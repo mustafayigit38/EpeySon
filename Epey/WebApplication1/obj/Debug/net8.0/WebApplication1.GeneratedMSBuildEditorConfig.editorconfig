@@ -1,0 +1,163 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication1
+build_property.RootNamespace = WebApplication1
+build_property.ProjectDir = C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Ayakkabı/CocukAyakkabı.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXlha2thYsSxXENvY3VrQXlha2thYsSxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Ayakkabı/ErkekAyakkabı.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXlha2thYsSxXEVya2VrQXlha2thYsSxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Ayakkabı/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXlha2thYsSxXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Ayakkabı/KadınAyakkabı.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXlha2thYsSxXEthZMSxbkF5YWtrYWLEsS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Ayakkabı/UnisexAyakkabı.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXlha2thYsSxXFVuaXNleEF5YWtrYWLEsS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Bilgisayar/Dizüstü.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZ2lzYXlhclxEaXrDvHN0w7wuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Bilgisayar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZ2lzYXlhclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Bilgisayar/Masaüstü.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZ2lzYXlhclxNYXNhw7xzdMO8LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/EvYasam/BeyazEsya.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZZYXNhbVxCZXlhekVzeWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/EvYasam/EvGerecleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZZYXNhbVxFdkdlcmVjbGVyaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/EvYasam/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZZYXNhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/EvYasam/IsıtmaSogutma.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZZYXNhbVxJc8SxdG1hU29ndXRtYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/EvYasam/KisiselBakim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZZYXNhbVxLaXNpc2VsQmFraW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/EvYasam/MutfakAletleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZZYXNhbVxNdXRmYWtBbGV0bGVyaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Shared/LoginIndicator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ2luSW5kaWNhdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Tasıtlar/Araba.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzxLF0bGFyXEFyYWJhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Tasıtlar/Bisiklet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzxLF0bGFyXEJpc2lrbGV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Tasıtlar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzxLF0bGFyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Tasıtlar/Motosiklet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzxLF0bGFyXE1vdG9zaWtsZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Telefon/AkıllıSaat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvblxBa8SxbGzEsVNhYXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Telefon/AkıllıTelefon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvblxBa8SxbGzEsVRlbGVmb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Telefon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Telefon/SarjAleti.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvblxTYXJqQWxldGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Telefon/TusluTelefon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZWZvblxUdXNsdVRlbGVmb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/TvGörüntüSes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHZHw7Zyw7xudMO8U2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/TvGörüntüSes/Kulaklık.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHZHw7Zyw7xudMO8U2VzXEt1bGFrbMSxay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/TvGörüntüSes/Monitör.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHZHw7Zyw7xudMO8U2VzXE1vbml0w7ZyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/TvGörüntüSes/Televizyon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHZHw7Zyw7xudMO8U2VzXFRlbGV2aXp5b24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/EpeySon/Epey/WebApplication1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bddmc6yalx

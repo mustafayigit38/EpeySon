@@ -1,0 +1,261 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .sablon {
+        width: 100%;
+        height: auto;
+        padding:30px 50px;
+    }
+
+    .resim {
+        width: 300px;
+        height: 60px;
+        float: left;
+        margin: 0 10px 0 10px;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        width: 500px;
+        height: 50px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: width 0.5s ease-in-out;
+    }
+
+        .search-container:hover {
+            width: 550px;
+            border-color: #333;
+        }
+
+        .search-container form {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .search-container input[type="text"] {
+            flex: 1;
+            padding: 0 20px;
+            border: 0;
+            background: transparent;
+            font-size: 16px;
+            color: #333;
+            outline: 0;
+        }
+
+        .search-container button[type="submit"] {
+            width: 50px;
+            height: 100%;
+            background: #333;
+            color: #fff;
+            border: 0;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
+
+            .search-container button[type="submit"]:hover {
+                background: #666;
+            }
+
+    .custom-menu {
+        width: 100%;
+        height: 50px;
+        float: left;
+        background: #d96142;
+        margin: 10px 0 10px 0;
+    }
+
+    .icerik1 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        font-size: 20px;
+    }
+
+    .icerik2 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+
+    .icerik3 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+
+    .icerik4 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+
+    .icerik5 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+
+    .icerik6 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+
+    .custom-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+        .custom-menu ul li {
+            float: left;
+            position: relative;
+        }
+
+            .custom-menu ul li a {
+                display: block;
+                width: 200px;
+                height: 35px;
+                text-align: center;
+                padding: 15px 15px 0 0;
+                color: black;
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+                .custom-menu ul li a:hover {
+                    background: #d96142;
+                }
+
+            .custom-menu ul li ul {
+                display: none;
+                position: absolute;
+                top: 50px;
+                left: 0px;
+                background: #e8dca8;
+            }
+
+            .custom-menu ul li:hover ul {
+                display: block;
+            }
+
+    .alt {
+        width: 100%;
+        height: 60px;
+        float: left;
+        background: #d96142;
+    }
+    .custom-navbar {
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        gap:50px;
+    }
+
+</style>
+
+
+<div class="sablon">
+  <div class="custom-navbar">
+        <img src="logo.jpg" class="resim">
+        <div class="search-container">
+            <form action="/search">
+                <input type="text" placeholder="Search..." name="q">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <input type="button" action="@Url.Action("login","Account")" onClick="location.href='loginpage.html'" value="Giriş Yapınız" style="background-color: #d96142;width: 400px; height: 60px;  border-radius: 10px; float: left; margin: 0 0 0 10px;" />
+  </div>
+
+    <div class="custom-menu">
+        <ul>
+            <li>
+                <a href="">TELEFON</a>
+                <ul>
+                    <li><a href="">Akıllı Telefon</a></li>
+                    <li><a href="">Tuşlu Telefon</a></li>
+                    <li><a href="">Akıllı Saat</a></li>
+                    <li><a href="">Şarj Aleti</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">EV-YAŞAM</a>
+                <ul>
+                    <li><a href="">Beyaz Eşya</a></li>
+                    <li><a href="">Isıtma-Soğutma</a></li>
+                    <li><a href="">Mutfak Aletleri</a></li>
+                    <li><a href="">Ev Gereçleri</a></li>
+                    <li><a href="">Kişisel Bakım ve Sağlık</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TV-GÖRÜNTÜ-SES</a>
+                <ul>
+                    <li><a href="">Monitör</a></li>
+                    <li><a href="">Televizyon</a></li>
+                    <li><a href="">Kulaklık</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">BİLGİSAYAR</a>
+                <ul>
+                    <li><a href="">Dizüstü</a></li>
+                    <li><a href="">Masaüstü</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TAŞITLAR</a>
+                <ul>
+                    <li><a href="">Araba</a></li>
+                    <li><a href="">Motosiklet</a></li>
+                    <li><a href="">Bisiklet</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">AYAKKABI</a>
+                <ul>
+                    <li><a href="">Erkek Ayakkabıları</a></li>
+                    <li><a href="">Kadın Ayakkabıları</a></li>
+                    <li><a href="">Çocuk Ayakkabıları</a></li>
+                    <li><a href="">Unisex Ayakkabılar</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="icerik1">Son Eklenen Telefonlar</div>
+    <div class="icerik2">Popüler Telefonlar</div>
+    <div class="icerik3">Fırsat Ürünler</div>
+    <div class="icerik4">Popüler Televizyonlar</div>
+    <div class="icerik5">Popüler Laptoplar</div>
+    <div class="icerik6">Son Eklenen Ürünler</div>
+    <div class="alt">
+        * Sitemizde yer alan bilgiler üzerine büyük bir hassasiyet göstersek de tüm bilgilerin %100 doğru olduğu garanti edilememektedir.
+        * Ürün fiyatları ve satılan ürüne ait özellikler satıcıdan doğrulanmalıdır. Fiyat listelerinde tüm satıcılar yer almayabilir.
+        * Epey.com; içeriğinde bulunan eksik veya hatalardan, buna bağlı yapılan tüm işlemler ve zararları ile 3. kişilere ait zararlardan hiçbir şekilde sorumlu tutulamaz.
+    </div>
+</div>
