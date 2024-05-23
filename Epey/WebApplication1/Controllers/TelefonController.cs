@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        public IActionResult AkıllıTelefon() 
+        public IActionResult AkilliTelefon() 
         {
             return View();
         }
@@ -16,7 +16,7 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        public IActionResult AkıllıSaat()
+        public IActionResult AkilliSaat()
         {
             return View();
         }

@@ -6,7 +6,7 @@
     .sablon {
         width: 100%;
         height: auto;
-        padding:30px 50px;
+        padding: 30px 50px;
     }
 
     .resim {
@@ -138,7 +138,7 @@
             .custom-menu ul li a {
                 display: block;
                 width: 200px;
-                height: 35px;
+                height:50px;
                 text-align: center;
                 padding: 15px 15px 0 0;
                 color: black;
@@ -168,18 +168,19 @@
         float: left;
         background: #d96142;
     }
+
     .custom-navbar {
         display: flex;
-        align-items:center;
-        justify-content:center;
-        gap:50px;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
     }
 
 </style>
 
 
 <div class="sablon">
-  <div class="custom-navbar">
+    <div class="custom-navbar">
         <img src="logo.jpg" class="resim">
         <div class="search-container">
             <form action="/search">
@@ -187,18 +188,18 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        <input type="button" action="@Url.Action("login","Account")" onClick="location.href='loginpage.html'" value="Giriş Yapınız" style="background-color: #d96142;width: 400px; height: 60px;  border-radius: 10px; float: left; margin: 0 0 0 10px;" />
-  </div>
+        <button onclick="location.href='@Url.Action("Login", "Account")'" style="background-color: #d96142;width: 400px; height: 60px;  border-radius: 10px; float: left; margin: 0 0 0 10px;">Giriş Yap</button>
+    </div>
 
     <div class="custom-menu">
         <ul>
             <li>
                 <a href="">TELEFON</a>
                 <ul>
-                    <li><a href="">Akıllı Telefon</a></li>
-                    <li><a href="">Tuşlu Telefon</a></li>
-                    <li><a href="">Akıllı Saat</a></li>
-                    <li><a href="">Şarj Aleti</a></li>
+                    <li><a href="@Url.Action("AkilliTelefon","Telefon")">Akıllı Telefon</a></li>
+                    <li><a href="@Url.Action("TusluTelefon","Telefon")">Tuşlu Telefon</a></li>
+                    <li><a href="@Url.Action("AkilliSaat","Telefon")">Akıllı Saat</a></li>
+                    <li><a href="@Url.Action("SarjAleti","Telefon")">Şarj Aleti</a></li>
                 </ul>
             </li>
             <li>
