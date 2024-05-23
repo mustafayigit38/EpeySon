@@ -1,0 +1,397 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .sablon {
+        width: 100%;
+        height: auto;
+        padding: 30px 50px;
+    }
+
+    .resim {
+        width: 300px;
+        height: 60px;
+        float: left;
+        margin: 0 10px 0 10px;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        width: 500px;
+        height: 50px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: width 0.5s ease-in-out;
+    }
+
+        .search-container:hover {
+            width: 550px;
+            border-color: #333;
+        }
+
+        .search-container form {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .search-container input[type="text"] {
+            flex: 1;
+            padding: 0 20px;
+            border: 0;
+            background: transparent;
+            font-size: 16px;
+            color: #333;
+            outline: 0;
+        }
+
+        .search-container button[type="submit"] {
+            width: 50px;
+            height: 100%;
+            background: #333;
+            color: #fff;
+            border: 0;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
+
+            .search-container button[type="submit"]:hover {
+                background: #666;
+            }
+
+    .custom-menu {
+        width: 100%;
+        height: 50px;
+        float: left;
+        background: #d96142;
+        margin: 10px 0 10px 0;
+    }
+
+    .icerik1 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        font-size: 20px;
+    }
+
+    .icerik2 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+
+    .icerik3 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+
+    .icerik4 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+
+    .icerik5 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+
+    .icerik6 {
+        width: 100%;
+        height: 450px;
+        background: #d96142;
+        float: left;
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+
+    .custom-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+        .custom-menu ul li {
+            float: left;
+            position: relative;
+        }
+
+            .custom-menu ul li a {
+                display: block;
+                width: 200px;
+                height:50px;
+                text-align: center;
+                padding: 15px 15px 0 0;
+                color: black;
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+                .custom-menu ul li a:hover {
+                    background: #d96142;
+                }
+
+            .custom-menu ul li ul {
+                display: none;
+                position: absolute;
+                top: 50px;
+                left: 0px;
+                background: #e8dca8;
+            }
+
+            .custom-menu ul li:hover ul {
+                display: block;
+            }
+
+    .alt {
+        width: 100%;
+        height: 60px;
+        float: left;
+        background: #d96142;
+    }
+
+    .custom-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+</style>
+
+
+<div class="sablon">
+    <div class="custom-navbar">
+        <img src="logo.jpg" class="resim">
+        <div class="search-container">
+            <form action="/search">
+                <input type="text" placeholder="Search..." name="q">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <button onclick="location.href='@Url.Action("Login", "Account")'" style="background-color: #d96142;width: 400px; height: 60px;  border-radius: 10px; float: left; margin: 0 0 0 10px;">Giriş Yap</button>
+    </div>
+
+    <div class="custom-menu">
+        <ul>
+            <li>
+                <a href="">TELEFON</a>
+                <ul>
+                    <li><a href="@Url.Action("AkilliTelefon","Telefon")">Akıllı Telefon</a></li>
+                    <li><a href="@Url.Action("TusluTelefon","Telefon")">Tuşlu Telefon</a></li>
+                    <li><a href="@Url.Action("AkilliSaat","Telefon")">Akıllı Saat</a></li>
+                    <li><a href="@Url.Action("SarjAleti","Telefon")">Şarj Aleti</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">EV-YAŞAM</a>
+                <ul>
+                    <li><a href="@Url.Action("BeyazEsya","EvYasam")">Beyaz Eşya</a></li>
+                    <li><a href="@Url.Action("IsıtmaSogutma","EvYasam")">Isıtma-Soğutma</a></li>
+                    <li><a href="@Url.Action("MutfakAletleri","EvYasam")">Mutfak Aletleri</a></li>
+                    <li><a href="@Url.Action("EvGerecleri","EvYasam")">Ev Gereçleri</a></li>
+                    <li><a href="@Url.Action("KisiselBakim","EvYasam")">Kişisel Bakım ve Sağlık</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TV-GÖRÜNTÜ-SES</a>
+                <ul>
+                    <li><a href="@Url.Action("Monitör","TvGörüntüSes")">Monitör</a></li>
+                    <li><a href="@Url.Action("Televizyon","TvGörüntüSes")">Televizyon</a></li>
+                    <li><a href="@Url.Action("Kulaklık","TvGörüntüSes")">Kulaklık</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">BİLGİSAYAR</a>
+                <ul>
+                    <li><a href="@Url.Action("Dizüstü","Bilgisayar")">Dizüstü</a></li>
+                    <li><a href="@Url.Action("Masaüstü","Bilgisayar")">Masaüstü</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TAŞITLAR</a>
+                <ul>
+                    <li><a href="@Url.Action("Araba","Tasıtlar")">Araba</a></li>
+                    <li><a href="@Url.Action("Motosiklet","Tasıtlar")">Motosiklet</a></li>
+                    <li><a href="@Url.Action("Bisiklet","Tasıtlar")">Bisiklet</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">AYAKKABI</a>
+                <ul>
+                    <li><a href="@Url.Action("ErkekAyakkabı","Ayakkabı")">Erkek Ayakkabıları</a></li>
+                    <li><a href="@Url.Action("KadınAyakkabı","Ayakkabı")">Kadın Ayakkabıları</a></li>
+                    <li><a href="@Url.Action("CocukAyakkabı","Ayakkabı")">Çocuk Ayakkabıları</a></li>
+                    <li><a href="@Url.Action("UnisexAyakkabı","Ayakkabı")">Unisex Ayakkabılar</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="icerik1">
+        <p>Son Eklenen telefonlar</p>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="~/photos/m_xiaomi-14-ultra-6.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Xiaomi 14 Ultra</h5>
+                        <p class="card-text">
+                            Dahili Depolama:512 GB
+                            <br />
+                            Bellek:16 GB
+                            <br />
+                            Batarya Kapasitesi: 5000mAh
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icerik2">
+        <p>Popüler Telefonlar</p>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="~/photos/m_samsung-galaxy-s24-ultra-1tb-1.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy S24 Ultra</h5>
+                        <p class="card-text">
+                            Dahili Depolama:1 TB
+                            <br />
+                            Bellek:12 GB
+                            <br />
+                            Batarya Kapasitesi: 5000mAh
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icerik3">
+        <p>Fırsat Ürünler</p>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="~/photos/m_2023-renault-megane-1-5-blue-dci-115-bg-edc-icon-5.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Renault Megane  </h5>
+                        <p class="card-text">
+                            Beygir: 115bg
+                            <br />
+                            Yakıt Tipi: Dizel
+                            <br />
+                            Tork: 270nm
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icerik4">
+        <p>Popüler Televizyonlar</p>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="~/photos/m_samsung-qn990c-98-qe98qn990ctxtk-98qn990ctxtk-6.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung 98QN990C Tv</h5>
+                        <p class="card-text">
+                            Ekran Boyutu: 98inc
+                            <br />
+                            Ekran Tazeleme Hızı: 120hz
+                            <br />
+                            Ekran Teknolojisi: LED
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icerik5">
+        <p>Popüler Laptoplar</p>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="~/photos/m_lenovo-legion-9-83ag000ntr-2.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Lenovo Legion 9  </h5>
+                        <p class="card-text">
+                            Ekran Boyutu: 16 inc
+                            <br />
+                            Bellek: 64 Gb
+                            <br />
+                            Sabit Disk: 2 TB
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icerik6">
+        <p>Son Eklenen Ürünler</p>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="~/photos/m_corelli-rave-up-20-v-fren-2.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Corelli Rave-Up  </h5>
+                        <p class="card-text">
+                            Jant Çapı: 20 inc
+                            <br />
+                            Vites Sayısı: 7
+                            <br />
+                            Fren Tipi: V Fren
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alt">
+        * Sitemizde yer alan bilgiler üzerine büyük bir hassasiyet göstersek de tüm bilgilerin %100 doğru olduğu garanti edilememektedir.
+        * Ürün fiyatları ve satılan ürüne ait özellikler satıcıdan doğrulanmalıdır. Fiyat listelerinde tüm satıcılar yer almayabilir.
+        * Epey.com; içeriğinde bulunan eksik veya hatalardan, buna bağlı yapılan tüm işlemler ve zararları ile 3. kişilere ait zararlardan hiçbir şekilde sorumlu tutulamaz.
+    </div>
+</div>
