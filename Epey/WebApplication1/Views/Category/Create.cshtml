@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Category
+<div>
+    <div id="giris">
+
+        <div id="uye_giris" class="uye_giris">
+            <form method="post" action="@Url.Action("Create","Category")">
+                <p style="font-size:24px;">Create Category</p>
+                <div style="display:none" class="mesaj"></div>
+                <input id="uye_parola1" class="uye_parola uyelik_alan" asp-for="Name" placeholder="category name"><br>
+                <button class="giris epey-giris" type="submit" id="adg845">Kaydet</button><br>
+
+            </form>
+
+        </div>
+    </div>
+</div>

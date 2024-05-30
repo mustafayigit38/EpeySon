@@ -1,0 +1,225 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<Phone>
+
+
+@{
+    var count = 1;
+}
+
+    @if (Model is not null)
+    {
+        
+
+        <div id="alttablo">
+            <div id="satir">
+                <div id="sutun" class="sutun1"></div>
+                <div id="sutun" class="sutun2">
+                    <div id="tablo">
+                        <style>
+                            #tablo .fiyat {
+                                height: 325px;
+                            }
+
+                                #tablo .fiyat a.fiyat {
+                                    height: 100px;
+                                }
+                        </style>
+                        <div id="satir" class="font16 tcenter bold">
+                            <div id="sutun" class="ozellik">
+                            </div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger0 urunid939542" style="position:relative">
+                                <span style="position:relative">
+                                    <a href="https://www.epey.com/akilli-telefonlar/samsung-galaxy-m35.html">@item.Name</a>
+                                </span>
+                            </div>
+                        }
+                      
+                            
+                        </div>
+                        <div id="satir" class="tcenter radi">
+                            <div id="sutun" class="ozellik"></div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger0 urunid939542">
+                                <a href="https://www.epey.com/akilli-telefonlar/samsung-galaxy-m35.html" title="Samsung Galaxy M35 Özellikleri"><img src="/@item.ImagePath"  style="max-width:200px"></a>
+                                <div class="genislik"></div>
+                            </div>
+                        }
+                      
+                          
+                        </div>
+                        <div id="satir" class="rpuan">
+                            <div id="sutun" class="ozellik"></div>
+                            <div id="sutun" class="deger deger0 urunid939542 tcenter">
+                            </div>
+                            <div id="sutun" class="deger deger1 urunid928247 tcenter">
+                            </div>
+                        </div>
+
+
+                        <div id="satir" class="kisim"><div id="sutun" class="ozellik">TÜM ÖZELLİKLER <strong class="fark"></strong></div><div id="sutun" class="deger deger1 urunid939542">&nbsp;</div> <div id="sutun" class="deger deger1 urunid928247">&nbsp;</div> </div>
+                        <div id="satir" class="grup farkli"><div id="sutun" class="ozellik"><img src="https://resim.epey.com/grup/ekran-1.png"><strong>EKRAN</strong></div><div id="sutun" class="deger deger1 urunid939542">&nbsp;</div> <div id="sutun" class="deger deger1 urunid928247">&nbsp;</div> </div>
+                        <div id="satir" class="tum farkli">
+                            <div id="sutun" class="ozellik tip ozellik1">Ekran Boyutu</div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger urunid939542">
+                                <span style="display:block;" class="@(item.PhoneScreenSpecs.ScreenSize == Model.Max(u=>u.PhoneScreenSpecs.ScreenSize)?"eniyi":"")">
+                                    <a href="https://www.epey.com/akilli-telefonlar/ekran-boyutu/6-6/" title="6.6 İnç Ekranlı Telefonlar">@item.PhoneScreenSpecs.ScreenSize İnç</a>
+                                </span>
+                            </div>
+                            
+                        }
+
+                            
+                        </div>
+                        <div id="satir" class="tum farkli">
+                            <div id="sutun" class="ozellik">Ekran Teknolojisi</div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger urunid939542">
+                                <span style="display:block;" class="@(item.PhoneScreenSpecs.ScreenFeature == Model.Max(u=>u.PhoneScreenSpecs.ScreenFeature)?"eniyi":"")">
+                                    <a href="https://www.epey.com/akilli-telefonlar/ekran-teknolojisi/super-amoled/" title="Super AMOLED Ekran Teknolojisine Sahip Telefonlar">@item.PhoneScreenSpecs.ScreenFeature</a>
+                                </span>
+                            </div>
+                           
+                        }
+                     
+                        </div>
+                        <div id="satir" class="tum farkli">
+                            <div id="sutun" class="ozellik tip ozellik3">Ekran Çözünürlüğü</div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger urunid939542">
+                                <span style="display:block;" class="@(item.PhoneScreenSpecs.ScreenResolution == Model.Max(u=>u.PhoneScreenSpecs.ScreenResolution)?"eniyi":"")">
+                                    <a href="https://www.epey.com/akilli-telefonlar/ekran-cozunurlugu/1080x2340-fhd-plus/" title="1080x2340 (FHD+) Piksel Ekran Çözünürlüklü Telefonlar">@item.PhoneScreenSpecs.ScreenResolution Piksel</a>
+                                </span>
+                            </div>
+                        
+                        }
+                 
+                        </div>
+
+
+                        <div id="satir" class="tum farkli">
+                            <div id="sutun" class="ozellik ">Ekran Yenileme Hızı</div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger urunid939542">
+                                <span style="display:block;" class="@(item.PhoneScreenSpecs.ScreenRefreshRate == Model.Max(u=>u.PhoneScreenSpecs.ScreenRefreshRate)?"eniyi":"")">
+                                    <a  href="https://www.epey.com/akilli-telefonlar/ekran-yenileme-hizi/120/" title="120 Hz Ekran Yenileme Hızına Sahip Telefonlar">@item.PhoneScreenSpecs.ScreenRefreshRate Hz</a>
+                                </span>
+                            </div>
+                         
+                        }
+                      
+                        </div>
+
+                        <div id="satir" class="grup farkli"><div id="sutun" class="ozellik"><img src="https://resim.epey.com/grup/batarya-2.png"><strong>BATARYA</strong></div><div id="sutun" class="deger deger1 urunid939542">&nbsp;</div> <div id="sutun" class="deger deger1 urunid928247">&nbsp;</div> </div>
+                        <div id="satir" class="tum farkli">
+                            <div id="sutun" class="ozellik tip ozellik7">Batarya Kapasitesi (Tipik)</div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger urunid939542">
+                                <span style="display:block;" class="@(item.PhoneBatterySpecs.BatteryCapacity== Model.Max(u=>u.PhoneBatterySpecs.BatteryCapacity)?"eniyi":"")">
+                                    <a href="https://www.epey.com/akilli-telefonlar/batarya-kapasitesi-tipik/6000/" title="6000 mAh Batarya (Pil) Gücüne Sahip Telefonlar">@item.PhoneBatterySpecs.BatteryCapacity mAh</a>
+                                </span>
+                            </div>
+                           
+                        }
+                        
+                        </div>  
+
+                        <div id="satir" class="tum ayni">
+                            <div id="sutun" class="ozellik">Hızlı Şarj</div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger urunid939542">
+                                <span style="display:block;" class="@(item.PhoneBatterySpecs.FastCharging?"Var":"Yok")">
+                                    <a href="https://www.epey.com/akilli-telefonlar/hizli-sarj/var/" title="Hızlı Şarj Özelliği Olan Telefonlar">@(item.PhoneBatterySpecs.FastCharging ? "Var" : "Yok")</a>
+                                </span>
+                            </div>
+                        
+                        }
+                       
+                        </div>
+
+                        <div id="satir" class="tum farkli">
+                            <div id="sutun" class="ozellik tip ozellik6593">Hızlı Şarj Gücü (Maks.)</div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger urunid939542 h40">
+                                <span style="display:block;" class="@(item.PhoneBatterySpecs.ChargingSpeed== Model.Max(u=>u.PhoneBatterySpecs.ChargingSpeed)?"eniyi":"")">
+                                    <a href="https://www.epey.com/akilli-telefonlar/hizli-sarj-gucu-maks/25w/" title="25 W Hızlı Şarj Desteği Olan Telefonlar">@item.PhoneBatterySpecs.ChargingSpeed W</a>
+                                </span>
+                            </div>
+                           
+                        }
+                        
+                        </div>
+
+                        <div id="satir" class="grup farkli"><div id="sutun" class="ozellik"><img src="https://resim.epey.com/grup/kamera-5.png"><strong>KAMERA</strong></div><div id="sutun" class="deger deger1 urunid939542">&nbsp;</div> <div id="sutun" class="deger deger1 urunid928247">&nbsp;</div> </div>
+                        <div id="satir" class="tum farkli">
+                            <div id="sutun" class="ozellik tip ozellik19">Kamera Çözünürlüğü</div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger urunid939542">
+                                <span style="display:block;" class="@(item.PhoneCameraSpecs.CameraResolution== Model.Max(u=>u.PhoneCameraSpecs.CameraResolution)?"eniyi":"")">
+                                    <a href="https://www.epey.com/akilli-telefonlar/kamera-cozunurlugu/50/" title="50 MP Kamera Çözünürlüğüne Sahip Telefonlar">@item.PhoneCameraSpecs.CameraResolution MP</a>
+                                </span>
+                            </div>
+                           
+                        }
+                       
+                        </div>
+                   
+
+                        <div id="satir" class="tum farkli">
+                            <div id="sutun" class="ozellik tip ozellik70">Video FPS Değeri</div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger urunid939542">
+                                <span style="display:block;" class="@(item.PhoneCameraSpecs.CameraFps== Model.Max(u=>u.PhoneCameraSpecs.CameraFps)?"eniyi":"")">
+                                    <a href="https://www.epey.com/akilli-telefonlar/video-fps-degeri/30/" title="30 fps Video Kaydı Yapabilen Telefonlar">@item.PhoneCameraSpecs.CameraFps FPS</a>
+                                </span>
+                            </div>
+                           
+                        }
+                       
+                        </div>
+
+                    <div id="satir" class="tum farkli">
+                        <div id="sutun" class="ozellik tip ozellik70">Camera Zoom Değeri</div>
+                        @foreach (var item in Model)
+                        {
+                            <div id="sutun" class="deger deger urunid939542">
+                                <span style="display:block;" class="@(item.PhoneCameraSpecs.CameraZoom== Model.Max(u=>u.PhoneCameraSpecs.CameraZoom)?"eniyi":"")">
+                                    <a href="https://www.epey.com/akilli-telefonlar/video-fps-degeri/30/" title="30 fps Video Kaydı Yapabilen Telefonlar">@item.PhoneCameraSpecs.CameraZoom X</a>
+                                </span>
+                            </div>
+
+                        }
+
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="kaydir">
+                <span class="fark"><input type="checkbox" id="urun" name="urun" onclick="fark(1)" value="1"><label for="urun"><span></span><div>&nbsp;Sadece Farkları Göster</div></label></span>
+            </div>
+        </div>
+
+
+        
+    }
+
+
+

@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+
+}
+@model IEnumerable<Phone>
+
+
+<div class="listele table" style="margin:0;position:relative;">
+    <style>
+        #gecissonuc {
+            position: fixed;
+            top: 0;
+            float: left;
+            background: #D96142;
+            text-align: center;
+            -moz-border-radius: 0 0 3px 3px;
+            -webkit-border-radius: 0 0 3px 3px;
+            color: #FFF;
+            font-weight: bold;
+            padding: 5px 20px;
+            z-index: 999;
+            opacity: 0.7;
+            margin-left: 50px;
+        }
+    </style>
+    <div id="gecissonuc" class="hide">yükleniyor...</div>
+    <ul class="baslik row">
+        <li class="adi  cell">Ürün Adı</li>
+        <li class="fiyat  cell">Fiyat</li>
+        <li class="ozellik  cell">Ekran Boyutu</li>
+        <li class="ozellik  cell">Dahili Depolama</li>
+        <li class="ozellik  cell" ">Bellek (RAM)</li>
+        <li class="ozellik  cell">Batarya Kapasitesi (Tipik)</li>
+        <li class="puan DESC cell" title="">Teknik Puan</li>
+    </ul>
+
+        @if (Model is not null && Model.Count() > 0)
+        {
+            @foreach (var item in Model)
+            {
+
+            <ul id="923849" class="metin row">
+                <li class="adi cell">
+                    <div class="resim cell">
+                        <a href="https://www.epey.com/akilli-telefonlar/xiaomi-14-ultra.html" class="urunresmi" title="Xiaomi 14 Ultra Cep Telefonu">
+                            <img src="/@item.ImagePath" width="56px" height="120px" alt="Xiaomi 14 Ultra resim">
+                        </a>
+                    </div> <div class="detay cell">
+                        <a href="https://www.epey.com/akilli-telefonlar/xiaomi-14-ultra.html" class="urunadi" title="Xiaomi 14 Ultra Cep Telefonu">@item.Name</a>
+                        <span class="degergetir">Android 14 (U)</span>
+                        <input onchange="Compareit(@item.Id)" type="checkbox" id="@item.Id" name="@item.Id" value="@item.Id" autocomplete="off"><label for="@item.Id"><span></span><div class="kiyasla kiyasla923849">Karşılaştır</div></label>
+                    </div>
+                </li>
+                <li class="fiyat cell">
+                    <a href="https://www.epey.com/akilli-telefonlar/xiaomi-14-ultra.html#fiyatlar" title="Xiaomi 14 Ultra Cep Telefonu Fiyatı">@item.Price TL<span>6 site, 7 fiyat</span></a>
+                </li>
+                <li class="ozellik ozellik1 cell">@item.PhoneScreenSpecs.ScreenSize İnç</li>
+                <li class="ozellik ozellik21 cell">512 GB</li>
+                <li class="ozellik ozellik14 cell">16 GB</li>
+                <li class="ozellik ozellik7 cell">@item.PhoneBatterySpecs.BatteryCapacity mAh</li>
+                <li class="puan cell"><div id="puan923849" data-dimension="70" data-text="100" data-info="puan" data-width="7" data-fontsize="22" data-percent="100" data-fgcolor="#D96041" data-bgcolor="#F8F4E0" class="circliful" style="width: 70px;"><span class="circle-text" itemprop="ratingValue" style="line-height: 70px; font-size: 22px;">100</span><span class="circle-info" style="line-height: 87.5px;">puan</span><canvas width="70" height="70"></canvas></div></li>
+            </ul>
+
+            }
+
+
+        }
+
+</div>
+
+
+

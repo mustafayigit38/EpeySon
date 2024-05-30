@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\EpeySon-main\\Epey\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\Samed\\source\\repos\\EpeySon\\Epey\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\EpeySon-main\\Epey\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\Samed\\source\\repos\\EpeySon\\Epey\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\EpeySon-main\\Epey\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Samed\\source\\repos\\EpeySon\\Epey\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\USER\\Desktop\\EpeySon-main\\Epey\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\EpeySon-main\\Epey\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\Samed\\source\\repos\\EpeySon\\Epey\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\Samed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samed\\source\\repos\\EpeySon\\Epey\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Samed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,6 +58,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             }
           },
           "imports": [

@@ -1,0 +1,7646 @@
+﻿@import "https://fonts.googleapis.com/css?family=Titillium+Web:600,400,300&display=swap&subset=latin,latin-ext";
+
+html {
+    margin: 0
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 13px/20px 'Titillium Web',Arial;
+    font-weight: 400;
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+img {
+    border: none
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+    a:hover {
+        color: #d96142
+    }
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+li {
+    list-style: none
+}
+
+input {
+    outline: 0
+}
+
+.red {
+    color: #d96142
+}
+
+#ust2 {
+    width: 100%;
+    margin: 0 auto
+}
+
+.ust2 {
+    float: left;
+    width: 100%;
+    height: 86px;
+    background: #d96142;
+    margin-top: 100px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+}
+
+
+
+#cerceve {
+    width: 990px;
+    margin: 0 auto;
+}
+
+#cercevek {
+    margin: 0 auto;
+    width: 100%;
+    position: relative
+}
+
+.cerceve {
+    float: left;
+    width: 970px;
+    background: #fff;
+    margin: 0;
+    padding: 0 10px 10px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    z-index: 9999
+}
+
+.cercevek {
+    float: left;
+    width: 100%;
+    background: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    z-index: 9999
+}
+
+#menu {
+    float: left;
+    position: relative;
+    width: 970px;
+    height: 44px;
+    background: #d96142;
+    border-top: 1px solid #d96142;
+    display: block;
+    border-bottom: 1px solid #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 0 0 3px 3px;
+    font-size: 14px;
+    z-index: 500
+}
+
+    #menu ul {
+        width: 100%;
+        text-align: left;
+        display: inline;
+        list-style: none;
+        padding: 0;
+        margin: 1px;
+        z-index: 900
+    }
+
+        #menu ul li {
+            width: auto;
+            display: inline-block;
+            padding: 12px 10px;
+            color: #fff;
+            height: 20px
+        }
+
+            #menu ul li:hover {
+                background: #fff;
+                color: #d96142;
+                text-align: center
+            }
+
+            #menu ul li a.seviye1 {
+                color: #fff
+            }
+
+            #menu ul li:hover a.seviye1 {
+                background: #fff;
+                color: #d96142
+            }
+
+            #menu ul li .dropDown {
+                padding: 0;
+                position: absolute;
+                top: 43px;
+                left: 0;
+                width: 968px;
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+                border: 1px solid #d96142;
+                border-top: 0;
+                background: #fff;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 0 0 3px 3px;
+                text-align: left
+            }
+
+            #menu ul li:hover .dropDown {
+                display: block;
+                opacity: 1;
+                visibility: visible
+            }
+
+            #menu ul li .dropDown .left {
+                float: left;
+                width: 225px;
+                border-right: 1px solid #d96142;
+                border-top: 0;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 0 0 3px 3px
+            }
+
+                #menu ul li .dropDown .left a {
+                    float: left;
+                    width: 180px;
+                    padding: 10px 10px 10px 35px;
+                    border-bottom: 1px solid #d96142
+                }
+
+                    #menu ul li .dropDown .left a span {
+                        float: right
+                    }
+
+            #menu ul li .dropDown .right {
+                float: left;
+                width: 741px;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                padding-top: 5px
+            }
+
+            #menu ul li .dropDown .full {
+                float: left;
+                width: 966px;
+                padding: 10px 0
+            }
+
+            #menu ul li .dropDown #grup2 {
+                float: left;
+                margin: 5px;
+                width: 200px
+            }
+
+            #menu ul li.seviye1 {
+                font-weight: 700
+            }
+
+            #menu ul li .seviye2 {
+                display: block;
+                font-weight: 700
+            }
+
+            #menu ul li .seviye3 {
+                display: block;
+                padding: 10px;
+                font-weight: 700;
+                text-decoration: underline;
+                color: #000
+            }
+
+            #menu ul li .seviye4 {
+                display: block;
+                padding: 10px 10px 10px 35px;
+                font-weight: 700
+            }
+
+            #menu ul li .seviye5 {
+                display: block;
+                padding: 5px 10px 5px 35px;
+                font-weight: 400
+            }
+
+        #menu ul .ayrac {
+            font-weight: 400;
+            width: 1px;
+            height: 20px;
+            color: #fff;
+            font-size: 22px
+        }
+
+        #menu ul li.nkat97 .dropDown .ustkategori .altkategori, #menu ul li.nkat25 .dropDown .ustkategori .altkategori {
+            left: -213px
+        }
+
+        #menu ul li .dropDown .ustkategori .altkategori {
+            background: #fff;
+            position: absolute;
+            left: 240px;
+            border: 1px solid #d96142;
+            border-width: 1px 1px 1px 0;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 0 0 3px 3px;
+            padding: 10px 5px;
+            font-size: 13px;
+            margin-top: -37px;
+            padding: 0 1px;
+            border-left: 1px solid #d96142
+        }
+
+        #menu ul li:hover .dropDown .ustkategori:hover .altkategori {
+            display: block;
+            opacity: 1;
+            visibility: visible
+        }
+
+        #menu ul li .dropDown .ustkategori .altkategori a.sub {
+            display: block;
+            color: #d96142;
+            width: 193px;
+            border-bottom: 1px solid #d96142;
+            padding: 8px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 0;
+            font-size: 14px
+        }
+
+            #menu ul li .dropDown .ustkategori .altkategori a.sub:hover {
+                background: #f5edcf
+            }
+
+        #menu ul li .dropDown .ustkategori .kategoriliste {
+            float: left;
+            width: 100%;
+            margin-top: 10px
+        }
+
+            #menu ul li .dropDown .ustkategori .kategoriliste a {
+                display: block;
+                margin: 0 8px;
+                border-bottom: 1px solid #e8dca8;
+                line-height: 30px
+            }
+
+        #menu ul li .dropDown .grup2 {
+            float: left;
+            padding: 5px
+        }
+
+#ust {
+    float: left;
+    width: 970px;
+    height: 40px;
+    margin: 0 5px;
+    padding: 10px 0 5px;
+    background: #fff
+}
+
+#logo {
+    float: left;
+    margin: 3px 0 0 15px
+}
+
+#garama {
+    float: right;
+    width: 778px;
+    height: 40px;
+    border: 1px solid #d96142;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #fff;
+    margin-right: 5px
+}
+
+    #garama input {
+        float: left;
+        padding: 7px 10px;
+        border: none;
+        background: 0 0;
+        outline: 0 !important;
+        -webkit-appearance: none;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px
+    }
+
+    #garama .arama {
+        width: 687px;
+        font-size: 15px;
+        margin-top: 4px;
+        font: bold 13px/20px 'Titillium Web',Arial
+    }
+
+    #garama .ara {
+        width: 70px;
+        height: 38px;
+        background: url(https://resim.epey.com/tema/aratmp.png) no-repeat center #d96142;
+        cursor: pointer;
+        margin: 1px 1px 0 0;
+        padding: 5px 0;
+        border-radius: 0 3px 3px 0
+    }
+
+    #garama .aramasonuc {
+        float: left;
+        width: 580px;
+        position: relative;
+        z-index: 100000
+    }
+
+    #garama .aramasonuc2 {
+        float: left;
+        width: 720px;
+        position: relative;
+        z-index: 100000
+    }
+
+    #garama .aramasonuc ul:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 100%;
+        right: 15px;
+        border-width: 0 6px 6px;
+        border-style: solid;
+        border-color: #fff transparent
+    }
+
+    #garama .aramasonuc ul:before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 100%;
+        right: 13px;
+        border-width: 0 8px 8px;
+        border-style: solid;
+        border-color: #e8dca8 transparent
+    }
+
+    #garama .aramasonuc ul {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border: 1px solid #e8dca8;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px
+    }
+
+        #garama .aramasonuc ul li a {
+            float: left;
+            width: 560px;
+            border-bottom: 1px solid #e8dca8;
+            z-index: 99999;
+            padding: 5px 10px;
+            background: #fff;
+            color: #505050
+        }
+
+    #garama .aramasonuc2 ul li a {
+        float: left;
+        width: 700px;
+        border-bottom: 1px solid #e8dca8;
+        z-index: 99999;
+        padding: 5px 10px;
+        background: #fff;
+        color: #505050
+    }
+
+    #garama .aramasonuc ul li a:hover {
+        background: #f8f4e0
+    }
+
+    #garama .aramasonuc ul li a p {
+        margin: 0
+    }
+
+    #garama .aramasonuc ul li a span {
+    }
+
+        #garama .aramasonuc ul li a span.kodu {
+            font-weight: 700;
+            font-size: 11px
+        }
+
+        #garama .aramasonuc ul li a span.aile {
+            color: #d96142;
+            font-weight: 700;
+            font-size: 11px
+        }
+
+        #garama .aramasonuc ul li a span.kategori {
+            float: right;
+            color: #999
+        }
+
+        #garama .aramasonuc ul li a span.resim {
+            float: left;
+            width: 50px;
+            margin-right: 10px;
+            text-align: center
+        }
+
+            #garama .aramasonuc ul li a span.resim img {
+                max-height: 35px
+            }
+
+.genel_ara {
+    z-index: 1000
+}
+
+#listeler {
+    float: right;
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: 600;
+    background: #fff
+}
+
+    #listeler a {
+        float: right;
+        padding: 5px 10px;
+        background: #f9f6e5;
+        margin: 0 10px 0 0;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px
+    }
+
+#kategori #garama {
+    float: left;
+    width: 170px;
+    border: 1px solid #e8dca8;
+    margin: 4px 4px 0
+}
+
+    #kategori #garama .arama {
+        width: 145px;
+        background: url(https://resim.epey.com/tema/ara.png) right no-repeat
+    }
+
+    #kategori #garama .aramasonuc {
+        width: 100%
+    }
+
+        #kategori #garama .aramasonuc ul {
+            width: 100%
+        }
+
+            #kategori #garama .aramasonuc ul li a {
+                width: 150px
+            }
+
+        #kategori #garama .aramasonuc ul {
+            top: 8px
+        }
+
+            #kategori #garama .aramasonuc ul .aile {
+                font-size: 13px
+            }
+
+#urunekle #garama {
+    float: left;
+    width: 255px;
+    border: 1px solid #e8dca8;
+    margin: 4px 4px 0
+}
+
+    #urunekle #garama .arama {
+        width: 230px;
+        background: url(https://resim.epey.com/tema/ara.png) right no-repeat
+    }
+
+    #urunekle #garama .aramasonuc {
+        width: 100%
+    }
+
+        #urunekle #garama .aramasonuc ul {
+            width: 100%
+        }
+
+            #urunekle #garama .aramasonuc ul li a {
+                width: 235px
+            }
+
+        #urunekle #garama .aramasonuc ul {
+            top: 8px
+        }
+
+            #urunekle #garama .aramasonuc ul .aile {
+                font-size: 13px
+            }
+
+#urun {
+    float: left;
+    width: 970px;
+    position: relative
+}
+
+    #urun .urun {
+        margin: 0 0 10px
+    }
+
+    #urun #urun_adi {
+        float: left;
+        margin: 0
+    }
+
+        #urun #urun_adi .puan {
+            float: left;
+            width: 140px;
+            height: 70px;
+            text-align: center
+        }
+
+        #urun #urun_adi .urun_adi {
+            float: left;
+            min-width: 320px
+        }
+
+            #urun #urun_adi .urun_adi h1 {
+                display: block;
+                margin: 0 0 5px
+            }
+
+                #urun #urun_adi .urun_adi h1 span {
+                    font-weight: 300;
+                    font-size: 18px
+                }
+
+    #urun a.kategori {
+        margin: 0;
+        font-size: 14px
+    }
+
+        #urun a.kategori:hover {
+            text-decoration: underline
+        }
+
+    #urun .buton {
+        float: left;
+        min-width: 275px;
+        margin: 5px 0 0;
+        padding: 5px 10px;
+        background: #d96142;
+        border-bottom: 1px solid #e8dca8;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px
+    }
+
+    #urun input[type=checkbox] + label {
+        font-size: 14px;
+        font-weight: 700
+    }
+
+    #urun .fiyat {
+        float: left
+    }
+
+        #urun .fiyat #oncelikli {
+            width: 900px;
+            height: 100px;
+            padding: 0 0 15px
+        }
+
+        #urun .fiyat .resim {
+            float: left;
+            margin-right: 10px
+        }
+
+            #urun .fiyat .resim img {
+                max-width: 270px;
+                max-height: 200px
+            }
+
+        #urun .fiyat .buton2 {
+            float: right;
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 5px
+        }
+
+#arama {
+    float: left;
+    width: 200px
+}
+
+    #arama .arama {
+        float: left;
+        width: 100%;
+        border: 1px solid #e8dca8;
+        padding: 4px 10px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px
+    }
+
+    #arama .aramasonuc {
+        float: left;
+        width: 100%;
+        position: relative;
+        z-index: 99999
+    }
+
+        #arama .aramasonuc ul:after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 100%;
+            right: 15px;
+            border-width: 0 6px 6px;
+            border-style: solid;
+            border-color: #fff transparent
+        }
+
+        #arama .aramasonuc ul:before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 100%;
+            right: 13px;
+            border-width: 0 8px 8px;
+            border-style: solid;
+            border-color: #e8dca8 transparent
+        }
+
+        #arama .aramasonuc ul {
+            position: absolute;
+            left: 0;
+            top: 10px;
+            display: block;
+            width: 220px;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            border: 1px solid #e8dca8;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px
+        }
+
+            #arama .aramasonuc ul li a {
+                float: left;
+                width: 200px;
+                border-bottom: 1px solid #e8dca8;
+                z-index: 99999;
+                padding: 5px 10px
+            }
+
+                #arama .aramasonuc ul li a:hover {
+                    background: #f8f4e0
+                }
+
+#ara {
+    float: left;
+    width: 200px
+}
+
+    #ara .arama {
+        float: left;
+        width: 100%;
+        border: 1px solid #e8dca8;
+        padding: 4px 10px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px
+    }
+
+    #ara .aramasonuc {
+        float: left;
+        width: 100%;
+        position: relative;
+        z-index: 9999
+    }
+
+        #ara .aramasonuc ul:after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 100%;
+            left: 15px;
+            border-width: 0 6px 6px;
+            border-style: solid;
+            border-color: #fff transparent
+        }
+
+        #ara .aramasonuc ul:before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 100%;
+            left: 13px;
+            border-width: 0 8px 8px;
+            border-style: solid;
+            border-color: #e8dca8 transparent
+        }
+
+        #ara .aramasonuc ul {
+            position: absolute;
+            left: 0;
+            top: 10px;
+            display: block;
+            width: 220px;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            border: 1px solid #e8dca8;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px
+        }
+
+            #ara .aramasonuc ul li a {
+                float: left;
+                width: 200px;
+                border-bottom: 1px solid #e8dca8;
+                z-index: 99999;
+                padding: 5px 10px
+            }
+
+                #ara .aramasonuc ul li a:hover {
+                    background: #f8f4e0
+                }
+
+#sirala {
+    float: left;
+    width: 100%;
+    height: 36px;
+    margin-top: -6px
+}
+
+.sirala {
+    float: left;
+    position: relative;
+    width: 150px;
+    padding: 5px 10px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #e8dca8;
+    cursor: pointer;
+    outline: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-weight: 600
+}
+
+    .sirala:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        border-width: 6px 6px 0;
+        border-style: solid;
+        border-color: #e8dca8 transparent
+    }
+
+    .sirala .dd {
+        display: none;
+        font-weight: 400
+    }
+
+    .sirala:hover .dd {
+        display: block
+    }
+
+    .sirala .dd li {
+        width: 100%
+    }
+
+        .sirala .dd li a {
+            display: block;
+            padding: 5px 10px;
+            border-bottom: 1px solid #e8dca8
+        }
+
+        .sirala .dd li:first-of-type a {
+            border-radius: 5px 5px 0 0
+        }
+
+        .sirala .dd li:last-of-type a {
+            border: none;
+            border-radius: 0 0 5px 5px
+        }
+
+        .sirala .dd li:hover a {
+            background: #f8f4e0
+        }
+
+.sirala1 {
+    z-index: 100
+}
+
+.sirala2 {
+    z-index: 99;
+    margin-bottom: 0
+}
+
+#fiyat {
+    width: 302px;
+    height: 280px;
+    vertical-align: top
+}
+
+    #fiyat .cell {
+        width: 150px;
+        height: 48px;
+        border-bottom: 1px solid #f8f4e0;
+        vertical-align: middle;
+        padding: 0 10px 0 0
+    }
+
+    #fiyat .cell2 {
+        text-align: right;
+        font-size: 15px;
+        font-weight: 600
+    }
+
+    #fiyat .tumu {
+        float: left;
+        font-size: 15px;
+        font-weight: 600
+    }
+
+        #fiyat .tumu a {
+            float: left;
+            margin: 5px 0 0
+        }
+
+.onerilen {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    margin: 10px 0 0
+}
+
+.testsurusu {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    margin: 0 0 5px
+}
+
+.site77 {
+    position: relative;
+    display: inline-block
+}
+
+    .site77:before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        border-bottom: 1px solid #000;
+        -webkit-transform: skewY(-10deg);
+        transform: skewY(-10deg)
+    }
+
+h2.urun {
+    float: left;
+    width: 970px;
+    border-bottom: 1px solid #f8f4e0;
+    margin: 12px 0;
+    padding: 0
+}
+
+    h2.urun a {
+        cursor: default
+    }
+
+        h2.urun a:hover {
+            color: #000
+        }
+
+#bilgiler {
+    float: left;
+    width: 970px
+}
+
+    #bilgiler #grup {
+        float: left;
+        width: 473px;
+        margin: 10px 0 20px
+    }
+
+        #bilgiler #grup h3 {
+            float: left;
+            width: 463px;
+            margin: 5px 10px 5px 0
+        }
+
+            #bilgiler #grup h3 img {
+                float: left
+            }
+
+            #bilgiler #grup h3 span {
+                float: left;
+                margin: 5px 0 0 5px
+            }
+
+        #bilgiler #grup ul.grup {
+            display: table;
+            width: 473px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #f8f4e0;
+            border-width: 1px 1px 0
+        }
+
+        #bilgiler #grup ul li.cls0, #bilgiler #grup ul li.cls1 {
+            display: table-row;
+            width: 463px;
+            list-style: none
+        }
+
+        #bilgiler #grup ul li strong#cell {
+            display: table-cell;
+            width: 190px;
+            background: #f8f4e0;
+            padding: 7px 5px;
+            border-bottom: 1px solid #fff;
+            vertical-align: top
+        }
+
+            #bilgiler #grup ul li strong#cell img {
+                float: right;
+                height: 20px;
+                margin: 0 5px 0 0
+            }
+
+        #bilgiler #grup ul li span.cell {
+            display: table-cell;
+            width: 273px;
+            padding: 7px 5px;
+            border-bottom: 1px solid #f8f4e0
+        }
+
+            #bilgiler #grup ul li span.cell span {
+                display: block
+            }
+
+        #bilgiler #grup li span.cs2 span {
+            float: left;
+            width: 50%
+        }
+
+        #bilgiler #grup li span.cs3 span {
+            float: left;
+            width: 33%
+        }
+
+        #bilgiler #grup li span.cs4 span {
+            float: left;
+            width: 25%
+        }
+
+.bilgiler {
+    float: left;
+    width: 970px
+}
+
+    .bilgiler ul.grup {
+        float: left;
+        width: 970px;
+        margin: 0;
+        padding: 0
+    }
+
+    .bilgiler ul li {
+        float: left;
+        list-style: none;
+        border: 1px solid #f8f4e0;
+        margin: 0 5px 5px 0
+    }
+
+        .bilgiler ul li strong, .bilgiler ul li span {
+            float: left;
+            padding: 7px 10px
+        }
+
+        .bilgiler ul li strong {
+            background: #f8f4e0
+        }
+
+#tanitim {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8a8a8a;
+    margin: 0 0 10px
+}
+
+    #tanitim h2 {
+        margin: 0;
+        padding: 3px 5px;
+        background: #f8f4e0
+    }
+
+.tanitim strong.row {
+    float: left;
+    width: 100%;
+    background: #f8f4e0;
+    padding: 5px;
+    font-size: 15px
+}
+
+.tanitim span.row {
+    float: left;
+    width: 948px;
+    border: 1px solid #f8f4e0;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    font-size: 15px
+}
+
+.tanitim p {
+    line-height: 20px
+}
+
+#kategori {
+    float: left;
+    width: 100%
+}
+
+    #kategori .table {
+        margin: 15px 0
+    }
+
+    #kategori .kategori_adi {
+        width: 725px
+    }
+
+        #kategori .kategori_adi p {
+            line-height: 20px;
+            margin: 0
+        }
+
+    #kategori #sol {
+        border: 1px solid #e8dca8;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 0;
+        height: none
+    }
+
+    #kategori .sol {
+        width: 180px
+    }
+
+    #kategori #sol #ara {
+        float: left;
+        width: 100%;
+        margin: 10px 0
+    }
+
+        #kategori #sol #ara .arama {
+            width: 138px;
+            padding: 5px 10px;
+            background: #fff;
+            border-radius: 5px;
+            border: 1px solid #e8dca8
+        }
+
+    #kategori #sol ::-webkit-input-placeholder {
+        font-size: 12px
+    }
+
+input[type=checkbox] {
+    display: none
+}
+
+    input[type=checkbox] + label span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: -1px 0 0;
+        vertical-align: middle;
+        background: url(https://resim.epey.com/tema/checkbox.png) left top no-repeat;
+        cursor: pointer
+    }
+
+    input[type=checkbox]:checked + label span {
+        background: url(https://resim.epey.com/tema/checkbox.png) -21px top no-repeat
+    }
+
+#kategori #sol #filtrele {
+    float: left;
+    width: 100%;
+    margin-top: 5px
+}
+
+#filtrele ul {
+    float: left;
+    margin: 0 10px 5px;
+    width: 160px
+}
+
+    #filtrele ul input {
+        width: 100%
+    }
+
+#filtrele label {
+    cursor: pointer
+}
+
+#filtrele h2 {
+    float: left;
+    width: 160px;
+    font-size: 14px;
+    background: #f8f4e0;
+    padding: 5px 10px;
+    margin: 0 0 5px 1px
+}
+
+#filtrele h4 {
+    float: left;
+    width: calc(100% - 20px);
+    font-size: 14px;
+    background: #f8f4e0;
+    padding: 5px 10px;
+    margin: 0 0 5px
+}
+
+#filtrele hr {
+    border-width: 1px 0 0;
+    border-top: 1px solid #e8dca8
+}
+
+#filtrele ul.filtre2 {
+    padding-bottom: 5px
+}
+
+#filtrele ul.filtre3 {
+    float: left;
+    background: #fff
+}
+
+    #filtrele ul.filtre3 .etiket {
+        float: left;
+        min-width: 30px;
+        padding: 5px;
+        margin: 0 5px 5px 0;
+        background: #f8f4e0;
+        cursor: pointer;
+        text-align: center
+    }
+
+    #filtrele ul.filtre3 .secili {
+        color: #fff;
+        background: #d96142
+    }
+
+    #filtrele ul.filtre3 .belirsiz {
+        text-align: left
+    }
+
+        #filtrele ul.filtre3 .belirsiz img {
+            float: left;
+            margin: 0 5px
+        }
+
+#filtrele #filter {
+    float: left;
+    width: 150px;
+    padding: 7px 10px;
+    margin: 0 5px 5px;
+    border: 1px solid rgba(0,0,0,.1);
+    background: 0 0;
+    outline: 0 !important;
+    -webkit-appearance: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+}
+
+#filtrele ul.markaliste {
+    height: 200px
+}
+
+#filtrele ul.siteliste {
+    height: 200px
+}
+
+#filtrele ul.filter {
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 5px
+}
+
+#filtrele ul.filtre3 {
+    max-height: 180px
+}
+
+#filtrele ul.filter li {
+    line-height: 22px
+}
+
+#filtrele .disabled {
+    pointer-events: none;
+    opacity: .5;
+    filter: alpha(opacity=50)
+}
+
+#filtrele h2.close, #filtrele h3.close {
+    background: url(https://resim.epey.com/tema/close.png) no-repeat right #f8f4e0;
+    cursor: pointer
+}
+
+#filtrele h2.open, #filtrele h3.open {
+    background: url(https://resim.epey.com/tema/open.png) no-repeat right #f8f4e0;
+    cursor: pointer
+}
+
+#filtrele input.close {
+    display: none
+}
+
+#filtrele ul.close {
+    display: none
+}
+
+#filtrele .deger {
+    width: 100%;
+    height: 40px;
+    position: relative
+}
+
+    #filtrele .deger input::placeholder {
+        font-size: 10px;
+        color: #999
+    }
+
+    #filtrele .deger .min, #filtrele .deger .max {
+        width: calc(50% - 19px);
+        height: 20px;
+        padding: 3px 0 3px 5px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border: 1px solid #ccc
+    }
+
+        #filtrele .deger .min::-webkit-inner-spin-button, #filtrele .deger .max::-webkit-inner-spin-button {
+            -webkit-appearance: none
+        }
+
+    #filtrele .deger .degeroner {
+        position: absolute;
+        left: 0;
+        top: 25px;
+        background: #fff;
+        z-index: 10000;
+        margin: 0;
+        padding: 0;
+        width: 182px;
+        border: 1px solid #e8dca8
+    }
+
+        #filtrele .deger .degeroner li {
+            padding: 5px 5px 3px;
+            border-top: 1px solid #e8dca8
+        }
+
+            #filtrele .deger .degeroner li:hover {
+                background: #f0f0f0
+            }
+
+    #filtrele .deger .degeroner {
+        position: absolute;
+        left: 0;
+        top: 25px;
+        background: #fff;
+        z-index: 10000;
+        margin: 0;
+        padding: 0;
+        width: 137px;
+        border: 1px solid #e8dca8
+    }
+
+        #filtrele .deger .degeroner li {
+            padding: 5px 5px 3px;
+            border-top: 1px solid #e8dca8
+        }
+
+            #filtrele .deger .degeroner li:hover {
+                background: #f0f0f0
+            }
+
+#filrele .filtresonuc {
+    display: block;
+    margin-left: 10px
+}
+
+#uyefiltre .kaydet {
+    float: right;
+    background: #d96142;
+    color: #fff;
+    padding: 3px 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-weight: 700;
+    font-size: 13px;
+    width: 100px;
+    text-align: center;
+    margin-right: 5px;
+    cursor: pointer
+}
+
+#uyefiltre .kaydet {
+    margin-bottom: 15px
+}
+
+#filtrele #uygula {
+    background: #d96142;
+    padding: 3px 6px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #fff;
+    font-weight: 700;
+    z-index: 9999999;
+    float: right;
+    margin: 1px -10px 0 0;
+    cursor: pointer
+}
+
+input[type=checkbox]:disabled {
+    color: #f0f0f0
+}
+
+    input[type=checkbox]:disabled + label {
+        opacity: .5;
+        filter: alpha(opacity=50)
+    }
+
+        input[type=checkbox]:disabled + label span {
+            opacity: .5;
+            filter: alpha(opacity=50)
+        }
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.1)
+}
+
+::-webkit-scrollbar-thumb {
+    background: #adaa9c
+}
+
+#kategori #sag {
+    padding: 0 0 0 3px;
+    margin: 0
+}
+
+#kategori .sag {
+    width: 785px
+}
+
+#kategori .sag177 .listele ul li.adi {
+    width: 450px
+}
+
+#urun #favori {
+    float: left
+}
+
+    #urun #favori input[type=checkbox] + label span {
+        float: left;
+        margin-top: 1px
+    }
+
+    #urun #favori strong {
+        margin: 0 2px
+    }
+
+#urun input[type=checkbox].favori + label span {
+    background: url(https://resim.epey.com/tema/takip.png?v=2) left top no-repeat;
+    width: 21px;
+    height: 21px
+}
+
+#urun input[type=checkbox].favori:checked + label span {
+    background: url(https://resim.epey.com/tema/takip.png?v=2) -21px top no-repeat
+}
+
+#satir1 {
+    float: left;
+    width: 100%;
+    margin: 0 0 10px
+}
+
+    #satir1 #sutun1 {
+        float: left;
+        width: 400px;
+        height: 440px;
+        margin: 0 10px 0 0;
+        position: relative
+    }
+
+    #satir1 #sutun2 {
+        float: left;
+        width: 560px;
+        height: 440px
+    }
+
+        #satir1 #sutun2 .satir1 {
+            float: left;
+            width: 560px;
+            height: 260px
+        }
+
+            #satir1 #sutun2 .satir1 #fiyat {
+                float: left;
+                width: 250px;
+                height: 200px
+            }
+
+                #satir1 #sutun2 .satir1 #fiyat li {
+                    float: left;
+                    list-style: none;
+                    border-bottom: 1px solid #f8f4e0;
+                    margin: 0;
+                    padding: 10px 0 5px;
+                    height: 26px;
+                    font-size: 16px
+                }
+
+                    #satir1 #sutun2 .satir1 #fiyat li.tumu {
+                        border: 0
+                    }
+
+                    #satir1 #sutun2 .satir1 #fiyat li span {
+                        float: left;
+                        width: 150px
+                    }
+
+                    #satir1 #sutun2 .satir1 #fiyat li strong {
+                        float: left;
+                        margin: 3px 0 0
+                    }
+
+                    #satir1 #sutun2 .satir1 #fiyat li.tumu span {
+                        float: left;
+                        width: 250px;
+                        font-weight: 600
+                    }
+
+        #satir1 #sutun2 .satir2 {
+            float: left;
+            width: 560px;
+            height: 48px;
+            margin: 3px 0 0
+        }
+
+            #satir1 #sutun2 .satir2 .oncelikli {
+                float: left;
+                width: 130px;
+                height: 80px
+            }
+
+                #satir1 #sutun2 .satir2 .oncelikli span.st1 {
+                    float: left;
+                    width: 110px;
+                    height: 40px;
+                    font-size: 12px
+                }
+
+                #satir1 #sutun2 .satir2 .oncelikli span.st2 {
+                    float: left;
+                    width: 110px;
+                    height: 40px;
+                    font-size: 15px
+                }
+
+                #satir1 #sutun2 .satir2 .oncelikli span.belirsiz {
+                    background: url(https://resim.epey.com/tema/belirsiz.png) no-repeat 2px 0
+                }
+
+                #satir1 #sutun2 .satir2 .oncelikli span.yuzde1 {
+                    float: left;
+                    width: 10px;
+                    height: 80px;
+                    background: #d96041;
+                    margin: 0 10px 0 0
+                }
+
+                #satir1 #sutun2 .satir2 .oncelikli span.yuzde2 {
+                    float: left;
+                    width: 10px;
+                    background: #f0e4ba;
+                    margin: 0 10px 0 0
+                }
+
+    #satir1 .cls1, #satir1 .cls2, #satir1 .cls3, #satir1 .cls4 {
+        padding: 0 0 10px 10px;
+        border-bottom: 1px solid #f5edcf;
+        border-right: 1px solid #f5edcf
+    }
+
+    #satir1 .cls5, #satir1 .cls6, #satir1 .cls7, #satir1 .cls8 {
+        padding: 10px 0 0 10px;
+        border-right: 1px solid #f5edcf
+    }
+
+    #satir1 .cls1, #satir1 .cls5 {
+        padding-left: 0
+    }
+
+    #satir1 .cls4, #satir1 .cls8 {
+        border-right: 0
+    }
+
+.tab {
+    float: left;
+    margin-bottom: 10px
+}
+
+    .tab h2 {
+        float: left;
+        width: 960px;
+        margin: 0;
+        padding: 9px 5px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 0 0 3px 3px;
+        background: #f8f4e0
+    }
+
+#yenilenmis h2 {
+    margin-top: 5px
+}
+
+#yenilenmis h3 {
+    float: left;
+    width: 100%;
+    background: #e1f5c4;
+    font-size: 13px;
+    margin: 4px 0 2px;
+    padding: 5px 0
+}
+
+    #yenilenmis h3 span {
+        padding: 0 7px
+    }
+
+#yenilenmis a {
+    background: #e1f5c4;
+    border-top: 1px solid #fff;
+    font-weight: 700
+}
+
+#fiyatlar {
+    float: left;
+    width: 970px;
+    position: relative
+}
+
+    #fiyatlar h2 {
+        padding: 9px 5px
+    }
+
+    #fiyatlar h3 {
+        width: 956px;
+        padding: 10px 7px;
+        margin: 0;
+        min-height: 20px;
+        height: 20px;
+        background: #f8f4e0;
+        border-bottom: 1px solid #e8dca8;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px
+    }
+
+    #fiyatlar .fiyat {
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 970px
+    }
+
+        #fiyatlar .fiyat a {
+            float: left;
+            width: 960px;
+            border-bottom: 1px solid #f5edcf;
+            padding: 7px 5px 0;
+            cursor: pointer
+        }
+
+            #fiyatlar .fiyat a:hover {
+                text-decoration: underline;
+                background: #f8f4e0
+            }
+
+            #fiyatlar .fiyat a.onsira {
+                background: #f3f8e0;
+                margin: 5px 0;
+                font-weight: 700
+            }
+
+            #fiyatlar .fiyat a.yurtdisi {
+                background: #e0f7f8;
+                min-height: 68px
+            }
+
+                #fiyatlar .fiyat a.yurtdisi:hover {
+                    background: #a7ddef;
+                    color: #000
+                }
+
+            #fiyatlar .fiyat a.onsira:hover {
+                background: #f8f4e0
+            }
+
+            #fiyatlar .fiyat a.yurtdisi .urun_git strong {
+                background: #1f5073
+            }
+
+            #fiyatlar .fiyat a.yurtdisi div.yurtdisi {
+                font-weight: 700;
+                color: #1f5073;
+                padding: 2px 0;
+                border: 1px solid #1f5073;
+                width: 100px;
+                text-align: center;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px
+            }
+
+            #fiyatlar .fiyat a.yurtdisi:hover div.yurtdisi {
+                background: #1f5073;
+                color: #fff
+            }
+
+        #fiyatlar .fiyat div {
+            float: left;
+            width: 960px;
+            border-bottom: 1px solid #f5edcf;
+            padding: 7px 5px 0
+        }
+
+            #fiyatlar .fiyat div:hover {
+                text-decoration: underline;
+                background: #f8f4e0
+            }
+
+            #fiyatlar .fiyat div.onsira {
+                background: #f3f8e0;
+                margin: 5px 0;
+                font-weight: 700
+            }
+
+            #fiyatlar .fiyat div.yurtdisi {
+                background: #e0f7f8;
+                min-height: 68px
+            }
+
+                #fiyatlar .fiyat div.yurtdisi:hover {
+                    background: #a7ddef;
+                    color: #000
+                }
+
+            #fiyatlar .fiyat div.onsira:hover {
+                background: #f8f4e0
+            }
+
+            #fiyatlar .fiyat div.yurtdisi .urun_git strong {
+                background: #1f5073
+            }
+
+            #fiyatlar .fiyat div.yurtdisi strong.yurtdisi {
+                display: block;
+                font-weight: 700;
+                color: #1f5073;
+                padding: 2px 0;
+                border: 1px solid #1f5073;
+                width: 100px;
+                text-align: center;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px
+            }
+
+            #fiyatlar .fiyat div.yurtdisi:hover div.yurtdisi {
+                background: #1f5073;
+                color: #fff
+            }
+
+        #fiyatlar .fiyat .site_logo {
+            float: left;
+            width: 160px;
+            height: 40px;
+            display: table-cell;
+            vertical-align: middle
+        }
+
+            #fiyatlar .fiyat .site_logo p {
+                font-size: 12px;
+                color: #505050
+            }
+
+        #fiyatlar .fiyat .sponsorlu {
+            margin: -17px 0 10px;
+            color: #d96142;
+            font-size: 11px;
+            font-weight: 700;
+            display: block;
+            padding: 0
+        }
+
+        #fiyatlar .fiyat .spon {
+            margin: -17px 0 10px;
+            color: #d96142;
+            font-size: 11px;
+            font-weight: 700;
+            display: block;
+            padding: 0
+        }
+
+        #fiyatlar .fiyat .urun_adi {
+            float: left;
+            width: 535px
+        }
+
+            #fiyatlar .fiyat .urun_adi p {
+                margin: 5px 0 0;
+                padding: 0
+            }
+
+                #fiyatlar .fiyat .urun_adi p .yorum {
+                    color: #d96142
+                }
+
+        #fiyatlar .fiyat .urun_fiyat {
+            float: left;
+            width: 150px;
+            text-align: right;
+            font-weight: 700;
+            font-size: 18px
+        }
+
+            #fiyatlar .fiyat .urun_fiyat p {
+                font-size: 12px;
+                color: #505050;
+                font-weight: 400;
+                margin-top: 5px
+            }
+
+            #fiyatlar .fiyat .urun_fiyat span {
+                display: block;
+                font-size: 12px;
+                color: #505050
+            }
+
+        #fiyatlar .fiyat.fiyat-47 .urun_fiyat p {
+            margin: 0
+        }
+
+            #fiyatlar .fiyat.fiyat-47 .urun_fiyat p.birim_fiyat {
+                font-weight: 700;
+                color: #d96142
+            }
+
+        #fiyatlar .fiyat .urun_fiyat p.birim_fiyat {
+            font-weight: 700;
+            color: #d96142
+        }
+
+        #fiyatlar .fiyat .urun_git {
+            float: left;
+            width: 100px;
+            margin-left: 15px
+        }
+
+            #fiyatlar .fiyat .urun_git strong {
+                float: right;
+                background: #d96142;
+                color: #fff;
+                padding: 5px 10px;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                font-weight: 700;
+                font-size: 13px;
+                width: 75px;
+                text-align: center
+            }
+
+            #fiyatlar .fiyat .urun_git p {
+                font-size: 11px;
+                color: gray;
+                font-size: 12px;
+                text-align: right;
+                margin-right: 2px
+            }
+
+        #fiyatlar .fiyat .magaza {
+            display: block;
+            margin-top: 5px
+        }
+
+        #fiyatlar .fiyat.sitestil {
+            border: 1px dashed #505050;
+            font-weight: 700;
+            margin: 2px 0
+        }
+
+        #fiyatlar .fiyat.cls {
+            background: #f8f4e0;
+            font-weight: 700
+        }
+
+            #fiyatlar .fiyat.cls span.urun_garanti {
+                font-weight: 700;
+                font-size: 15px
+            }
+
+            #fiyatlar .fiyat.cls span.urun_kargo {
+                font-weight: 700;
+                font-size: 15px
+            }
+
+            #fiyatlar .fiyat.cls span.urun_fiyat {
+                text-align: center;
+                font-size: 15px
+            }
+
+    #fiyatlar h3 .sirala {
+        font-size: 12px
+    }
+
+    #fiyatlar h3 button {
+        background: #fff;
+        border: 1px solid #e8dca8;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        margin: 0 5px;
+        padding: 3px 5px;
+        font-weight: 700
+    }
+
+        #fiyatlar h3 button:hover {
+            cursor: pointer;
+            color: #d96142
+        }
+
+.d96142 {
+    color: #d96142
+}
+
+#fiyatgecmisi {
+    margin-top: 10px
+}
+
+.fiyatgecmis {
+    float: left;
+    width: 970px
+}
+
+.cartjs {
+    float: left;
+    width: 660px;
+    margin: -30px 0 0 -15px;
+    padding: 0
+}
+
+#reklam300 {
+    float: right;
+    width: 300px;
+    height: 250px;
+    margin-top: 35px
+}
+
+#canvas {
+    height: 250vh;
+    width: 10vw
+}
+
+#fiyatgecmisi {
+    float: left;
+    width: 970px;
+    position: relative
+}
+
+    #fiyatgecmisi h2 {
+        padding: 9px 5px
+    }
+
+#urunfiltre {
+    position: absolute;
+    top: 5px;
+    right: 5px
+}
+
+    #urunfiltre span {
+        float: right;
+        font-size: 13px;
+        background: #fff;
+        padding: 3px 10px;
+        margin: 0 0 0 5px;
+        font-weight: 700;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        cursor: pointer;
+        border: 2px solid #f0e4ba
+    }
+
+        #urunfiltre span:hover {
+            border: 2px solid #000
+        }
+
+        #urunfiltre span.selected {
+            border: 2px solid #d96142
+        }
+
+    #urunfiltre label strong.checkbox2, #deger label strong.checkbox2 {
+        float: right;
+        font-size: 13px;
+        background: #fff;
+        padding: 3px 10px;
+        margin: 0 0 0 5px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        cursor: pointer;
+        border: 2px solid #f0e4ba
+    }
+
+    #urunfiltre label strong.checked2, #deger label strong.checked2 {
+        float: right;
+        text-align: center;
+        font-size: 13px;
+        background: #fff;
+        font-weight: 700;
+        cursor: pointer;
+        border: 2px solid #d96142
+    }
+
+    #urunfiltre label:hover {
+        border: 2px solid #000
+    }
+
+    #urunfiltre .sort {
+        font: 13px titillium web;
+        float: right;
+        background: #fff;
+        padding: 2px 10px;
+        margin: 0 0 0 5px;
+        font-weight: 700;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        cursor: pointer;
+        border: 2px solid #f0e4ba
+    }
+
+        #urunfiltre .sort:after {
+            background: #ccc
+        }
+
+        #urunfiltre .sort.select-arrow-active:after {
+            border-color: transparent transparent #fff transparent
+        }
+
+#deger {
+    float: left;
+    width: 970px;
+    position: absolute;
+    top: 40px;
+    right: 5px
+}
+
+#fiyatlar .outlet {
+    float: right;
+    color: #d96142
+}
+
+#fiyatlar .fiyat p {
+    margin: 0 0 5px
+}
+
+#fiyatlar .asagi {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    margin: -56px 0 0 5px;
+    cursor: pointer;
+    background: url(https://resim.epey.com/tema/asagiyukari.png) no-repeat
+}
+
+#fiyatlar .fiyatyok {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 700
+}
+
+#sagblok {
+    float: left;
+    width: 300px
+}
+
+#ads728 {
+    float: right;
+    width: 728px;
+    height: 90px;
+    margin: 0
+}
+
+#ads300 {
+    float: left;
+    width: 300px;
+    height: 250px;
+    margin-top: 5px
+}
+
+#ads160 {
+    float: left;
+    width: 160px;
+    height: 600px;
+    margin: 5px
+}
+
+#ads970 {
+    float: left;
+    width: 970px;
+    height: 30px;
+    margin-top: 3px
+}
+
+#sagblokfix {
+    float: left;
+    width: 295px;
+    margin-left: 5px
+}
+
+.sagblokfix {
+    position: fixed;
+    top: 100px
+}
+
+#sagustblok {
+    float: left;
+    width: 290px;
+    margin: 0 0 0 10px
+}
+
+span.fark {
+    float: left;
+    width: 200px;
+    margin: 5px 0 0 5px
+}
+
+    span.fark span {
+        float: left;
+        margin-right: 10px
+    }
+
+#listele {
+    margin: 0;
+    padding: 0
+}
+
+    #listele #filtre {
+        float: left;
+        width: 100%
+    }
+
+        #listele #filtre .deger {
+            display: inline-block;
+            padding: 5px 10px 5px 20px;
+            margin: 0 5px 5px 0;
+            border-bottom: 1px solid #e8dca8;
+            background: #f8f4e0;
+            position: relative;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            color: #d96142;
+            font-weight: 600
+        }
+
+            #listele #filtre .deger .ozellik {
+                display: block;
+                font-size: 11px;
+                color: #999
+            }
+
+        #listele #filtre span.toplam, #listele #filtre a.temizle {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0 5px 5px 0
+        }
+
+        #listele #filtre a.temizle {
+            background: #d96142;
+            color: #fff;
+            padding: 5px;
+            -webkit-appearance: none;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            font-weight: 700
+        }
+
+            #listele #filtre a.temizle:hover {
+                text-decoration: underline
+            }
+
+        #listele #filtre h1 {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: -42px
+        }
+
+.listele {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 15px
+}
+
+    .listele .duzenle {
+        position: absolute;
+        top: -5px;
+        left: -10px
+    }
+
+    .listele ul li {
+        padding: 5px 0;
+        margin: 0;
+        vertical-align: middle;
+        border-bottom: 1px solid #e8dca8
+    }
+
+        .listele ul li.adi {
+            width: 300px;
+            max-width: width:300px;
+            border-collapse: separate;
+            border-spacing: 10px
+        }
+
+            .listele ul li.adi .resim {
+                margin-right: 15px;
+                text-align: center;
+                vertical-align: middle;
+                position: relative;
+                width: 120px
+            }
+
+            .listele ul li.adi a.urunadi {
+                display: block;
+                font-size: 17px;
+                font-weight: 600;
+                margin: 0 0 5px
+            }
+
+            .listele ul li.adi span {
+                float: left
+            }
+
+                .listele ul li.adi span.urunkodu {
+                    float: none;
+                    display: block;
+                    margin: 2px 0
+                }
+
+                .listele ul li.adi span.degergetir {
+                    float: none;
+                    display: block;
+                    color: #b9b6a7;
+                    margin: 2px 0
+                }
+
+                .listele ul li.adi span.aile {
+                    float: none;
+                    display: block
+                }
+
+            .listele ul li.adi p {
+                display: block
+            }
+
+            .listele ul li.adi .detay {
+                position: relative;
+                padding-bottom: 30px;
+                min-width: 100px
+            }
+
+            .listele ul li.adi label {
+                font-size: 13px;
+                font-weight: 300;
+                position: absolute;
+                bottom: 10px
+            }
+
+                .listele ul li.adi label span {
+                    float: left;
+                    margin: 0 3px 0 0
+                }
+
+        .listele ul li.fiyat {
+            text-align: right;
+            font-weight: 600;
+            min-width: 75px
+        }
+
+            .listele ul li.fiyat span {
+                display: block;
+                color: #333;
+                font-size: 11px;
+                font-weight: 400
+            }
+
+.sagulke2 .listele ul li.fiyat span {
+    font-size: 10.1px
+}
+
+.listele ul li.ozellik {
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+    min-width: 55px
+}
+
+.listele ul li.puan {
+    text-align: center
+}
+
+.listele ul:before, .listele li ul li {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.listele ul:before {
+    height: 100%
+}
+
+.listele ul.baslik {
+    height: 70px;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+    border: none
+}
+
+    .listele ul.baslik li {
+        background: #f8f4e0;
+        cursor: pointer;
+        border-bottom: 1px solid #e8dca8;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        font-weight: 600;
+        padding: 5px 0 10px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        padding: 0 10px
+    }
+
+        .listele ul.baslik li:hover {
+            background: url(https://resim.epey.com/tema/descikon_hover.png) no-repeat #f5edcf;
+            background-position: center bottom
+        }
+
+        .listele ul.baslik li.adi {
+            text-align: center
+        }
+
+        .listele ul.baslik li.fiyat {
+            text-align: center
+        }
+
+.listele li.baslik {
+    border: none
+}
+
+.listele ul.baslik li.ASC {
+    background: url(https://resim.epey.com/tema/ascikon.png) no-repeat #f5edcf;
+    background-position: center bottom
+}
+
+.listele ul.baslik li.DESC {
+    background: url(https://resim.epey.com/tema/descikon.png) no-repeat #f5edcf;
+    background-position: center bottom
+}
+
+.listele ul.firsat li {
+    background: #f3f8e0
+}
+
+#kategori .sag1 .listele ul li.adi .resim {
+    width: 65px
+}
+
+#altbar {
+    float: left;
+    width: 100%;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999999;
+    background: #d96142;
+    display: none;
+    border-top: 1px solid #e8dca8;
+    margin: 0 auto;
+    height: 50px;
+    color: #fff
+}
+
+    #altbar a {
+        color: #fff
+    }
+
+#altbarbuton {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    display: none
+}
+
+    #altbarbuton .goster {
+        float: right;
+        width: 30px;
+        height: 50px;
+        background: url(https://resim.epey.com/tema/yukarikon.png) no-repeat;
+        padding: 0 10px;
+        cursor: pointer;
+        margin: 0 0 5px
+    }
+
+#altbar .altbar {
+    width: 970px;
+    margin: 0 auto
+}
+
+#altbar .gizle {
+    float: right;
+    border-left: 1px solid #a4a4a4;
+    display: block;
+    width: 30px;
+    height: 55px;
+    padding: 0 10px;
+    background: url(https://resim.epey.com/tema/asagikon.png) no-repeat;
+    margin-top: -6px;
+    cursor: pointer
+}
+
+#kiyasla {
+    width: 960px;
+    margin: 0 auto
+}
+
+    #kiyasla span {
+        float: left;
+        margin: 4px 5px 0 0
+    }
+
+    #kiyasla input[type=button] {
+        float: left;
+        width: 20px;
+        height: 20px;
+        background: #99a4ac;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        cursor: pointer;
+        border: none;
+        margin: 4px 5px 0 0
+    }
+
+    #kiyasla .button {
+        float: left;
+        background: #5e5e5e;
+        border: none;
+        margin: 0 5px;
+        padding: 3px 6px;
+        font-weight: 700;
+        margin: 3px 5px 0 0;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        color: #fff
+    }
+
+        #kiyasla .button:hover {
+            text-decoration: underline
+        }
+
+    #kiyasla .resim {
+        float: left;
+        margin: 0 5px
+    }
+
+        #kiyasla .resim img {
+            max-height: 40px
+        }
+
+    #kiyasla ul.secili {
+        display: inline
+    }
+
+        #kiyasla ul.secili .tip .li2 a {
+            color: #000
+        }
+
+    #kiyasla li {
+        float: left;
+        position: relative
+    }
+
+    #kiyasla .tip {
+        position: absolute;
+        top: -172px;
+        left: -100px;
+        width: 200px;
+        height: 150px;
+        float: left;
+        display: none;
+        border: 1px solid #e8dca8;
+        box-shadow: 0 0 5px #888;
+        padding: 10px;
+        text-align: center;
+        background: #fff
+    }
+
+        #kiyasla .tip ul {
+            position: relative;
+            float: left;
+            width: 100%
+        }
+
+        #kiyasla .tip li {
+            float: left;
+            width: 100%
+        }
+
+        #kiyasla .tip .li2 {
+            font-size: 12px
+        }
+
+        #kiyasla .tip .li3 {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 15px;
+            font-weight: 600
+        }
+
+            #kiyasla .tip .li3 .iptalikon {
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                background-color: #f0f0f0
+            }
+
+    #kiyasla a.resimkiyas {
+        width: 50px;
+        height: 40px;
+        background: #fff;
+        float: left;
+        padding: 5px;
+        text-align: center
+    }
+
+#sayfala {
+    float: left;
+    width: 100%;
+    margin: 5px 0 0 1px;
+    font-weight: 700
+}
+
+    #sayfala span, #sayfala a {
+        float: left;
+        padding: 3px 7px;
+        border: 1px solid #e8dca8;
+        margin: 5px 2px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        background: #fff
+    }
+
+        #sayfala span.sayfa {
+            float: left;
+            background: #f5edcf
+        }
+
+        #sayfala a:hover {
+            background: #f5edcf
+        }
+
+        #sayfala a.ileri {
+            background: url(https://resim.epey.com/tema/ileri.png) no-repeat right;
+            padding: 3px 15px 3px 3px
+        }
+
+        #sayfala a.geri {
+            background: url(https://resim.epey.com/tema/geri.png) no-repeat left;
+            padding: 3px 3px 3px 15px
+        }
+
+        #sayfala a.ilk {
+            background: url(https://resim.epey.com/tema/ilk.png) no-repeat right;
+            float: left;
+            padding: 0;
+            width: 24px;
+            height: 26px
+        }
+
+        #sayfala a.son {
+            background: url(https://resim.epey.com/tema/son.png) no-repeat right;
+            float: left;
+            padding: 0;
+            width: 24px;
+            height: 26px
+        }
+
+    #sayfala button {
+        float: left;
+        padding: 3px 7px;
+        border: 1px solid #e8dca8;
+        margin: 5px 2px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        background: #fff
+    }
+
+        #sayfala button.sayfa {
+            background: #f5edcf
+        }
+
+        #sayfala button:hover {
+            background: #f5edcf
+        }
+
+        #sayfala button.ileri {
+            background: url(https://resim.epey.com/tema/ileri.png) no-repeat right;
+            padding: 3px 15px 3px 3px
+        }
+
+        #sayfala button.geri {
+            background: url(https://resim.epey.com/tema/geri.png) no-repeat left;
+            padding: 3px 3px 3px 15px
+        }
+
+        #sayfala button.ilk {
+            background: url(https://resim.epey.com/tema/ilk.png) no-repeat right;
+            float: left;
+            padding: 0;
+            width: 24px;
+            height: 26px
+        }
+
+        #sayfala button.son {
+            background: url(https://resim.epey.com/tema/son.png) no-repeat right;
+            float: left;
+            padding: 0;
+            width: 24px;
+            height: 26px
+        }
+
+#fiyatlar .filtre {
+    float: left;
+    margin: 5px 0 0
+}
+
+    #fiyatlar .filtre .etiket {
+        float: left;
+        margin-right: 5px;
+        font-weight: 700;
+        background: #f8f4e0
+    }
+
+#fiyatlar #sayfala {
+    float: left;
+    width: 300px;
+    font-weight: 700;
+    text-align: right;
+    cursor: pointer
+}
+
+    #fiyatlar #sayfala button {
+        background-color: #fff;
+        font-weight: 700;
+        cursor: pointer
+    }
+
+#fiyatlar #sayfala {
+    float: left;
+    width: 300px;
+    font-weight: 700;
+    text-align: right;
+    cursor: pointer
+}
+
+    #fiyatlar #sayfala .jplist-selected {
+        background-color: #f5edcf
+    }
+
+.loading {
+    position: absolute;
+    width: 128px;
+    height: 15px;
+    left: 50%;
+    top: 50%;
+    margin-left: -64px;
+    margin-top: -8px
+}
+
+.toplam {
+    display: inline-block;
+    font-weight: 700;
+    margin: 0 0 0 10px
+}
+
+.ortala {
+    text-align: center
+}
+
+.fright {
+    float: right
+}
+
+.circliful {
+    position: relative
+}
+
+.circle-text, .circle-info, .circle-text-half, .circle-info-half {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px
+}
+
+.circle-info, .circle-info-half {
+    color: #b9b6a7
+}
+
+.circliful .fa {
+    margin: -10px 3px 0;
+    position: relative;
+    bottom: 4px
+}
+
+#urun .circle-info, #alttablo .circle-info {
+    margin-top: 3px
+}
+
+#urun .circle-text, #alttablo .circle-text {
+    margin-top: -3px
+}
+
+#gecis {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    float: left;
+    z-index: 99999999
+}
+
+.loading {
+    position: absolute;
+    width: 128px;
+    height: 15px;
+    left: 50%;
+    top: 50%;
+    margin-left: -64px;
+    margin-top: -8px;
+    z-index: 99999999
+}
+
+.bildir2 {
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;
+    font-size: 15px
+}
+
+#alt {
+    float: left;
+    width: 100%;
+    background: #f8f4e0;
+    border-top: 1px solid #e8dca8;
+    margin: 50px 0 0;
+    padding: 7px 0 30px;
+    text-align: center;
+    position: relative;
+    z-index: 100
+}
+
+.alt {
+    width: 970px;
+    margin: 0 auto
+}
+
+    .alt .bilgi {
+        float: left;
+        width: 970px;
+        text-align: center
+    }
+
+        .alt .bilgi p {
+            margin: 5px 0
+        }
+
+        .alt .bilgi a {
+            text-decoration: underline;
+            margin: 0 10px
+        }
+
+#outletbilgi {
+    font-size: 13px;
+    background: #f8f4e0;
+    float: left;
+    width: 940px;
+    margin: 10px 10px 0;
+    padding: 5px
+}
+
+div.ss-controls {
+    float: left
+}
+
+div.nav-controls {
+    float: right
+}
+
+div.slideshow-container, div.loader, div.slideshow a.advance-link {
+    width: 404px
+}
+
+div.slideshow-container {
+    position: relative;
+    clear: both
+}
+
+div.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(images/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+div.slideshow span.image-wrapper {
+    display: block
+}
+
+div.slideshow a.advance-link {
+    display: block;
+    text-align: center
+}
+
+div.slideshow img {
+}
+
+div.caption-container {
+    float: right;
+    position: relative
+}
+
+span.image-caption {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+div.caption-container, span.image-caption {
+    width: 334px
+}
+
+div.photo-index {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+div.navigation-container {
+    float: left
+}
+
+div.navigation {
+    float: left;
+    position: relative
+}
+
+ul.thumbs {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0
+}
+
+    ul.thumbs li {
+        float: left;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden
+    }
+
+a.thumb {
+    display: block;
+    width: 62px;
+    height: 42px;
+    border: 1px solid #99a4ac;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0 3px
+}
+
+    a.thumb:hover {
+        border-color: #f8f4e0
+    }
+
+ul.thumbs img {
+    display: inline-block;
+    max-width: 50px;
+    max-height: 40px;
+    text-align;
+    center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+div.gallery-gutter {
+    clear: both
+}
+
+div.navigation a.pageLink {
+    display: block;
+    position: relative;
+    float: left;
+    width: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 9px
+}
+
+div.navigation a.prev {
+    background: url(https://resim.epey.com/tema/gerikon.png);
+    float: left;
+    width: 17px;
+    height: 25px
+}
+
+div.navigation a.next {
+    background: url(https://resim.epey.com/tema/ilerikon.png);
+    float: left;
+    width: 17px;
+    height: 25px
+}
+
+#basic-modal-content {
+    display: none
+}
+
+#simplemodal-overlay {
+    background-color: #000
+}
+
+#simplemodal-container {
+    height: 360px;
+    width: 600px;
+    color: #bbb;
+    background-color: #333;
+    border: 4px solid #444;
+    padding: 12px
+}
+
+    #simplemodal-container .simplemodal-data {
+        padding: 8px
+    }
+
+    #simplemodal-container code {
+        background: #141414;
+        border-left: 3px solid #65b43d;
+        color: #bbb;
+        display: block;
+        font-size: 12px;
+        margin-bottom: 12px;
+        padding: 4px 6px 6px
+    }
+
+    #simplemodal-container a {
+        color: #ddd
+    }
+
+        #simplemodal-container a.modalCloseImg {
+            background: url(https://resim.epey.com/tema/iptal.png) no-repeat;
+            width: 25px;
+            height: 29px;
+            display: inline;
+            z-index: 3200;
+            position: absolute;
+            top: 0;
+            right: -5px;
+            cursor: pointer;
+            z-index: 999
+        }
+
+    #simplemodal-container h3 {
+        color: #84b8d9
+    }
+
+#yorumlar #yorumyaz, #yorumlar #yorum {
+    float: left;
+    width: 970px;
+    margin: 0
+}
+
+#yorumlar .yorum, #yorumlar .yanit {
+    float: left;
+    width: 100%;
+    min-height: 50px;
+    border-top: 1px solid #f8f4e0;
+    padding: 5px 0
+}
+
+    #yorumlar .yorum .yorumekle {
+        width: 881px;
+        height: 45px;
+        resize: none;
+        border: 2px solid #f8f4e0;
+        font-family: inherit;
+        font-size: 15px;
+        padding: 5px 10px;
+        margin: 5px 0 0 15px
+    }
+
+#yorumlar .ust {
+    margin: 10px 0 0
+}
+
+#yorumlar .alt {
+    margin: 10px 0 0 50px;
+    width: 920px
+}
+
+#yorumlar .yorumyaz {
+    border: 0
+}
+
+    #yorumlar .yorumyaz .yorumekle {
+        width: 881px;
+        margin: 0
+    }
+
+#yorumlar .yorum .gonder {
+    float: right;
+    background-color: #d96142;
+    width: 75px;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 700;
+    -webkit-border-radius: 3px;
+    box-sizing: border-box;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px 0 0
+}
+
+#yorumlar .yanit {
+    margin-left: 50px;
+    width: 920px
+}
+
+#yorumlar .yanitekle {
+    margin-left: 50px;
+    width: 920px
+}
+
+#yorumlar .yorum .resim, #yorumlar .yanit .resim {
+    padding-right: 10px;
+    margin-top: 15px
+}
+
+    #yorumlar .yorum .resim img, #yorumlar .yanit .resim img {
+        margin-left: 5px;
+        max-width: 50px
+    }
+
+#yorumlar .yorum .adi, #yorumlar .yanit .adi {
+    font-weight: 800;
+    color: #d96142
+}
+
+#yorumlar .yorum .metin, #yorumlar .yanit .metin {
+    font-size: 15px;
+    display: flex;
+    display: -webkit-flex;
+    min-height: 25px
+}
+
+#yorumlar .yorum .secenek, #yorumlar .yanit .secenek {
+    font-size: 11px;
+    padding-top: 5px
+}
+
+#yorumlar .yorum .dugme, #yorumlar .yanit .dugme {
+    padding-right: 5px;
+    cursor: pointer;
+    color: #d96142
+}
+
+#yorumlar .sayi {
+    float: left;
+    width: 150px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 15px
+}
+
+#yorumlar h2 {
+    float: left;
+    background: #f8f4e0;
+    padding: 5px;
+    width: calc(100% - 10px);
+    height: 28px
+}
+
+    #yorumlar h2.fb {
+        height: 28px;
+        padding-top: 10px
+    }
+
+    #yorumlar h2 .yorumsayi {
+        font-size: 14px
+    }
+
+#yorumlar .sirala {
+    float: right;
+    font-weight: 700;
+    width: 150px;
+    margin-top: -22px;
+    font-size: 12px
+}
+
+    #yorumlar .sirala .dd li span {
+        display: block;
+        padding: 5px 10px;
+        border-bottom: 1px solid #e8dca8
+    }
+
+    #yorumlar .sirala .dd li:first-of-type span {
+        border-radius: 5px 5px 0 0
+    }
+
+    #yorumlar .sirala .dd li:last-of-type span {
+        border: none;
+        border-radius: 0 0 5px 5px
+    }
+
+    #yorumlar .sirala .dd li:hover span {
+        background: #f8f4e0
+    }
+
+#yorumlar .more {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    background: #d96142;
+    color: #fff;
+    padding: 5px 10px;
+    -webkit-border-radius: 3px;
+    margin-top: 10px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer
+}
+
+#yorumlar .yanitmore {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    color: #d96142;
+    padding: 5px 10px;
+    -webkit-border-radius: 3px;
+    margin-top: 10px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid
+}
+
+#yorumyaz {
+    float: left;
+    width: 95%;
+    margin: 0 0 0 20px
+}
+
+    #yorumyaz h2 {
+        float: left;
+        width: 100%
+    }
+
+    #yorumyaz form span {
+        float: left;
+        width: 100%
+    }
+
+    #yorumyaz form input, #yorumyaz form textarea {
+        float: left;
+        width: 100%;
+        border: 2px solid #f8f4e0;
+        padding: 10px
+    }
+
+    #yorumyaz form textarea {
+        height: 150px
+    }
+
+    #yorumyaz form .buton {
+        float: right;
+        width: 100px;
+        cursor: pointer
+    }
+
+    #yorumyaz .uyari {
+        float: left;
+        width: 200px;
+        margin: 5px 0 0;
+        color: #d96041
+    }
+
+    #yorumyaz .gonder {
+        float: right;
+        width: 150px
+    }
+
+.sabit {
+    padding: 0 25px 0 5px;
+    font-weight: 700;
+    background: url(https://www.epey.com/uye/tuttur2.png) right 0 no-repeat;
+    color: #d96142
+}
+
+#scroll {
+    width: auto;
+    border: 1px solid #fff;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap
+}
+
+    #scroll li {
+        display: inline-block
+    }
+
+.aile {
+    font-size: 16px;
+    color: #d96142;
+    font-weight: 700
+}
+
+#mukayeseler {
+    float: left;
+    width: 100%;
+    margin: 0 0 20px;
+    border-bottom: 2px solid #f8f4e0
+}
+
+    #mukayeseler h2 {
+        float: left;
+        width: 940px;
+        padding: 5px 0;
+        font-weight: 600
+    }
+
+    #mukayeseler ul {
+        display: table
+    }
+
+    #mukayeseler li {
+        display: table-cell;
+        vertical-align: top;
+        text-align: center
+    }
+
+        #mukayeseler li:hover {
+            background: #f8f4e0
+        }
+
+        #mukayeseler li a {
+            float: left;
+            padding: 10px 15px 5px
+        }
+
+            #mukayeseler li a img {
+                margin: 0 4px;
+                max-width: 120px
+            }
+
+#onecikanlar {
+    float: left;
+    width: 100%;
+    display: table;
+    margin: 0 0 20px
+}
+
+    #onecikanlar h2 {
+        float: left;
+        width: 940px;
+        background: url(https://resim.epey.com/tema/onecikan.png) no-repeat;
+        padding: 5px 0 5px 30px
+    }
+
+    #onecikanlar ul {
+        float: left;
+        width: 100%;
+        margin: 0;
+        border: 1px solid #f8f4e0;
+        border-width: 0 0 1px 1px
+    }
+
+    #onecikanlar li {
+        margin: 0;
+        padding: 0
+    }
+
+        #onecikanlar li a {
+            float: left;
+            padding: 5px 3px;
+            width: 235px;
+            height: 40px;
+            border: 1px solid #f8f4e0;
+            border-width: 1px 1px 0 0
+        }
+
+            #onecikanlar li a:hover {
+                background: #f8f4e0
+            }
+
+        #onecikanlar li span {
+            float: left;
+            width: 60px;
+            text-align: center
+        }
+
+        #onecikanlar li img {
+            margin: 0 auto;
+            max-height: 40px
+        }
+
+    #onecikanlar ul.onecikan4 li a {
+        width: 315px
+    }
+
+#coksatan {
+    float: left;
+    width: 100%;
+    display: table;
+    margin: 0 0 20px
+}
+
+    #coksatan h2 {
+        float: left;
+        width: 940px;
+        padding: 5px 0
+    }
+
+    #coksatan ul {
+        float: left;
+        width: 100%;
+        margin: 0;
+        border: 1px solid #f8f4e0;
+        border-width: 0 0 1px 1px
+    }
+
+    #coksatan li {
+        margin: 0;
+        padding: 0
+    }
+
+        #coksatan li a {
+            float: left;
+            padding: 5px 3px;
+            width: 315px;
+            height: 120px;
+            border: 1px solid #f8f4e0;
+            border-width: 1px 1px 0 0
+        }
+
+            #coksatan li a:hover {
+                background: #f8f4e0
+            }
+
+        #coksatan li span {
+            float: left;
+            text-align: center
+        }
+
+            #coksatan li span.resim {
+                margin: 0 5px
+            }
+
+        #coksatan li img {
+            margin: 0 auto
+        }
+
+        #coksatan li strong {
+            display: block
+        }
+
+            #coksatan li strong.fiyat {
+                color: #d96142
+            }
+
+    #coksatan .sirano {
+        width: 25px;
+        height: 23px;
+        padding-top: 2px;
+        background: #d96142;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        color: #fff
+    }
+
+#etiket {
+    float: left;
+    width: 300px;
+    margin-right: 23px
+}
+
+    #etiket h2 {
+        float: left;
+        width: 290px;
+        padding: 3px 5px;
+        font-size: 15px
+    }
+
+    #etiket li {
+        padding: 0;
+        margin: 0
+    }
+
+        #etiket li a {
+            float: left;
+            width: 290px;
+            background: #f8f4e0;
+            padding: 4px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            margin: 1px 5px
+        }
+
+#varyantlar {
+    float: left;
+    width: 100%;
+    margin: 0 0 20px
+}
+
+    #varyantlar h2 {
+        float: left;
+        width: 940px;
+        border-bottom: 1px solid #f8f4e0;
+        background: url(https://resim.epey.com/tema/varyantlar.png) no-repeat;
+        padding: 5px 0 5px 30px
+    }
+
+    #varyantlar li {
+        font-weight: 700
+    }
+
+#varyant {
+    width: 100%;
+    margin: 15px 0 0;
+    border-collapse: separate;
+    border-spacing: 5px
+}
+
+    #varyant .varyant {
+        border: 2px solid #f0e4ba;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px
+    }
+
+        #varyant .varyant:hover {
+            border: 2px solid #505050
+        }
+
+    #varyant .selected {
+        border: 2px solid #d96142
+    }
+
+    #varyant .varyant .vresim {
+    }
+
+        #varyant .varyant .vresim img {
+            display: block;
+            max-width: 85px
+        }
+
+    #varyant .varyant .vurunfiyat {
+        min-width: 120px;
+        word-wrap: break-word;
+        max-width: 200px
+    }
+
+    #varyant .varyant .vurun {
+        color: #d96142;
+        font-weight: 700;
+        overflow: hidden
+    }
+
+    #varyant .varyant .vfiyat {
+        font-weight: 700;
+        font-size: 18px
+    }
+
+    #varyant .varyant .veski {
+        text-decoration: line-through;
+        font-size: 15px;
+        color: #999
+    }
+
+    #varyant .varyant .vfiyat span {
+        font-size: 13px
+    }
+
+#kiyas #varyant .varyant {
+    min-width: 230px
+}
+
+.puanla .br-widget {
+    height: 24px
+}
+
+    .puanla .br-widget a {
+        background: url(./eklenti/rating/star.png);
+        width: 24px;
+        height: 24px;
+        display: block;
+        float: left;
+        margin: 1px
+    }
+
+        .puanla .br-widget a.br-active, .puanla .br-widget a.br-selected {
+            background-position: 0 24px
+        }
+
+    .puanla .br-widget .br-current-rating {
+        float: left;
+        padding: 2px 0 0 10px
+    }
+
+.yuzde1m {
+    float: left;
+    width: 10px;
+    height: 80px;
+    background: #d96041
+}
+
+.yuzde2m {
+    float: left;
+    width: 10px;
+    background: #f0e4ba;
+    margin: 0
+}
+
+.anasayfa #grup {
+    float: left;
+    width: 473px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border: 1px solid #f8f4e0
+}
+
+    .anasayfa #grup h2 {
+        margin: 0;
+        padding: 5px;
+        background: #f8f4e0;
+        margin: 0
+    }
+
+#satir {
+    display: table-row
+}
+
+#sutun {
+    display: table-cell;
+    z-index: 10px
+}
+
+#usttablo, #alttablo {
+    display: table;
+    border-collapse: collapse;
+    table-layout: fixed;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    float: left
+}
+
+#tablo {
+    display: inline-block;
+    border-collapse: collapse;
+    table-layout: fixed;
+    overflow: hidden
+}
+
+    #tablo #sutun {
+        z-index: 1000px
+    }
+
+#usttablo {
+    position: fixed;
+    background: #fff;
+    z-index: 999999;
+    top: -115px;
+    border-bottom: 1px solid #f8f4e0
+}
+
+    #usttablo .ozellik .logo {
+        width: 160px;
+        margin: 8px 0 0;
+        padding: 0
+    }
+
+    #usttablo #tablo #sutun .urunresmi {
+        float: left
+    }
+
+    #usttablo #tablo #sutun .urunadi {
+        display: table-cell;
+        height: 37px;
+        font-weight: 700
+    }
+
+    #usttablo #tablo #sutun .urunfiyati {
+        display: block;
+        font-weight: 400;
+        font-size: 12px
+    }
+
+.iptalikon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: url(https://resim.epey.com/tema/iptal.png) no-repeat;
+    cursor: pointer
+}
+
+    .iptalikon:hover {
+        background-position: bottom
+    }
+
+.iptalikonsag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    background: url(https://resim.epey.com/tema/iptal.png) no-repeat;
+    cursor: pointer
+}
+
+    .iptalikonsag:hover {
+        background-position: bottom
+    }
+
+#usttablo #tablo #sutun #yuzdeh {
+    float: left;
+    width: 100%;
+    color: #000;
+    margin-left: 5px
+}
+
+    #usttablo #tablo #sutun #yuzdeh .yuzdepuan {
+        float: left;
+        margin: -5px 0 0 10px
+    }
+
+#tablo #sutun .genislik {
+    display: block
+}
+
+#tablo #sutun .yukseklik {
+    display: block;
+    height: 700px
+}
+
+#tablo .ozellik {
+    width: 159px;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 5px
+}
+
+#tablo .deger {
+    display: table-cell;
+    width: 250px;
+    padding: 10px;
+    position: relative;
+    border-right: 1px solid #f8f4e0
+}
+
+#tablo .kod {
+    font-weight: 300
+}
+
+#usttablo .sutun1, #alttablo .sutun1 {
+    width: 169px;
+    vertical-align: top
+}
+
+#usttablo .sutun2, #alttablo .sutun2 {
+    z-index: 10;
+    overflow: hidden
+}
+
+#usttablo .sutun3, #alttablo .sutun3 {
+    width: 300px;
+    vertical-align: top;
+    z-index: 100
+}
+
+#usttablo .deger {
+    padding: 10px;
+    overflow: hidden;
+    background: #fff
+}
+
+#usttablo img {
+    float: left;
+    margin: 5px
+}
+
+#usttablo .yuzde1h {
+    float: left;
+    width: 170px;
+    height: 10px;
+    background: #f0e4ba;
+    margin: 0
+}
+
+#usttablo .yuzde2h {
+    float: left;
+    height: 10px;
+    background: #d96041
+}
+
+#usttablo .sutun3 {
+    background: #fff
+}
+
+#satir .sutun3 button {
+    float: left;
+    margin: 10px 10px 10px 0;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #f8f4e0
+}
+
+    #satir .sutun3 button:disabled {
+        opacity: .4;
+        filter: alpha(opacity=40)
+    }
+
+#satir .sutun3 .geri {
+    background: url(https://resim.epey.com/tema/geri.png) no-repeat left #f8f4e0;
+    padding: 5px 10px 5px 20px
+}
+
+#satir .sutun3 .ileri {
+    background: url(https://resim.epey.com/tema/ileri.png) no-repeat right #f8f4e0;
+    padding: 5px 20px 5px 10px
+}
+
+#satir .sutun3 .kategori {
+    float: left;
+    width: 295px;
+    font: 16px titillium web;
+    margin: 0 0 10px 5px
+}
+
+#alttablo .logo {
+    width: 150px;
+    margin: 10px 0 0 10px
+}
+
+#alttablo .ozellik img.ikon {
+    float: right;
+    height: 20px;
+    position: absolute;
+    right: 5px
+}
+
+#alttablo .temel #sutun, #alttablo .tum #sutun {
+    border-top: 1px solid #f8f4e0;
+    padding-top: 8px
+}
+
+#alttablo #satir #sutun #tablo .temel .ozellik, #alttablo #satir #sutun #tablo .tum .ozellik {
+}
+
+#alttablo #satir #ictablo {
+    min-height: 610px
+}
+
+#tablo .kisim #sutun {
+    background: #f0e4ba
+}
+
+#tablo .grup #sutun {
+    background: #f8f4e0
+}
+
+#tablo .kisim .ozellik {
+    padding: 10px;
+    width: 300px;
+    z-index: 10
+}
+
+#tablo .kisim .deger {
+    padding: 10px
+}
+
+#tablo .grup .ozellik {
+    padding: 4px 5px;
+    width: 300px;
+    z-index: 10;
+    height: 32px
+}
+
+    #tablo .grup .ozellik img {
+        float: left;
+        margin: 0 5px 0 0;
+        height: 32px
+    }
+
+    #tablo .grup .ozellik strong {
+        float: left;
+        margin: 7px 0 0
+    }
+
+#tablo .yok, #tablo .yok a {
+    color: #d5d5d5
+}
+
+#tablo .cs2 {
+    float: left;
+    width: 50%
+}
+
+#tablo .cs3 {
+    float: left;
+    width: 33%
+}
+
+#tablo .cs4 {
+    float: left;
+    width: 25%
+}
+
+#tablo .fiyat #sutun {
+    text-align: center;
+    font-size: 16px
+}
+
+    #tablo .fiyat #sutun .img {
+        float: left;
+        width: 100px;
+        text-align: left;
+        height: 30px
+    }
+
+        #tablo .fiyat #sutun .img span {
+            padding-top: 100%
+        }
+
+        #tablo .fiyat #sutun .img img {
+            max-width: 100px;
+            max-height: 25px
+        }
+
+    #tablo .fiyat #sutun a {
+        display: block;
+        line-height: 20px
+    }
+
+    #tablo .fiyat #sutun .fiyatyok {
+        float: left;
+        width: 100%;
+        text-align: center;
+        line-height: 25px
+    }
+
+    #tablo .fiyat #sutun .buton {
+        width: 100%;
+        margin: 5px 0 0;
+        padding: 2px 0;
+        background: #d96142;
+        border-bottom: 1px solid #e8dca8;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        line-height: 20px
+    }
+
+        #tablo .fiyat #sutun .buton small {
+            display: block
+        }
+
+#tablo {
+    width: 100%;
+    padding-right: 0
+}
+
+#alttablo {
+    margin-top: 15px
+}
+
+    #alttablo .sutun2 {
+        padding: 0;
+        margin: 0
+    }
+
+#tablo .fiyat a {
+    display: table-row;
+    margin: 0 -10px;
+    border-bottom: 1px solid #f5edcf;
+    padding: 5px 10px 5px 5px;
+    overflow: hidden
+}
+
+    #tablo .fiyat a:hover {
+        background: #f8f4e0
+    }
+
+    #tablo .fiyat a.onsira {
+        background: #f3f8e0;
+        font-weight: 700
+    }
+
+    #tablo .fiyat a.yurtdisi {
+        background: #e0f7f8
+    }
+
+#tablo .site_logo {
+    vertical-align: middle;
+    display: table-cell;
+    padding: 0 5px;
+    text-align: left
+}
+
+    #tablo .site_logo p {
+        font-size: 12px;
+        color: #505050;
+        display: block
+    }
+
+    #tablo .site_logo img {
+        max-width: 110px;
+        max-height: 35px
+    }
+
+#tablo .urun_adi {
+    display: table-cell;
+    padding: 0 5px;
+    vertical-align: top;
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+    line-height: 20px
+}
+
+    #tablo .urun_adi span {
+        float: left;
+        height: 43px
+    }
+
+        #tablo .urun_adi span .yorum {
+            color: #d96142
+        }
+
+    #tablo .urun_adi .yurtdisi {
+        background: #d98642;
+        padding: 3px 5px 3px 25px;
+        margin: 3px 5px;
+        color: #fff;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px
+    }
+
+#tablo .urun_fiyat {
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 5px 5px;
+    min-width: 110px
+}
+
+    #tablo .urun_fiyat p {
+        font-size: 12px;
+        color: #505050;
+        font-weight: 400;
+        display: block;
+        line-height: 20px;
+        margin: 0;
+        height: 20px
+    }
+
+        #tablo .urun_fiyat p.birim_fiyat {
+            font-weight: 700;
+            color: #d96142;
+            line-height: 20px
+        }
+
+    #tablo .urun_fiyat strong {
+        line-height: 20px
+    }
+
+#tablo .urun_git {
+    display: table-cell;
+    padding: 0 0 0 5px;
+    vertical-align: top
+}
+
+    #tablo .urun_git strong {
+        background: #d96142;
+        color: #fff;
+        padding: 0 5px;
+        width: 85px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        font-weight: 700;
+        font-size: 13px;
+        text-align: center;
+        float: right
+    }
+
+#tablo a.yurtdisi:hover {
+    background: #a7ddef;
+    color: #000
+}
+
+#tablo a.yurtdisi .urun_git strong {
+    background: #1f5073
+}
+
+#tablo .urun_git p {
+    font-size: 11px;
+    color: gray;
+    font-size: 12px;
+    text-align: right;
+    display: none
+}
+
+#tablo .magaza {
+    display: block;
+    margin-top: 5px
+}
+
+#tablo .fiyat #sutun .buton {
+    padding: 5px 0
+}
+
+    #tablo .fiyat #sutun .buton small {
+        display: inline
+    }
+
+#tablo .deger {
+    width: 350px
+}
+
+##tablo .deger {
+    width: 100%
+}
+
+#tablo .genislik {
+    width: 380px
+}
+
+#usttablo ::-webkit-scrollbar {
+    display: none
+}
+
+.karsilastirma {
+    font-size: 14px;
+    width: 970px;
+    margin: 0 auto;
+    border: none;
+    padding: 0
+}
+
+    .karsilastirma .kaydir {
+        float: right
+    }
+
+    .karsilastirma .yol {
+        float: left;
+        width: 100%;
+        display: block;
+        margin: 10px 0 20px;
+        padding: 0
+    }
+
+        .karsilastirma .yol a {
+            float: left
+        }
+
+        .karsilastirma .yol span {
+            float: left;
+            margin: 0 5px
+        }
+
+    .karsilastirma h1 {
+        float: left;
+        margin: -1px 0 0;
+        padding: 0;
+        font-size: 13px;
+        font-weight: 700
+    }
+
+.karsilastirma {
+    font-size: 14px;
+    width: 966px;
+    margin: 0 auto;
+    padding: 2px 2px 8px
+}
+
+    .karsilastirma .yol {
+        float: left;
+        width: 100%;
+        display: block;
+        margin: 10px 0 0
+    }
+
+    .karsilastirma h1 {
+        float: left;
+        margin: 5px 0 20px;
+        padding: 0;
+        font-size: 18px
+    }
+
+    .karsilastirma .yol h1 {
+        margin: 0;
+        padding: 0
+    }
+
+#usttablo .ozellik .logo {
+    width: 129px;
+    margin: 20px 0 0 15px;
+    padding: 0
+}
+
+#kaydir {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000000;
+    width: 200px
+}
+
+    #kaydir button {
+        float: left;
+        margin: 10px 10px 10px 0;
+        cursor: pointer;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border: 2px solid #e8dca8
+    }
+
+        #kaydir button:disabled {
+            opacity: .4;
+            filter: alpha(opacity=40)
+        }
+
+    #kaydir .geri {
+        background: url(https://resim.epey.com/tema/geri.png) no-repeat left #f8f4e0;
+        padding: 5px 10px 5px 20px
+    }
+
+    #kaydir .ileri {
+        background: url(https://resim.epey.com/tema/ileri.png) no-repeat right #f8f4e0;
+        padding: 5px 20px 5px 10px
+    }
+
+    #kaydir .fark {
+        background: #d96142;
+        padding: 3px 5px;
+        border: 2px solid #e8dca8;
+        width: 150px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border: 2px solid #d96142;
+        display: block;
+        margin: 0;
+        font-weight: 700;
+        color: #fff
+    }
+
+        #kaydir .fark label div {
+            margin-top: -2px
+        }
+
+        #kaydir .fark input[type=checkbox] + label span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: -1px 0 0;
+            vertical-align: middle;
+            background: url(https://resim.epey.com/tema/checkbox3.png) left top no-repeat;
+            cursor: pointer
+        }
+
+        #kaydir .fark input[type=checkbox]:checked + label span {
+            background: url(https://resim.epey.com/tema/checkbox3.png) -21px top no-repeat
+        }
+
+#urunekle {
+    float: right
+}
+
+    #urunekle #garama {
+        float: left;
+        width: 220px;
+        height: 30px;
+        border: 1px solid #e8dca8;
+        margin: 0 10px 0 0
+    }
+
+        #urunekle #garama .arama {
+            width: 200px;
+            background: url(https://resim.epey.com/tema/ara.png) right no-repeat;
+            padding: 0 5px
+        }
+
+        #urunekle #garama .aramasonuc {
+            width: 100%
+        }
+
+            #urunekle #garama .aramasonuc ul {
+                width: 100%
+            }
+
+                #urunekle #garama .aramasonuc ul li a {
+                    width: 200px
+                }
+
+            #urunekle #garama .aramasonuc ul {
+                top: 8px
+            }
+
+                #urunekle #garama .aramasonuc ul .aile {
+                    font-size: 13px
+                }
+
+.font11 {
+    font-size: 11px
+}
+
+.font12 {
+    font-size: 12px
+}
+
+.font13 {
+    font-size: 13px
+}
+
+.font14 {
+    font-size: 14px
+}
+
+.font15 {
+    font-size: 15px
+}
+
+.font16 {
+    font-size: 16px
+}
+
+.font18 {
+    font-size: 18px
+}
+
+ul.liste {
+    float: left;
+    width: 970px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font: 16px
+}
+
+    ul.liste li {
+        float: left;
+        width: 970px;
+        list-style: none;
+        border-bottom: 1px solid #e8dca8
+    }
+
+        ul.liste li ul {
+            margin: 0;
+            padding: 0
+        }
+
+            ul.liste li ul li {
+                float: none;
+                padding: 5px 0;
+                border: none
+            }
+
+                ul.liste li ul li.adi {
+                    width: 275px
+                }
+
+                    ul.liste li ul li.adi span.sira {
+                        float: left;
+                        margin: 0 15px;
+                        font-weight: 600;
+                        font-size: 22px;
+                        color: #d96041
+                    }
+
+                    ul.liste li ul li.adi span.resim {
+                        float: left;
+                        margin: 0 15px 0 0
+                    }
+
+                        ul.liste li ul li.adi span.resim img {
+                            display: block;
+                            margin: auto
+                        }
+
+                    ul.liste li ul li.adi a.urunadi {
+                        display: block;
+                        font-weight: 600;
+                        margin: 0 0 15px
+                    }
+
+                    ul.liste li ul li.adi span {
+                        float: left
+                    }
+
+                    ul.liste li ul li.adi p {
+                        display: block
+                    }
+
+                    ul.liste li ul li.adi label {
+                        font-size: 14px
+                    }
+
+                        ul.liste li ul li.adi label span {
+                            float: left;
+                            margin: 0 3px 0 0
+                        }
+
+                ul.liste li ul li.fiyat {
+                    width: 75px;
+                    padding: 18px 10px 0 0;
+                    text-align: right
+                }
+
+                    ul.liste li ul li.fiyat span {
+                        display: block;
+                        font-size: 12px
+                    }
+
+                ul.liste li ul li.ozellik {
+                    width: 84px;
+                    text-align: center
+                }
+
+                ul.liste li ul li.puan {
+                    width: 80px;
+                    text-align: center
+                }
+
+        ul.liste li.baslik ul {
+            height: 70px
+        }
+
+            ul.liste li.baslik ul li {
+                background: #f8f4e0;
+                border-bottom: 1px solid #e8dca8;
+                font-weight: 600;
+                font-size: 12px;
+                padding: 10px 0;
+                height: 36px
+            }
+
+                ul.liste li.baslik ul li.adi {
+                    text-align: center
+                }
+
+                ul.liste li.baslik ul li.fiyat {
+                    width: 85px;
+                    text-align: center
+                }
+
+        ul.liste li.baslik {
+            border: none
+        }
+
+        ul.liste li ul:before, ul.liste li ul li {
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        ul.liste li ul:before {
+            height: 100%
+        }
+
+.info {
+    position: relative;
+    display: inline-block;
+    margin: -1px 0 0 5px;
+    width: 15px;
+    height: 15px;
+    background: url(https://resim.epey.com/tema/info.png) no-repeat;
+    cursor: pointer;
+    border: 0
+}
+
+.tanim {
+    border: 2px solid #f0e4ba;
+    position: absolute;
+    left: 21px;
+    top: -20px;
+    width: 250px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 5px 10px;
+    font-weight: 400;
+    text-align: left;
+    z-index: 999999;
+    font: 13px/18px 'Titillium Web'
+}
+
+    .tanim a {
+        text-decoration: underline
+    }
+
+    .tanim:before {
+        border-color: transparent #f0e4ba transparent transparent;
+        border-right: 6px solid #f0e4ba;
+        border-style: solid;
+        border-width: 6px 6px 6px 0;
+        content: "";
+        display: block;
+        display: block;
+        height: 0;
+        width: 0;
+        line-height: 0;
+        position: absolute;
+        left: -7px;
+        top: 20px
+    }
+
+    .tanim p {
+        margin: 5px 0
+    }
+
+    .tanim ul {
+        margin: 0 0 0 10px
+    }
+
+        .tanim ul li {
+            list-style: initial
+        }
+
+.rang {
+    font: 18px titillium web
+}
+
+#hatasayfasi {
+    float: left;
+    width: 100%;
+    min-height: 500px;
+    margin: 50px auto;
+    text-align: center
+}
+
+.tcenter {
+    text-align: center
+}
+
+.prelative {
+    position: relative
+}
+
+.bold {
+    font-weight: 600
+}
+
+#manset {
+    float: left;
+    width: 650px;
+    height: 250px;
+    position: relative;
+    margin: 3px 10px 0 0;
+    border: 1px solid #f8f4e0
+}
+
+    #manset .mask {
+        float: left;
+        width: 650px;
+        height: 250px;
+        overflow: hidden
+    }
+
+    #manset ul.images {
+        position: relative;
+        top: 0;
+        left: 0
+    }
+
+        #manset ul.images li {
+            float: left
+        }
+
+    #manset ul.triggers {
+        position: absolute;
+        top: 260px;
+        left: 4px
+    }
+
+        #manset ul.triggers li {
+            float: left;
+            margin: 0 5px 0 4px;
+            cursor: pointer;
+            border: 1px solid #f8f4e0
+        }
+
+            #manset ul.triggers li.selected {
+                border: 1px solid #e38871
+            }
+
+            #manset ul.triggers li img {
+                width: 117px
+            }
+
+    #manset .control {
+        position: absolute;
+        top: 250px;
+        cursor: pointer;
+        display: none
+    }
+
+    #manset .prev {
+        left: 120px
+    }
+
+    #manset .next {
+        left: 180px
+    }
+
+#kurumsal {
+    float: left;
+    width: 950px;
+    padding: 0 10px;
+    font: 12px/18px Arial
+}
+
+    #kurumsal h1 {
+        margin: 10px 0
+    }
+
+#liste {
+    float: right;
+    width: 307px;
+    height: 315px
+}
+
+    #liste ol {
+        list-style: none;
+        font-size: 14px;
+        padding: 0;
+        margin: 0 0 0 10px;
+        font-weight: 600
+    }
+
+        #liste ol a {
+            position: relative;
+            display: block;
+            padding: 5px 10px 5px 25px;
+            margin: 0 0 5px;
+            background: #f8f4e0;
+            color: #444;
+            font-weight: 600
+        }
+
+            #liste ol a:hover {
+                background: #f0e4ba
+            }
+
+.rounded-list a {
+    position: relative;
+    display: block;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: .3em;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+
+    .rounded-list a:hover:before {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+
+    .rounded-list a:before {
+        content: '+';
+        counter-increment: li;
+        position: absolute;
+        left: -1.3em;
+        top: 50%;
+        margin-top: -1.3em;
+        background: #d96041;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        border: .3em solid #fff;
+        text-align: center;
+        font-weight: 700;
+        -moz-border-radius: 2em;
+        -webkit-border-radius: 2em;
+        border-radius: 2em;
+        -webkit-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        color: #fff;
+        font-size: 15px
+    }
+
+#katurunler {
+    float: left;
+    width: 960px;
+    margin-top: 5px;
+    padding: 2px;
+    border: 1px solid #f8f4e0
+}
+
+    #katurunler h2 {
+        float: left;
+        width: 940px;
+        padding: 5px 10px;
+        background: #f8f4e0;
+        margin: 0
+    }
+
+    #katurunler ul {
+        float: left;
+        font-size: 14px;
+        padding: 0;
+        margin: 0
+    }
+
+        #katurunler ul li {
+            float: left;
+            vertical-align: top;
+            width: 139px;
+            height: 220px;
+            padding: 10px 5px;
+            margin: 0 5px;
+            border-left: 1px solid #f8f4e0;
+            position: relative
+        }
+
+            #katurunler ul li.katurun1 {
+                border-left: 0
+            }
+
+            #katurunler ul li a.adi {
+                float: left;
+                width: 100%;
+                height: 180px;
+                margin-bottom: 5px;
+                overflow: hidden
+            }
+
+                #katurunler ul li a.adi span {
+                    float: left;
+                    width: 100%;
+                    text-align: center
+                }
+
+                    #katurunler ul li a.adi span.img {
+                        height: 124px
+                    }
+
+            #katurunler ul li a.fiyat {
+                float: left;
+                width: 100%;
+                text-align: center;
+                font-size: 14px
+            }
+
+                #katurunler ul li a.fiyat span {
+                    font-size: 12px
+                }
+
+        #katurunler ul.eniyi li a.adi {
+            border-bottom: 1px solid #f8f4e0
+        }
+
+        #katurunler ul.enyeni li {
+            height: 150px
+        }
+
+            #katurunler ul.enyeni li a.adi {
+                height: 130px
+            }
+
+        #katurunler ul.enkiyas li {
+            width: 299px;
+            height: 180px;
+            text-align: center
+        }
+
+            #katurunler ul.enkiyas li a.adi {
+                height: auto
+            }
+
+            #katurunler ul.enkiyas li .kiyasresim {
+                display: block
+            }
+
+        #katurunler ul.enkiyas .kiyasikon {
+            width: 20px;
+            margin: -20px 4px 0
+        }
+
+        #katurunler ul.enkiyas li .kiyasmetin {
+            display: block;
+            margin: 5px 0 0
+        }
+
+        #katurunler ul.enkiyas1 li {
+            width: 219px
+        }
+
+        #katurunler ul.eniyi4 li, #katurunler ul.enyeni4 li {
+            height: 250px
+        }
+
+            #katurunler ul.eniyi4 li a.adi, #katurunler ul.enyeni4 li a.adi {
+                height: 210px
+            }
+
+    #katurunler a.buton {
+        float: right;
+        margin: 5px 0 0;
+        background: #f0e4ba;
+        color: #000;
+        padding: 5px 10px;
+        min-width: 150px
+    }
+
+        #katurunler a.buton:hover {
+            background: #d96142;
+            color: #fff
+        }
+
+#tablo .Var {
+    padding-left: 25px;
+    background: url(https://resim.epey.com/tema/var.png) no-repeat;
+    color: #7bbf6a
+}
+
+#tablo .Yok {
+    padding-left: 25px;
+    background: url(https://resim.epey.com/tema/yok.png) no-repeat;
+    color: #e04006
+}
+
+#tablo .Opsiyonel {
+    padding-left: 25px;
+    background: url(https://resim.epey.com/tema/opsiyonel.png) no-repeat;
+    color: #f99e0e
+}
+
+#tablo .belirsiz {
+    display: block;
+    background: url(https://resim.epey.com/tema/belirsiz.png) no-repeat
+}
+
+#tablo .farkli .eniyi {
+    font-weight: 600
+}
+
+#tablo .h40 {
+    height: 40px
+}
+
+#urunoneri {
+    float: left;
+    width: 295px;
+    margin: 20px 0 0 5px
+}
+
+    #urunoneri ul {
+        display: table;
+        margin: 0;
+        padding: 0
+    }
+
+    #urunoneri li {
+        display: table-row;
+        float: left;
+        width: 100%;
+        list-style: none;
+        margin-bottom: 10px;
+        line-height: 24px
+    }
+
+        #urunoneri li .urunresmi {
+            float: left;
+            margin-right: 5px
+        }
+
+        #urunoneri li .ekle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            backgground: url(https://resim.epey.com/tema/ekle.png) no-repeat
+        }
+
+        #urunoneri li .stn {
+            display: table-cell;
+            vertical-align: top
+        }
+
+        #urunoneri li .stn1 {
+            position: relative
+        }
+
+        #urunoneri li .stn2 {
+            padding: 0 5px
+        }
+
+            #urunoneri li .stn2 p {
+                margin: 0
+            }
+
+.degerVar {
+    padding-left: 25px;
+    background: url(https://resim.epey.com/tema/var.png) no-repeat;
+    color: #7bbf6a
+}
+
+    .degerVar a {
+        color: #7bbf6a
+    }
+
+.degerYok {
+    padding-left: 25px;
+    background: url(https://resim.epey.com/tema/yok.png) no-repeat;
+    color: #e04006
+}
+
+    .degerYok a {
+        color: #e04006
+    }
+
+.degerOpsiyonel {
+    padding-left: 25px;
+    background: url(https://resim.epey.com/tema/opsiyonel.png) no-repeat;
+    color: #f99e0e
+}
+
+    .degerOpsiyonel a {
+        color: #f99e0e
+    }
+
+#fiyat #oncelikli .oncelikli span.degerVar, #fiyat #oncelikli .oncelikli span.degerYok {
+    width: 85px
+}
+
+#satir1 #sutun2 .satir2 .oncelikli span.degerVar, #satir1 #sutun2 .satir2 .oncelikli span.degerYok {
+    width: 85px
+}
+
+#satir .sutun3 .farklilar {
+    width: 270px;
+    background: #f8f4e0;
+    padding: 7px 10px
+}
+
+#urun h1 {
+    width: 570px;
+    margin: 0 0 10px
+}
+
+    #urun h1 .kod {
+        font-size: 16px;
+        font-weight: 400
+    }
+
+#urun .baslik {
+    float: left;
+    width: 640px;
+    margin: 0 0 5px
+}
+
+.yol {
+    float: left;
+    margin: 5px 0 10px;
+    font-size: 13px;
+    width: 820px
+}
+
+    .yol a.anasayfa {
+        float: left;
+        background: url(https://resim.epey.com/tema/anasayfa.png) no-repeat;
+        width: 20px;
+        height: 20px
+    }
+
+    .yol a:hover {
+        color: #d96142
+    }
+
+#urun .uyebilgi {
+    float: right;
+    width: 250px;
+    text-align: right;
+    color: #999
+}
+
+#urun .uyepuani {
+    float: right;
+    width: 110px;
+    text-align: right;
+    margin-top: 5px
+}
+
+    #urun .uyepuani .rating {
+        float: left
+    }
+
+    #urun .uyepuani .basic {
+        float: left
+    }
+
+    #urun .uyepuani .kpuan {
+        display: block;
+        color: #999
+    }
+
+    #urun .uyepuani .ksayi {
+        color: #999
+    }
+
+    #urun .uyepuani .detay {
+        float: left;
+        width: 100%;
+        text-align: left;
+        margin: 5px 0 0 2px
+    }
+
+.paylas {
+    width: 246px;
+    margin-right: 10px
+}
+
+    .paylas .fb-like {
+        float: right;
+        width: 113px;
+        height: 20px
+    }
+
+    .paylas .tweet-button {
+        float: right;
+        margin-right: 2px;
+        width: 57px;
+        height: 20px
+    }
+
+    .paylas .plusone {
+        float: right
+    }
+
+.kiyas {
+    float: left;
+    margin: 3px 0
+}
+
+#resim {
+    float: left;
+    width: 330px;
+    text-align: center;
+    position: relative;
+    overflow: hidden
+}
+
+    #resim .buyuk {
+        float: left;
+        width: 250px
+    }
+
+        #resim .buyuk .galerim {
+            width: 250px;
+            vertical-align: middle;
+            cursor: pointer
+        }
+
+        #resim .buyuk img {
+            max-width: 250px;
+            max-height: 200px
+        }
+
+    #resim .kucuk {
+        float: left;
+        width: 70px;
+        border-collapse: separate;
+        border-spacing: 5px
+    }
+
+        #resim .kucuk li {
+            display: block;
+            width: 65px;
+            height: 58px;
+            border: 1px solid #e8dca8;
+            vertical-align: middle;
+            margin-bottom: 3px;
+            padding-top: 7px
+        }
+
+            #resim .kucuk li img {
+                max-width: 65px;
+                max-height: 65px
+            }
+
+    #resim #player {
+        float: left;
+        width: 308px
+    }
+
+    #resim .video {
+    }
+
+        #resim .video a {
+            border: none
+        }
+
+        #resim .video img {
+            height: 43px
+        }
+
+    #resim #player {
+        border: 1px solid #f0e4ba
+    }
+
+    #resim .pause {
+        background: url(https://resim.epey.com/tema/vid.png) no-repeat;
+        background-position: 0 0
+    }
+
+    #resim .play {
+        background: url(https://resim.epey.com/tema/vid.png) no-repeat;
+        background-position: -4px -42px
+    }
+
+    #resim .galerik li.video a {
+        float: left;
+        border: none;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        margin: 0 0 0 15px
+    }
+
+    #resim .videok {
+        position: absolute;
+        bottom: 0;
+        left: 75px;
+        width: 32px;
+        height: 32px;
+        background: url(https://resim.epey.com/tema/video.png) no-repeat
+    }
+
+#ozet {
+    float: left;
+    width: 640px;
+    position: relative
+}
+
+    #ozet #puan {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 71px;
+        height: 71px;
+        background: url(https://resim.epey.com/tema/puan_bg.png)
+    }
+
+    #ozet .etiket {
+        float: left;
+        min-width: 30px;
+        padding: 5px;
+        margin: 0 5px 5px 0;
+        cursor: pointer;
+        text-align: center;
+        background: #f8f4e0
+    }
+
+        #ozet .etiket img {
+            float: left;
+            margin-right: 5px
+        }
+
+#reklam {
+    width: 336px;
+    height: 280px;
+    border: 1px solid #f5edcf
+}
+
+#reklamic970 {
+    float: left;
+    width: 970px;
+    margin-top: 10px;
+    text-align: center
+}
+
+#oncelikli {
+    float: left;
+    width: 100%;
+    margin: 15px 0 0;
+    overflow: hidden
+}
+
+    #oncelikli .cell {
+        padding: 15px 20px 0 0;
+        float: left;
+        width: 140px
+    }
+
+        #oncelikli .cell .row {
+            float: left;
+            width: 100%
+        }
+
+        #oncelikli .cell .row1 {
+            line-height: 26px;
+            color: #999;
+            height: 25px;
+            overflow: hidden
+        }
+
+        #oncelikli .cell .row2 {
+            font-size: 14px
+        }
+
+        #oncelikli .cell .font12 {
+            font-size: 12px
+        }
+
+        #oncelikli .cell .belirsiz {
+            height: 20px;
+            background: url(https://resim.epey.com/tema/belirsiz.png) no-repeat
+        }
+
+        #oncelikli .cell .font14 {
+            font-size: 14px
+        }
+
+.table {
+    display: table
+}
+
+.row {
+    display: table-row;
+    vertical-align: top
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: top
+}
+
+    .cell .colspan {
+        width: 1px
+    }
+
+        .cell .colspan > div {
+            position: relative;
+            width: 970px
+        }
+
+.circliful {
+    position: relative
+}
+
+.circle-text, .circle-info, .circle-text-half, .circle-info-half {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px
+}
+
+.circle-info {
+    margin-top: 3px
+}
+
+.circle-text {
+    margin-top: -3px
+}
+
+#rating {
+    float: right;
+    width: 230px;
+    height: 30px;
+    margin: 0 0 5px
+}
+
+    #rating .basic {
+        float: left;
+        margin: 0 5px 0 0
+    }
+
+.jRatingAverage {
+    background: #d9441e;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%
+}
+
+.jRatingColor {
+    background: #edd479;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%
+}
+
+.jStar {
+    position: relative;
+    left: 0;
+    z-index: 3
+}
+
+p.jRatingInfos {
+    position: absolute;
+    z-index: 9999;
+    background: url(https://resim.epey.com/tema/bg_jRatingInfos.png) no-repeat;
+    color: #fff;
+    display: none;
+    width: 91px;
+    height: 29px;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 5px
+}
+
+    p.jRatingInfos span.maxRate {
+        font-size: 14px
+    }
+
+#yorumyap {
+    float: right;
+    width: 500px;
+    background: #f1f1f1;
+    z-index: 99999;
+    position: absolute;
+    right: 100px;
+    top: 28px;
+    display: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 4px solid #5c75a9
+}
+
+    #yorumyap .kapat {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        float: left;
+        padding: 2px 8px;
+        background: #43609c;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px
+    }
+
+input[type=checkbox] {
+    display: none
+}
+
+    input[type=checkbox] + label {
+        cursor: pointer
+    }
+
+        input[type=checkbox] + label span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: -1px 0 0;
+            vertical-align: middle;
+            background: url(https://resim.epey.com/tema/checkbox.png) left top no-repeat;
+            cursor: pointer
+        }
+
+    input[type=checkbox]:checked + label span {
+        background: url(https://resim.epey.com/tema/checkbox.png) -21px top no-repeat
+    }
+
+#resimler {
+    float: left;
+    width: 100%
+}
+
+    #resimler .galerib {
+        float: left;
+        width: 600px;
+        height: 600px;
+        overflow: hidden;
+        text-align: center
+    }
+
+    #resimler .galerik {
+        float: left;
+        width: 300px;
+        height: 600px;
+        overflow: hidden
+    }
+
+        #resimler .galerik li a {
+            float: left;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 5px;
+            text-align: center
+        }
+
+#kategori .sag2 .listele ul li.adi .resim, #kategori .sag7 .listele ul li.adi .resim, #kategori .sag16 .listele ul li.adi .resim {
+    width: 120px
+}
+
+#kategori .sag2 .listele ul.metin, #kategori .sag7 .listele ul.metin, #kategori .sag16 .listele ul.metin {
+    height: 120px
+}
+
+#kategori .sag17 .listele ul li.adi .resim, #kategori .sag17 .listele ul li.adi .resim img, #kategori .sag16 .listele ul li.adi .resim img {
+    max-width: 80px;
+    max-height: 120px
+}
+
+#kategori .sag .listele ul.metin .kiyasla {
+    float: left
+}
+
+.degertanim {
+    float: left;
+    width: 100%;
+    margin-top: 10px
+}
+
+#listele input[type=checkbox] + label span, #urun input[type=checkbox] + label span {
+    background: url(https://resim.epey.com/tema/kiyasekle2.png) left top no-repeat
+}
+
+#listele input[type=checkbox]:checked + label span, #urun input[type=checkbox]:checked + label span {
+    background: url(https://resim.epey.com/tema/kiyasekle2.png) -22px top no-repeat
+}
+
+#listele input[type=checkbox] + label span {
+    margin: 0 5px 0 0
+}
+
+.listele ul li.fiyat .button {
+    background: #d96142;
+    color: #fff;
+    padding: 3px 5px;
+    -webkit-appearance: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 12px;
+    float: right;
+    margin-top: 5px
+}
+
+#tablo .yok2 {
+    display: none
+}
+
+#tablo .var2 {
+    display: block
+}
+
+#iletisim {
+    float: left;
+    width: 950px
+}
+
+    #iletisim h1 {
+        float: left;
+        margin: 10px 0
+    }
+
+    #iletisim form {
+        float: left;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        background: #f8f4e0;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-bottom: 1px solid #e8dca8
+    }
+
+        #iletisim form li {
+            float: left;
+            width: 100%;
+            margin: 5px 0
+        }
+
+            #iletisim form li strong {
+                float: left;
+                width: 100px
+            }
+
+            #iletisim form li .text {
+                float: left;
+                width: 578px;
+                padding: 5px 10px;
+                border: 1px solid #e8dca8;
+                background: #fff;
+                outline: 0 !important;
+                -webkit-appearance: none;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px
+            }
+
+            #iletisim form li .guvenlik {
+                width: 100px
+            }
+
+            #iletisim form li .captcha {
+                float: left;
+                margin: 0 0 0 5px
+            }
+
+            #iletisim form li .submit {
+                float: right;
+                width: 100px;
+                cursor: pointer;
+                background: #d96041;
+                color: #fff;
+                margin-right: 250px
+            }
+
+                #iletisim form li .submit:hover {
+                    background: #d96041;
+                    color: #fff
+                }
+
+            #iletisim form li textarea {
+                height: 100px
+            }
+
+    #iletisim .durummesaji {
+        float: left;
+        font-weight: 700;
+        color: #d96041;
+        font-size: 16px
+    }
+
+#bagla {
+    float: left;
+    width: 100%;
+    margin: 0 0 20px
+}
+
+    #bagla h2 {
+        float: left;
+        width: 940px;
+        border-bottom: 1px solid #f8f4e0;
+        background: url(https://resim.epey.com/tema/aile.png) no-repeat;
+        padding: 5px 0 5px 35px;
+        font-weight: 600
+    }
+
+    #bagla ul {
+        display: table
+    }
+
+    #bagla li {
+        display: table-cell;
+        vertical-align: top;
+        text-align: center
+    }
+
+        #bagla li:hover {
+            background: #f8f4e0
+        }
+
+        #bagla li a {
+            float: left;
+            padding: 10px 15px 5px
+        }
+
+            #bagla li a img {
+                margin: 0 4px
+            }
+
+            #bagla li a span {
+                display: table-row
+            }
+
+#fiyat2 {
+    float: left;
+    width: 650px;
+    margin-top: -20px;
+    font-size: 15px;
+    height: 460px
+}
+
+    #fiyat2 a.fiyat {
+        display: table-caption;
+        width: 650px;
+        border-bottom: 1px solid #f5edcf;
+        padding: 5px 0
+    }
+
+        #fiyat2 a.fiyat:hover {
+            background: #f8f4e0
+        }
+
+    #fiyat2 .row {
+        padding: 0;
+        margin: 0
+    }
+
+    #fiyat2 .cell {
+        vertical-align: middle
+    }
+
+    #fiyat2 .site_logo {
+        width: 135px;
+        padding: 0 0 0 5px
+    }
+
+        #fiyat2 .site_logo img {
+            max-width: 120px;
+            max-height: 30px
+        }
+
+    #fiyat2 .ustbilgi .urun_adi {
+        float: left;
+        width: 370px;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 13px;
+        padding: 8px 5px 0
+    }
+
+    #fiyat2 .ustbilgi .urun_fiyat {
+        width: 120px;
+        font-size: 18px;
+        padding: 0 0 0 5px;
+        font-weight: 700;
+        text-align: right
+    }
+
+        #fiyat2 .ustbilgi .urun_fiyat span {
+            display: block;
+            font-size: 11px;
+            color: #505050
+        }
+
+    #fiyat2 span.siteye_git {
+        float: right;
+        background: #d96142;
+        color: #fff;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        font-weight: 700;
+        width: 15px;
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+        width: 80px;
+        font-size: 13px
+    }
+
+    #fiyat2 .altbilgi {
+        font-size: 13px;
+        color: #505050
+    }
+
+        #fiyat2 .altbilgi .urun_adi {
+            padding: 0 5px
+        }
+
+        #fiyat2 .altbilgi .urun_fiyat {
+            padding: 0 0 0 5px;
+            text-align: right;
+            font-size: 11px
+        }
+
+        #fiyat2 .altbilgi .site_logo {
+            white-space: nowrap
+        }
+
+    #fiyat2 .ustbilgi .urun_fiyat span.birim_fiyat {
+        color: #000;
+        font-size: 13px;
+        margin-bottom: -3px
+    }
+
+    #fiyat2 .msite_logo {
+        width: 135px
+    }
+
+        #fiyat2 .msite_logo img {
+            margin: 0 0 0 5px
+        }
+
+    #fiyat2 .etiket {
+    }
+
+    #fiyat2 .outlet {
+        float: left;
+        background: url(https://resim.epey.com/tema/urun_uyari.png) no-repeat 3px 3px #d96142;
+        color: #fff;
+        padding-left: 35px;
+        font-weight: 700;
+        margin: -10px 0 5px
+    }
+
+    #fiyat2 .yeni {
+        float: right;
+        font-weight: 700;
+        margin: 0 7px 5px 0
+    }
+
+.etiket {
+    float: left;
+    padding: 5px;
+    background: #f0e4ba;
+    moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer
+}
+
+    .etiket:hover {
+        color: #d96142
+    }
+
+    .etiket span {
+        font-size: 13px
+    }
+
+#filter {
+    float: left;
+    margin: 10px;
+    font-weight: 700
+}
+
+    #filter span {
+        float: left;
+        padding: 5px 5px 5px 35px;
+        background: url(https://resim.epey.com/tema/urun_checkbox2.png) no-repeat 3px 3px #f0e4ba;
+        moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        font-size: 12px;
+        margin-right: 10px;
+        text-align: center;
+        cursor: pointer
+    }
+
+        #filter span:hover {
+            color: #d96142
+        }
+
+        #filter span.selected {
+            background: url(https://resim.epey.com/tema/urun_checkbox.png) no-repeat 3px 3px #d96142;
+            color: #fff
+        }
+
+#tumu {
+    float: right;
+    background: #f0e4ba;
+    font-weight: 700;
+    padding: 5px 10px
+}
+
+.sponsormetni {
+    position: absolute;
+    top: 75px;
+    right: 5px;
+    font-size: 11px;
+    background: #d96142;
+    color: #fff;
+    padding: 0 5px
+}
+
+.hide {
+    display: none
+}
+
+#giydirme {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
+
+.giydirme {
+    position: relative;
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1
+}
+
+.giydirmeust {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: auto;
+    z-index: -1
+}
+
+.giydirmesol {
+    position: absolute;
+    top: 0;
+    z-index: -1
+}
+
+.giydirmesag {
+    position: absolute;
+    top: 0;
+    z-index: -1
+}
+
+.reklam970 {
+    float: left;
+    width: 970px;
+    text-align: center
+}
+
+@supports(-ms-ime-align:auto) {
+    #tablo {
+    }
+
+        #tablo .ozellik, #tablo .kisim .ozellik #tablo .grup .ozellik {
+            margin-top: -25px
+        }
+
+        #tablo .ozellik {
+            margin-top: -25px
+        }
+
+        #tablo .kisim .ozellik {
+            margin-top: -25px
+        }
+
+        #tablo .grup .ozellik {
+            margin-top: -25px
+        }
+
+        #tablo .ozellik {
+            padding-top: 15px
+        }
+
+        #tablo .kisim .ozellik {
+            padding-top: 11px
+        }
+
+        #tablo .grup .ozellik {
+            padding-top: 5px
+        }
+
+            #tablo .grup .ozellik strong {
+                margin-top: 8px
+            }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    // safari #tablo #sutun {
+        margin-top: 0
+    }
+}
+
+#outlet1 {
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    margin: 20px -10px 10px
+}
+
+    #outlet1 a {
+        width: 275px;
+        margin: 0 0 10px;
+        padding: 5px 5px 5px 40px;
+        font-weight: 700;
+        border: 1px solid #f5edcf;
+        position: relative
+    }
+
+        #outlet1 a:hover {
+            color: inherit;
+            background: #f8f4e0
+        }
+
+        #outlet1 a .table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0
+        }
+
+    #outlet1 .urun_resim {
+        height: 40px;
+        vertical-align: middle
+    }
+
+        #outlet1 .urun_resim img {
+            display: table-cell
+        }
+
+    #outlet1 .urun_fiyat {
+        width: 100px;
+        height: 40px;
+        vertical-align: middle;
+        font-size: 18px;
+        text-align: right
+    }
+
+    #outlet1 .urun_adi {
+        width: 100%
+    }
+
+#kiyas {
+    float: left;
+    width: 100%;
+    margin: 0 0 5px
+}
+
+    #kiyas ul {
+        float: left
+    }
+
+    #kiyas li {
+        float: left;
+        width: 160px;
+        height: 220px;
+        vertical-align: top;
+        text-align: center
+    }
+
+        #kiyas li a {
+            text-align: center
+        }
+
+            #kiyas li a:hover {
+                background: #f8f4e0
+            }
+
+        #kiyas li.selected a {
+            color: #d96142;
+            font-weight: 700
+        }
+
+        #kiyas li.enabled a:hover {
+            background: #f8f4e0
+        }
+
+aile2 li.selected a:hover {
+    background: 0 0;
+    cursor: default
+}
+
+#kiyas li.disabled a {
+    opacity: .5;
+    filter: alpha(opacity=50)
+}
+
+    #kiyas li.disabled a:hover {
+        cursor: default;
+        color: #000
+    }
+
+#kiyas li a {
+    float: left;
+    padding: 5px 10px;
+    min-width: 120px
+}
+
+    #kiyas li a img {
+        margin: 0 4px
+    }
+
+#kiyas #varyant .varyant .vurun {
+    color: #000
+}
+
+#urun #outlet {
+    float: left;
+    width: 970px;
+    margin: 0;
+    font-size: 15px
+}
+
+    #urun #outlet h2 {
+        margin: 0;
+        padding: 5px;
+        background: #f8f4e0
+    }
+
+    #urun #outlet h3 {
+        width: 956px;
+        padding: 10px 7px;
+        margin: 0;
+        min-height: 20px;
+        height: 20px;
+        background: #f8f4e0;
+        border-bottom: 1px solid #e8dca8;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px
+    }
+
+    #urun #outlet ul {
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 970px
+    }
+
+        #urun #outlet ul li {
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+            #urun #outlet ul li a {
+                float: left;
+                width: 950px;
+                border-bottom: 1px solid #f5edcf;
+                padding: 15px 10px 5px
+            }
+
+                #urun #outlet ul li a:hover {
+                    text-decoration: underline;
+                    background: #f8f4e0
+                }
+
+            #urun #outlet ul li span.site_logo {
+                float: left;
+                width: 160px;
+                white-space: nowrap;
+                padding-left: 30px
+            }
+
+                #urun #outlet ul li span.site_logo p {
+                    font-size: 12px;
+                    color: #505050
+                }
+
+                #urun #outlet ul li span.site_logo img {
+                    vertical-align: middle;
+                    max-width: 135px
+                }
+
+            #urun #outlet ul li span.urun_adi {
+                float: left;
+                width: 500px
+            }
+
+                #urun #outlet ul li span.urun_adi p {
+                    font-size: 12px;
+                    color: #505050
+                }
+
+            #urun #outlet ul li span.urun_fiyat {
+                float: left;
+                width: 140px;
+                text-align: right;
+                font-weight: 700;
+                font-size: 18px
+            }
+
+                #urun #outlet ul li span.urun_fiyat p {
+                    font-size: 11px;
+                    color: #999;
+                    font-weight: 400
+                }
+
+            #urun #outlet ul li span.urun_git {
+                float: right;
+                background: #d96142;
+                color: #fff;
+                padding: 5px 10px;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                font-weight: 700;
+                font-size: 13px
+            }
+
+            #urun #outlet ul li.sitestil {
+                border: 1px dashed #505050;
+                font-weight: 700;
+                margin: 2px 0
+            }
+
+            #urun #outlet ul li.cls {
+                background: #f8f4e0;
+                font-weight: 700
+            }
+
+                #urun #outlet ul li.cls span.urun_garanti {
+                    font-weight: 700;
+                    font-size: 15px
+                }
+
+                #urun #outlet ul li.cls span.urun_kargo {
+                    font-weight: 700;
+                    font-size: 15px
+                }
+
+                #urun #outlet ul li.cls span.urun_fiyat {
+                    text-align: center;
+                    font-size: 15px
+                }
+
+    #urun #outlet h3 .sirala {
+        font-size: 12px
+    }
+
+    #urun #outlet h3 button {
+        background: #fff;
+        border: 1px solid #e8dca8;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        margin: 0 5px;
+        padding: 3px 5px;
+        font-weight: 700
+    }
+
+        #urun #outlet h3 button:hover {
+            cursor: pointer;
+            color: #d96142
+        }
+
+.d96142 {
+    color: #d96142
+}
+
+#urun #outlet ul li.grupla {
+    display: none
+}
+
+#urun #outlet ul li p {
+    margin: 0 0 5px
+}
+
+#urun #outlet .asagi {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    margin: -56px 0 0 5px;
+    cursor: pointer;
+    background: url(https://resim.epey.com/tema/asagiyukari.png) no-repeat
+}
+
+#urun #outlet .yukari {
+    background-position: 0 -30px
+}
+
+#urun #outlet .fiyatyok {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 700
+}
+
+#urun #outlet .urun_adi span {
+    float: left;
+    padding: 2px 5px;
+    border-bottom: 1px solid #e8dca8;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin-right: 5px;
+    font-size: 13px;
+    margin-top: 4px;
+    font-weight: 700
+}
+
+    #urun #outlet .urun_adi span.etiket2 {
+        border-bottom: 1px solid #d96142;
+        color: #d96142
+    }
+
+    #urun #outlet .urun_adi span.etiket3 {
+        font-weight: 700
+    }
+
+#urun #outlet hr {
+    border: 1px solid #d96142;
+    margin-bottom: 0
+}
+
+.bildir {
+    float: right;
+    background: url(https://resim.epey.com/tema/edit.png) no-repeat;
+    padding: 0 0 0 26px;
+    margin: 2px 0 0 5px;
+    height: 24px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px
+}
+
+#bilgiler span.selected, #fiyatlar span.selected {
+    border: 2px solid #d96142
+}
+
+.edit {
+    background: url(https://resim.epey.com/tema/edit.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    margin: 5px 5px 0 0;
+    float: right;
+    cursor: pointer
+}
+
+.send {
+    background: url(https://resim.epey.com/tema/send.png) no-repeat
+}
+
+.check {
+    background: url(https://resim.epey.com/tema/check.png) no-repeat;
+    cursor: auto
+}
+
+#bilgiler input {
+    float: left;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 2px solid #f0e4ba;
+    margin-top: 5px;
+    width: 100%;
+    padding: 3px 5px
+}
+
+#fiyatlar .fiyat .edit {
+    float: right;
+    margin: 10px -30px 0 0
+}
+
+.ribbon {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right
+}
+
+    .ribbon span {
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        width: 100px;
+        display: block;
+        background: #79a70a;
+        background: linear-gradient(#D96142 0%,#8F0808 100%);
+        box-shadow: 0 3px 10px -5px #000;
+        position: absolute;
+        top: 19px;
+        left: -21px
+    }
+
+        .ribbon span::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid #8f0808;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #8f0808
+        }
+
+        .ribbon span::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid #8f0808;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #8f0808
+        }
+
+.progress {
+    height: 5px;
+    overflow: hidden;
+    margin-top: 3px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1)
+}
+
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease
+}
+
+.progress-striped .progress-bar {
+    background-image: -webkit-linear-gradient(45deg,#F0E4BA 25%,transparent 25%,transparent 50%,#F0E4BA 50%,#F0E4BA 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,#F0E4BA 25%,transparent 25%,transparent 50%,#F0E4BA 50%,#F0E4BA 75%,transparent 75%,transparent);
+    background-size: 40px 40px
+}
+
+.progress.active .progress-bar {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite
+}
+
+.progress-bar-success {
+    background-color: #5cb85c
+}
+
+.progress-striped .progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg,#F0E4BA 25%,transparent 25%,transparent 50%,#F0E4BA 50%,#F0E4BA 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,#F0E4BA 25%,transparent 25%,transparent 50%,#F0E4BA 50%,#F0E4BA 75%,transparent 75%,transparent)
+}
+
+.progress-bar-info {
+    background-color: #f0e4ba
+}
+
+.progress-striped .progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg,#F0E4BA 25%,transparent 25%,transparent 50%,#F0E4BA 50%,#F0E4BA 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,#F0E4BA 25%,transparent 25%,transparent 50%,#F0E4BA 50%,#F0E4BA 75%,transparent 75%,transparent)
+}
+
+.progress-bar-warning {
+    background-color: #f0ad4e
+}
+
+.progress-striped .progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg,#F0E4BA 25%,transparent 25%,transparent 50%,#F0E4BA 50%,#F0E4BA 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,#F0E4BA 25%,transparent 25%,transparent 50%,#F0E4BA 50%,#F0E4BA 75%,transparent 75%,transparent)
+}
+
+.progress-bar-danger {
+    background-color: #d9534f
+}
+
+.progress-striped .progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg,#F0E4BA 25%,transparent 25%,transparent 50%,#F0E4BA 50%,#F0E4BA 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,#F0E4BA 25%,transparent 25%,transparent 50%,#F0E4BA 50%,#F0E4BA 75%,transparent 75%,transparent)
+}
+
+h2.mediamarkt {
+    float: left;
+    width: 950px;
+    padding: 5px 10px;
+    background: #f8f4e0;
+    margin: 0
+}
+
+#medimarkt {
+    width: 100%;
+    margin: 15px 0 0;
+    border-collapse: separate;
+    border-spacing: 5px;
+    text-align: center
+}
+
+    #medimarkt .varyant {
+        border: 2px solid #f0e4ba;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center
+    }
+
+        #medimarkt .varyant:hover {
+            border: 2px solid #505050
+        }
+
+    #medimarkt .selected {
+        border: 2px solid #d96142
+    }
+
+    #medimarkt .varyant .vresim {
+        text-align: center;
+        float: left;
+        width: 184px;
+        height: 150px
+    }
+
+        #medimarkt .varyant .vresim img {
+            max-width: 160px;
+            max-height: 140px;
+            margin: 5px 0 0
+        }
+
+    #medimarkt .varyant .vurunfiyat {
+        text-align: center;
+        float: left;
+        width: 184px
+    }
+
+    #medimarkt .varyant .vurun {
+        font-weight: 700;
+        float: left;
+        width: 174px;
+        height: 40px;
+        padding: 0 5px;
+        overflow: hidden
+    }
+
+    #medimarkt .varyant .vfiyat {
+        font-weight: 700;
+        font-size: 18px;
+        float: left;
+        width: 184px;
+        margin: 5px 0
+    }
+
+        #medimarkt .varyant .vfiyat span {
+            font-size: 13px
+        }
+
+ul.listelegr {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    width: 100%
+}
+
+    ul.listelegr a {
+        width: 200px;
+        height: 250px;
+        border: 1px solid #f8f4e0;
+        vertical-align: top;
+        padding: 5px 25px;
+        position: relative
+    }
+
+        ul.listelegr a #checkbox {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 5px;
+            right: 5px
+        }
+
+        ul.listelegr a .resim {
+        }
+
+        ul.listelegr a .kategori_adi {
+            font-size: 11px;
+            font-weight: 700
+        }
+
+        ul.listelegr a .resim .cell {
+            width: 240px;
+            height: 150px;
+            text-align: center;
+            vertical-align: middle
+        }
+
+        ul.listelegr a .resim .cell {
+            width: 240px;
+            height: 150px;
+            text-align: center;
+            vertical-align: middle
+        }
+
+        ul.listelegr a .resim img {
+            max-width: 150px;
+            max-height: 150px
+        }
+
+        ul.listelegr a .adi {
+            float: left;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
+            height: 40px;
+            overflow: hidden
+        }
+
+        ul.listelegr a .fiyat {
+            font-weight: 700;
+            font-size: 15px;
+            text-align: left
+        }
+
+        ul.listelegr a .birimfiyat {
+            color: #d96142;
+            font-weight: 700;
+            font-size: 12px;
+            text-align: left
+        }
+
+        ul.listelegr a .fiyat.eski {
+            display: block;
+            text-decoration: line-through;
+            font-size: 15px;
+            color: #999;
+            font-weight: 400
+        }
+
+        ul.listelegr a .fiyatsayi {
+            font-size: 12px;
+            text-align: left
+        }
+
+#harictut {
+    position: relative;
+    width: 103px;
+    float: right;
+    font-weight: 700;
+    margin-right: -5px
+}
+
+    #harictut *, #harictut *:before, #harictut *:after {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    #harictut input[type=checkbox] {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+
+        #harictut input[type=checkbox][disabled] ~ label {
+            pointer-events: none
+        }
+
+            #harictut input[type=checkbox][disabled] ~ label .harictut__switch {
+                opacity: .4
+            }
+
+        #harictut input[type=checkbox]:checked ~ label .harictut__switch:before {
+            content: attr(data-unchecked);
+            left: 0
+        }
+
+        #harictut input[type=checkbox]:checked ~ label .harictut__switch:after {
+            content: attr(data-checked)
+        }
+
+    #harictut label {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        position: relative;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+        #harictut label #harictut__label-text {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1
+        }
+
+        #harictut label .harictut__switch {
+            position: relative
+        }
+
+            #harictut label .harictut__switch:before {
+                content: attr(data-checked);
+                position: absolute;
+                top: 0;
+                text-align: center
+            }
+
+            #harictut label .harictut__switch:after {
+                content: attr(data-unchecked);
+                position: absolute;
+                z-index: 5;
+                text-align: center;
+                background: #fff;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0)
+            }
+
+    #harictut input[type=checkbox][disabled] ~ label {
+        color: rgba(119,119,119,.5)
+    }
+
+    #harictut input[type=checkbox]:focus ~ label .harictut__switch, #harictut input[type=checkbox]:hover ~ label .harictut__switch {
+        background-color: #777
+    }
+
+        #harictut input[type=checkbox]:focus ~ label .harictut__switch:after, #harictut input[type=checkbox]:hover ~ label .harictut__switch:after {
+            color: #5e5e5e
+        }
+
+    #harictut input[type=checkbox]:hover ~ label {
+        color: #6a6a6a
+    }
+
+    #harictut input[type=checkbox]:checked ~ label:hover {
+        color: #55bc49
+    }
+
+    #harictut input[type=checkbox]:checked ~ label .harictut__switch {
+        background-color: #848484
+    }
+
+        #harictut input[type=checkbox]:checked ~ label .harictut__switch:after {
+            color: #848484
+        }
+
+    #harictut input[type=checkbox]:checked:focus ~ label .harictut__switch, #harictut input[type=checkbox]:checked:hover ~ label .harictut__switch {
+        background-color: #848484
+    }
+
+        #harictut input[type=checkbox]:checked:focus ~ label .harictut__switch:after, #harictut input[type=checkbox]:checked:hover ~ label .harictut__switch:after {
+            color: #848484
+        }
+
+    #harictut label #harictut__label-text {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1
+    }
+
+    #harictut label .harictut__switch {
+        -webkit-transition: background-color .3s cubic-bezier(0,1,.5,1);
+        transition: background-color .3s cubic-bezier(0,1,.5,1);
+        background: #848484
+    }
+
+        #harictut label .harictut__switch:before {
+            color: rgba(255,255,255,.5)
+        }
+
+        #harictut label .harictut__switch:after {
+            -webkit-transition: -webkit-transform .3s cubic-bezier(0,1,.5,1);
+            transition: transform .3s cubic-bezier(0,1,.5,1);
+            color: #777
+        }
+
+    #harictut input[type=checkbox]:focus ~ label .harictut__switch:after, #harictut input[type=checkbox]:hover ~ label .harictut__switch:after {
+        box-shadow: 0 3px 3px rgba(0,0,0,.4)
+    }
+
+    #harictut input[type=checkbox]:checked ~ label .harictut__switch:after {
+        -webkit-transform: translate3d(100px,0,0);
+        transform: translate3d(50px,0,0)
+    }
+
+    #harictut input[type=checkbox]:checked:focus ~ label .harictut__switch:after, #harictut input[type=checkbox]:checked:hover ~ label .harictut__switch:after {
+        box-shadow: 0 3px 3px rgba(0,0,0,.4)
+    }
+
+    #harictut label {
+        font-size: 14px
+    }
+
+        #harictut label .harictut__switch {
+            height: 22px;
+            -webkit-flex: 0 0 102px;
+            -ms-flex: 0 0 102px;
+            flex: 0 0 102px;
+            border-radius: 4px
+        }
+
+            #harictut label .harictut__switch:before {
+                left: 53px;
+                font-size: 12px;
+                line-height: 22px;
+                width: 48px
+            }
+
+            #harictut label .harictut__switch:after {
+                top: 2px;
+                left: 2px;
+                border-radius: 2px;
+                width: 48px;
+                line-height: 18px;
+                font-size: 12px
+            }
+
+            #harictut label .harictut__switch:hover:after {
+                box-shadow: 0 3px 3px rgba(0,0,0,.4)
+            }
+
+#listele #filtre .harictut, #listele #filtre .harictut .ozellik {
+    background: #e5e5e5
+}
+
+#fbaslik {
+    float: left;
+    width: 100%;
+    margin: 15px 0
+}
+
+#favorilerim {
+    float: left;
+    min-height: calc(100vh - 300px)
+}
+
+    #favorilerim li {
+        float: left;
+        width: 467px;
+        height: 125px;
+        border: 1px solid #e8dca8;
+        margin: 0 3px 4px;
+        padding: 5px;
+        position: relative
+    }
+
+        #favorilerim li span {
+            margin: 5px 0
+        }
+
+        #favorilerim li .resim {
+            float: left;
+            text-align: center;
+            text-align: center;
+            width: 120px;
+            margin-right: 15px
+        }
+
+        #favorilerim li .adi {
+            display: block;
+            width: 425px;
+            font-size: 13px
+        }
+
+            #favorilerim li .adi a {
+                font-size: 15px;
+                font-weight: 700
+            }
+
+        #favorilerim li .varyant {
+            font-size: 13px;
+            font-weight: 400
+        }
+
+        #favorilerim li .fiyat {
+            display: block
+        }
+
+            #favorilerim li .fiyat span {
+                float: left;
+                width: 140px;
+                height: 50px
+            }
+
+                #favorilerim li .fiyat span strong {
+                    display: block;
+                    font-size: 15px
+                }
+
+            #favorilerim li .fiyat .arrow {
+                width: 50px;
+                background: url(https://resim.epey.com/tema/arrow.png?v=2) no-repeat
+            }
+
+        #favorilerim li .tarih {
+            display: block;
+            font-size: 13px
+        }
+
+        #favorilerim li .degisim {
+            position: absolute;
+            top: 0;
+            right: 3px;
+            width: 24px;
+            text-align: center
+        }
+
+        #favorilerim li .artis {
+            background: url(https://resim.epey.com/tema/artis.png?v=2) no-repeat top;
+            padding: 20px 0 0 0
+        }
+
+        #favorilerim li .dusus {
+            background: url(https://resim.epey.com/tema/dusus.png?v=2) no-repeat bottom;
+            padding: 0 0 20px 0
+        }
+
+        #favorilerim li .sil {
+            position: absolute;
+            bottom: 0;
+            right: 3px;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            background: url(https://resim.epey.com/tema/delete.png?v=1) no-repeat bottom;
+            cursor: pointer
+        }
+
+#filtrelerim {
+    float: left;
+    min-height: calc(100vh - 650px)
+}
+
+    #filtrelerim li {
+        float: left;
+        width: 957px;
+        border: 1px solid #e8dca8;
+        margin: 0 3px 4px 0;
+        padding: 5px;
+        font-weight: 700
+    }
+
+        #filtrelerim li .sil {
+            float: right;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            background: url(https://resim.epey.com/tema/delete.png?v=1) no-repeat bottom;
+            cursor: pointer
+        }
+
+ul.favorilerim {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    width: 100%
+}
+
+    ul.favorilerim li {
+        float: left;
+        width: 232px;
+        height: 250px;
+        border: 1px solid #f8f4e0;
+        vertical-align: top;
+        padding: 5px 10px;
+        position: relative
+    }
+
+        ul.favorilerim li #checkbox {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 5px;
+            right: 5px
+        }
+
+        ul.favorilerim li .resim {
+        }
+
+            ul.favorilerim li .resim .cell {
+                width: 240px;
+                height: 150px;
+                text-align: center;
+                vertical-align: middle
+            }
+
+            ul.favorilerim li .resim img {
+                max-width: 150px;
+                max-height: 150px
+            }
+
+        ul.favorilerim li .adi {
+            float: left;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
+            height: 40px;
+            overflow: hidden
+        }
+
+        ul.favorilerim li .fiyat {
+            font-weight: 700;
+            font-size: 15px;
+            text-align: left
+        }
+
+        ul.favorilerim li .birimfiyat {
+            color: #d96142;
+            font-weight: 700;
+            font-size: 12px;
+            text-align: left
+        }
+
+        ul.favorilerim li .fiyatsayi {
+            font-size: 12px;
+            text-align: left
+        }
+
+        ul.favorilerim li .degisim {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 24px;
+            text-align: center
+        }
+
+        ul.favorilerim li .sabit {
+            background: url(https://resim.epey.com/tema/sabit.png?v=2) no-repeat top;
+            padding: 20px 0 0 0
+        }
+
+        ul.favorilerim li .artis {
+            background: url(https://resim.epey.com/tema/artis.png?v=2) no-repeat top;
+            padding: 20px 0 0 0
+        }
+
+        ul.favorilerim li .dusus {
+            background: url(https://resim.epey.com/tema/dusus.png?v=2) no-repeat bottom;
+            padding: 0 0 20px 0
+        }
+
+        ul.favorilerim li .sil {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            background: url(https://resim.epey.com/tema/delete.png?v=1) no-repeat bottom;
+            cursor: pointer
+        }
+
+        ul.favorilerim li .eski {
+            float: left;
+            width: 115px;
+            height: 50px
+        }
+
+        ul.favorilerim li .yeni {
+            float: right;
+            width: 115px;
+            height: 50px;
+            text-align: right
+        }
+
+        ul.favorilerim li .arrow {
+            float: left;
+            width: 40px;
+            height: 50px;
+            background: url(https://resim.epey.com/tema/arrow.png?v=2) no-repeat
+        }
+
+.mesaj {
+    float: left;
+    width: 100%;
+    text-align: center
+}
+
+    .mesaj .uyari {
+        float: left;
+        width: 300px;
+        font-weight: 700;
+        background: url(https://resim.epey.com/tema/alert.png) no-repeat;
+        background-position: center top;
+        padding-top: 24px;
+        margin-bottom: 20px
+    }
+
+        .mesaj .uyari a {
+            color: #d96142
+        }
+
+            .mesaj .uyari a:hover {
+                text-decoration: underline
+            }
+
+#sifirla .mesaj {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+#sifirla .final {
+    float: left;
+    width: 100%;
+    margin-top: 30px
+}
+
+#giris {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+    min-height: calc(100vh - 300px)
+}
+
+    #giris .uyelik_logo {
+        text-align: center
+    }
+
+    #giris .uye_giris {
+        text-align: center;
+        flex-wrap: wrap
+    }
+
+    #giris .kaydol {
+        text-align: center;
+        flex-wrap: wrap
+    }
+
+    #giris .uyelik_alan {
+        width: 300px;
+        height: 50px;
+        padding: 15px;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 3px 0;
+        box-sizing: border-box;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px
+    }
+
+    #giris .giris, #giris .uye_ol {
+        width: 300px;
+        padding: 15px 10px;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 3px 0;
+        box-sizing: border-box;
+        border: none;
+        color: #fff;
+        cursor: pointer
+    }
+
+    #giris .epey-giris {
+        background-color: #d96142;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px
+    }
+
+        #giris .epey-giris:hover {
+            background-color: #df7a66;
+            transition: ease 1s
+        }
+
+    #giris .fb-giris {
+        background-color: #3c5a99
+    }
+
+        #giris .fb-giris:hover {
+            background-color: #4d669b;
+            transition: ease 1s
+        }
+
+    #giris .go-giris {
+        background-color: #db4437
+    }
+
+        #giris .go-giris:hover {
+            background-color: #dd5d51;
+            transition: ease 1s
+        }
+
+    #giris .ayrac {
+        border-top: 1px solid #d96142;
+        width: 300px
+    }
+
+    #giris .dikey-cizgi {
+        border-left: 1px solid #d96142;
+        height: 350px;
+        margin-left: 50px;
+        margin-right: 50px
+    }
+
+    #giris .uyelik_alan {
+        border: 1px solid #d96142
+    }
+
+    #giris .sifre_unut {
+        float: right
+    }
+
+.g-signin2 > div {
+    margin: 5px auto
+}
+
+#bilgilerim {
+    float: left;
+    padding: 25px 15px 0;
+    width: 938px;
+    min-height: calc(100vh - 650px);
+    border: 1px solid #e8dca8
+}
+
+    #bilgilerim .uye_giris strong {
+        float: left;
+        width: 120px;
+        padding: 15px 0
+    }
+
+    #bilgilerim .uyelik_alan {
+        width: 300px;
+        height: 50px;
+        padding: 15px;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 3px 0;
+        box-sizing: border-box;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px
+    }
+
+    #bilgilerim .giris, #bilgilerim .uye_ol {
+        width: 300px;
+        padding: 15px 10px;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 3px 0;
+        box-sizing: border-box;
+        border: none;
+        color: #fff;
+        cursor: pointer
+    }
+
+    #bilgilerim .epey-giris {
+        background-color: #d96142;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px
+    }
+
+        #bilgilerim .epey-giris:hover {
+            background-color: #df7a66;
+            transition: ease 1s
+        }
+
+    #bilgilerim .fb-giris {
+        background-color: #3c5a99
+    }
+
+        #bilgilerim .fb-giris:hover {
+            background-color: #4d669b;
+            transition: ease 1s
+        }
+
+    #bilgilerim .go-giris {
+        background-color: #db4437
+    }
+
+        #bilgilerim .go-giris:hover {
+            background-color: #dd5d51;
+            transition: ease 1s
+        }
+
+    #bilgilerim .ayrac {
+        border-top: 1px solid #d96142;
+        width: 300px
+    }
+
+    #bilgilerim .dikey-cizgi {
+        border-left: 1px solid #d96142;
+        height: 350px;
+        margin-left: 50px;
+        margin-right: 50px
+    }
+
+    #bilgilerim .uyelik_alan {
+        border: 1px solid #d96142
+    }
+
+    #bilgilerim .sifre_unut {
+        float: right
+    }
+
+#uyelik {
+    min-height: 500px
+}
+
+    #uyelik h1 {
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0
+    }
+
+    #uyelik #sifirla {
+        float: left;
+        width: 100%;
+        text-align: center
+    }
+
+    #uyelik .uyelik_logo {
+        text-align: center
+    }
+
+    #uyelik .cerceve_giris {
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 25px
+    }
+
+    #uyelik .uye_giris {
+        text-align: center;
+        flex-wrap: wrap
+    }
+
+    #uyelik .kaydol {
+        text-align: center;
+        flex-wrap: wrap
+    }
+
+    #uyelik .uyelik_alan {
+        width: 300px;
+        height: 50px;
+        padding: 15px;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 3px 0;
+        box-sizing: border-box
+    }
+
+    #uyelik .giris, #uyelik .uye_ol {
+        width: 300px;
+        padding: 15px 10px;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 3px 0;
+        box-sizing: border-box;
+        border: none;
+        color: #fff;
+        cursor: pointer
+    }
+
+    #uyelik .epey-giris {
+        background-color: #d96142
+    }
+
+        #uyelik .epey-giris:hover {
+            background-color: #df7a66;
+            transition: ease 1s
+        }
+
+    #uyelik .fb-giri#uyelik s {
+        background-color: #3c5a99
+    }
+
+    #uyelik .fb-giris:hover {
+        background-color: #4d669b;
+        transition: ease 1s
+    }
+
+    #uyelik .go-giris {
+        background-color: #db4437
+    }
+
+        #uyelik .go-giris:hover {
+            background-color: #dd5d51;
+            transition: ease 1s
+        }
+
+    #uyelik .ayrac {
+        border-top: 1px solid #d96142;
+        width: 300px
+    }
+
+    #uyelik .dikey-cizgi {
+        border-left: 1px solid #d96142;
+        height: 350px;
+        margin-left: 50px;
+        margin-right: 50px
+    }
+
+    #uyelik .uyelik_alan {
+        border: 1px solid #d96142
+    }
+
+    #uyelik .sifre_unut {
+        float: right
+    }
+
+#garama {
+    float: left;
+    width: 650px;
+    height: 40px;
+    border: 1px solid #d96142;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin-left: 25px
+}
+
+    #garama .arama {
+        width: 559px;
+        font-size: 15px;
+        margin-top: 4px;
+        font: bold 13px/20px 'Titillium Web',Arial
+    }
+
+#uye_panel {
+    position: relative;
+    width: 102px;
+    height: 36px;
+    border: 1px solid #d96142;
+    cursor: pointer;
+    padding: 4px 0 0 35px;
+    border-radius: 3px;
+    float: left;
+    background: url(https://resim.epey.com/tema/user.png) 5px 10px no-repeat
+}
+
+.genel_ara {
+    z-index: 1000
+}
+
+#uye_menu_liste {
+    display: none;
+    position: absolute;
+    min-width: 136px;
+    z-index: 60000;
+    right: 0;
+    top: 41px
+}
+
+.uye_menu_liste {
+    border: 1px solid #d96142;
+    min-width: 136px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+    border-radius: 3px;
+    background: #fff;
+    margin-top: 7px
+}
+
+..uye_menu_liste:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 92%;
+    right: 15px;
+    border-width: 0 6px 6px;
+    border-style: solid;
+    border-color: #fff transparent
+}
+
+..uye_menu_liste:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 92%;
+    right: 13px;
+    border-width: 0 8px 8px;
+    border-style: solid;
+    border-color: #e8dca8 transparent
+}
+
+#uye_panel:hover #uye_menu_liste {
+    display: block
+}
+
+.uye_menu_liste a {
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px
+}
+
+    .uye_menu_liste a:hover {
+        color: #d96142;
+        text-decoration: none
+    }
+
+.bildirim_icon {
+    float: right;
+    margin-right: 7px;
+    margin-top: 4px
+}
+
+.bildirim_sayisi {
+    float: right
+}
+
+.panelliste {
+    font-size: 15px
+}
+
+    .panelliste span {
+        display: block;
+        font-size: 12px;
+        line-height: 17px
+    }
+
+        .panelliste span.sp1 {
+            font-size: 16px;
+            font-weight: 700
+        }
+
+    .panelliste .descikon {
+        float: right;
+        width: 25px;
+        height: 17px;
+        background: url(https://resim.epey.com/tema/down.png?v=3) no-repeat;
+        margin: 10px 0 0
+    }
+
+#blok {
+    float: left;
+    width: 100%;
+    background: #f8f4e0;
+    border-collapse: separate;
+    border-spacing: 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+}
+
+    #blok h2 {
+        margin: 8px 8px 5px
+    }
+
+        #blok h2 a {
+            float: right;
+            padding: 0 3px;
+            color: #d96142;
+            font-size: 13px
+        }
+
+    #blok .blok {
+        float: left;
+        width: 314px;
+        height: 110px;
+        background: #fff;
+        border: 1px solid #fff;
+        margin: 0 2px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px
+    }
+
+        #blok .blok:hover {
+            border: 1px solid #d96142
+        }
+
+        #blok .blok .resim {
+            width: 120px;
+            height: 100px;
+            vertical-align: middle;
+            text-align: center
+        }
+
+            #blok .blok .resim img {
+                max-width: 110px;
+                max-height: 90px
+            }
+
+        #blok .blok .adi {
+            display: block;
+            height: 60px;
+            overflow: hidden;
+            margin: 0 0 3px
+        }
+
+        #blok .blok .fiyat {
+            display: block;
+            font-weight: 700;
+            font-size: 18px
+        }
+
+        #blok .blok .eski {
+            display: block;
+            text-decoration: line-through;
+            font-size: 15px;
+            color: #999;
+            font-weight: 400
+        }
+
+        #blok .blok .ozellik {
+            display: block
+        }
+
+    #blok .blok1 {
+        height: 130px
+    }
+
+        #blok .blok1 .resim {
+            width: 80px;
+            height: 120px;
+            vertical-align: middle;
+            text-align: center
+        }
+
+            #blok .blok1 .resim img {
+                max-height: 120px
+            }
+
+        #blok .blok1 .ozellik .deger {
+            float: left;
+            width: 95px;
+            margin: 0 10px 5px 0
+        }
+
+        #blok .blok1 .adi {
+            font-weight: 700;
+            display: block;
+            height: 25px;
+            overflow: hidden;
+            margin: 0 0 3px
+        }
+
+        #blok .blok1 .fiyat {
+            font-weight: 400;
+            font-size: 15px
+        }
+
+    #blok .soneklenenler .blok {
+        width: 233px;
+        height: 100px;
+        overflow: hidden
+    }
+
+        #blok .soneklenenler .blok .resim {
+            width: 90px;
+            height: 90px
+        }
+
+            #blok .soneklenenler .blok .resim img {
+                max-width: 80px;
+                max-height: 80px
+            }
+
+        #blok .soneklenenler .blok .adi {
+            height: 60px;
+            overflow: hidden
+        }
+
+#anasayfa #blok {
+    margin-top: 5px
+}
+
+#urun #blok {
+    margin-bottom: 5px
+}
+
+.wallpapers-img {
+    height: 150px;
+    overflow: hidden;
+    width: 100%;
+    position: relative
+}
+
+    .wallpapers-img img {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+.card {
+    height: 100%
+}
+
+[data-name=buttons-text-filter].jplist-selected {
+    color: #fff
+}
+
+.jplist-selected, .jplist-selected:hover, .jplist-selected:active, .jplist-selected:focus {
+    background-color: #000;
+    border-color: #007bff;
+    outline: none
+}
+
+#fiyatlar #deger button {
+    float: right;
+    font: 13px/20px 'Titillium Web',Arial;
+    background: #fff;
+    padding: 3px 10px;
+    margin: 0 0 5px 5px;
+    font-weight: 700;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid #f0e4ba
+}
+
+    #fiyatlar #deger button:first-child {
+    }
+
+    #fiyatlar #deger button.jplist-selected {
+        color: #000;
+        border: 2px solid #d96142
+    }
+
+#fiyatlar #deger .deger {
+    float: left;
+    width: 100%;
+    margin-top: 5px
+}
+
+#fiyatlar #deger .deger1 label {
+    min-width: 65px
+}
+
+.jplist-items-number-0 > ul.pagination {
+    display: none !important
+}
+
+.jplist-items-number-0 > span[data-type=info] {
+    margin-left: 0 !important
+}
+
+p.kodred {
+    color: #d96142
+}
+
+    p.kodred span {
+        color: #d96142;
+        text-decoration: underline;
+        text-decoration-style: dashed
+    }
+
+        p.kodred span:hover {
+            text-decoration: underline;
+            text-decoration-style: solid;
+            color: #000
+        }
+
+.copyToClipboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #d96142;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0
+}
+
+#cookienotice {
+    background: #f8f4e0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000000;
+    height: 20px;
+    opacity: .9;
+    padding: 10px;
+    border: 1px solid #d96142;
+    text-align: center;
+    width: 100%
+}
+
+#cookie_agree {
+    cursor: pointer;
+    padding-left: 50px
+}
+
+#poparama {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #e8dca8;
+    padding: 15px 0;
+    margin: 5px 0
+}
+
+    #poparama ul {
+        float: left;
+        text-align: left;
+        margin: 0 75px 0 10px;
+        max-height: 400px
+    }
+
+.yorum_islem {
+    position: absolute
+}
+
+    .yorum_islem span {
+        display: block;
+        left: 789px;
+        top: 468px;
+        width: 100px;
+        border-bottom: 1px solid #e8dca8;
+        background: #f8f4e0;
+        padding: 6px 0 5px;
+        margin: 0 2px;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: center
+    }
+
+        .yorum_islem span:hover {
+            color: #d96142
+        }
+
+#fiyatlar input {
+    float: left;
+    width: 900px;
+    padding: 6px 8px;
+    margin: 5px 0;
+    border: 2px solid #f0f0f0
+}

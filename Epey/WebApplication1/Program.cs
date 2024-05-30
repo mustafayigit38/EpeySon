@@ -1,17 +1,25 @@
+
+
 using Microsoft.AspNetCore.Authentication.Cookies;
+using WebApplication1;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(c => {
-                    c.Cookie.Name = "FihristUserCookie";
-                    c.LoginPath = "/Account/Login";
-                    c.LogoutPath = "/Account/Logout";
-                    c.AccessDeniedPath = "/Account/AccessDenied";
-                    c.ExpireTimeSpan = TimeSpan.FromSeconds(120);
-                });
+				.AddCookie(c =>
+				{
+					c.Cookie.Name = "EpeyUserCookie";
+					c.LoginPath = "/Account/Login";
+					c.LogoutPath = "/Account/Logout";
+					c.AccessDeniedPath = "/Account/AccessDenied";
+					c.ExpireTimeSpan = TimeSpan.FromSeconds(200);
+				});
+
+
+builder.Services.AddPersistenceServices();
+
 
 var app = builder.Build();
 
@@ -29,6 +37,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
 
 app.MapControllerRoute(
 	name: "default",
