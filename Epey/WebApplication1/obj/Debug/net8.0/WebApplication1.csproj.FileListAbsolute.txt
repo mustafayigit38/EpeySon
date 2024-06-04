@@ -499,9 +499,7 @@ C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\staticwebass
 C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication1.props
 C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebApplication1.props
 C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\scopedcss\bundle\WebApplication1.styles.css
-C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\scopedcss\projectbundle\WebApplication1.bundle.scp.css
 C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\WebAppli.7D14BD69.Up2Date
 C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\WebApplication1.dll
 C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\refint\WebApplication1.dll
@@ -762,3 +760,4 @@ C:\Users\Samed\Source\Repos\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\WebApp
 C:\Users\Samed\Source\Repos\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Samed\Source\Repos\EpeySon\Epey\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
 C:\Users\Samed\source\repos\EpeySon\Epey\WebApplication1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\USER\Desktop\EpeySon\Epey\WebApplication1\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
