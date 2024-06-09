@@ -18,7 +18,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 				});
 
 
-builder.Services.AddPersistenceServices();
 
 
 var app = builder.Build();

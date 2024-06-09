@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using WebApplication1.Models;
-using WebApplication1.Repositories;
 
 namespace WebApplication1.Controllers
 {
@@ -10,18 +9,16 @@ namespace WebApplication1.Controllers
     [Authorize]
     public class CategoryController : Controller
     {
-        private readonly IWriteRepository<Category> _categoryWriteRepository;
-        private readonly IReadRepository<Category> _categoryReadRepository;
+        private readonly EpeyContext epeyContext;
 
-        public CategoryController(IWriteRepository<Category> categoryWriteRepository, IReadRepository<Category> categoryReadRepository)
+        public CategoryController()
         {
-            _categoryWriteRepository = categoryWriteRepository;
-            _categoryReadRepository = categoryReadRepository;
+            epeyContext = new EpeyContext();
         }
 
         public IActionResult Index()
         {
-            var categories = _categoryReadRepository.GetAll();
+            var categories = epeyContext.Categories.ToList();
 
             return View(categories);
         }
@@ -36,7 +33,7 @@ namespace WebApplication1.Controllers
         public async Task<IActionResult> Create([FromForm] Category model)
         {
 
-            await _categoryWriteRepository.AddAsync(
+            await epeyContext.Categories.AddAsync(
                 new()
                 {
                     Name = model.Name,
@@ -44,7 +41,7 @@ namespace WebApplication1.Controllers
                 }
             );
 
-            await _categoryWriteRepository.SaveAsync();
+            await epeyContext.SaveChangesAsync();
 
 
 
