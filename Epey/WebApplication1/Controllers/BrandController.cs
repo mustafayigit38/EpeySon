@@ -2,27 +2,22 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WebApplication1.Models;
-using WebApplication1.Repositories;
 
 namespace WebApplication1.Controllers
 {
     [Authorize]
     public class BrandController : Controller
     {
-        private readonly IWriteRepository<Brand> _brandWriteRepository;
-        private readonly IReadRepository<Brand> _brandReadRepository;
-        private readonly IReadRepository<Category> _categoryReadRepository;
+        private readonly EpeyContext epeyContext;
 
-        public BrandController(IWriteRepository<Brand> brandWriteRepository, IReadRepository<Brand> brandReadRepository, IReadRepository<Category> categoryReadRepository)
+        public BrandController()
         {
-            _brandWriteRepository = brandWriteRepository;
-            _brandReadRepository = brandReadRepository;
-            _categoryReadRepository = categoryReadRepository;
+            epeyContext = new EpeyContext();
         }
 
         public IActionResult Index()
         {
-            var brands = _brandReadRepository.GetAll();
+            var brands = epeyContext.Brands.ToList();
 
             return View(brands);
         }
@@ -38,7 +33,7 @@ namespace WebApplication1.Controllers
         public async Task<IActionResult> Create([FromForm] Brand model)
         {
 
-            await _brandWriteRepository.AddAsync(
+            await epeyContext.Brands.AddAsync(
                 new()
                 {
                     Name = model.Name,
@@ -46,7 +41,7 @@ namespace WebApplication1.Controllers
                 }
             );
 
-            await _brandWriteRepository.SaveAsync();
+            await epeyContext.SaveChangesAsync();
 
 
             return RedirectToAction("Create","Brand");

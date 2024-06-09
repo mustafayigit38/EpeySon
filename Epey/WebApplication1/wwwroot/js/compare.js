@@ -1,14 +1,31 @@
 ﻿function Compareit(id) {
-    var state = JSON.parse(localStorage.getItem("compareitems"));
-    if (state === null) {
-        state = [];
-    }
 
-    if (state.includes(id)) {
-        state = state.filter(x => x !== id);
-    } else {
-        state.push(id);
-    }
+    fetch('/Phone/AddToCompare?id=' + id, {
+        method: 'POST',
+    }).then(response => response.status)
+        .then(status => {
 
-    localStorage.setItem("compareitems", JSON.stringify(state));
+            if (status == 201) {
+                location.reload();
+            }
+
+        })       
+
+   
+}
+
+function ClearCompare() {
+
+    fetch('/Phone/CompareItemsClear', {
+        method: 'POST',
+    }).then(response => response.status)
+        .then(status => {
+
+            if (status == 202) {
+                location.reload();
+            }
+
+        })
+
+
 }

@@ -2,52 +2,56 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.IO;
+using System.Net;
 using WebApplication1.Models;
-using WebApplication1.Models.PhoneSpecs.PhoneBattery;
+using WebApplication1.ViewModels;
+
 using WebApplication1.Models.PhoneSpecs.PhoneScreen;
-using WebApplication1.Repositories;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize]
     public class PhoneController : Controller
     {
-        private readonly IWriteRepository<Brand> _brandWriteRepository;
-        private readonly IReadRepository<Brand> _brandReadRepository;
-        private readonly IReadRepository<Category> _categoryReadRepository;
-        private readonly IWriteRepository<Phone> _phoneWriteRepository;
-        private readonly IReadRepository<Phone> _phoneReadRepository;
-
         IWebHostEnvironment _webHostEnvironment;
+        private readonly EpeyContext epeyContext;
 
-        public PhoneController(IWriteRepository<Brand> brandWriteRepository, IReadRepository<Brand> brandReadRepository, IReadRepository<Category> categoryReadRepository, IWriteRepository<Phone> phoneWriteRepository, IReadRepository<Phone> phoneReadRepository, IWebHostEnvironment webHostEnvironment)
+
+        public PhoneController(IWebHostEnvironment webHostEnvironment)
         {
-            _brandWriteRepository = brandWriteRepository;
-            _brandReadRepository = brandReadRepository;
-            _categoryReadRepository = categoryReadRepository;
-            _phoneWriteRepository = phoneWriteRepository;
-            _phoneReadRepository = phoneReadRepository;
             _webHostEnvironment = webHostEnvironment;
+            epeyContext = new EpeyContext();
+        }
+        public IActionResult Phonebybrand(string brand)
+        {
+            var brands = epeyContext.Phones.Include(p => p.Brand).Where(p => p.Brand.Name == brand).ToList();
+
+
+
+            return View("Index", brands);
         }
 
         public IActionResult Index()
         {
-            var brands = _phoneReadRepository.GetAll().ToList();
+
+            var brands = epeyContext.Phones.ToList();
+
+
 
             return View(brands);
         }
-
+        [Authorize]
         public IActionResult Create()
         {
-            var categories = _categoryReadRepository.GetAll().Select(c => new SelectListItem
+            var categories = epeyContext.Categories.Select(c => new SelectListItem
             {
                 Value = c.Id.ToString(),
                 Text = c.Name
             });
 
-            var brands = _brandReadRepository.GetAll().Select(b => new SelectListItem
+            var brands = epeyContext.Brands.Select(b => new SelectListItem
             {
                 Value = b.Id.ToString(),
                 Text = b.Name
@@ -65,11 +69,11 @@ namespace WebApplication1.Controllers
 
             return View();
         }
-
+        [Authorize]
         [HttpPost, ActionName("Create")]
         public async Task<IActionResult> Create([FromForm] PhoneRequest_VM model)
         {
-           
+
             string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "photos");
 
 
@@ -88,68 +92,83 @@ namespace WebApplication1.Controllers
 
                 await model.PhotoFile.CopyToAsync(fileStream);
                 await fileStream.FlushAsync();
-               
+
             }
             catch (Exception er)
             {
                 throw er;
             }
 
-        await _phoneWriteRepository.AddAsync(
-                new()
-                {
-                    Name = model.Name,
-                    Brand = model.Brand,
-                    Category = model.Category,
-                    Price = model.Price,
-                    Seller = model.Seller,
-                    ImagePath = "photos/" + model.PhotoFile.FileName,
-                    PhoneScreenSpecs = new()
+            await epeyContext.Phones.AddAsync(
+                    new()
                     {
-                        ScreenResolution = model.PhoneScreenSpecs.ScreenResolution,
-                        ScreenSize = model.PhoneScreenSpecs.ScreenSize,
-                        ScreenFeature = model.PhoneScreenSpecs.ScreenFeature,
-                        ScreenRefreshRate = model.PhoneScreenSpecs.ScreenRefreshRate
-                    },
-                    PhoneCameraSpecs = new()
-                    {
-                        CameraResolution = model.PhoneCameraSpecs.CameraResolution,
-                        CameraFps = model.PhoneCameraSpecs.CameraFps,
-                        CameraZoom = model.PhoneCameraSpecs.CameraZoom
-                    },
-                    PhoneBatterySpecs = new()
-                    {
-                        BatteryCapacity = model.PhoneBatterySpecs.BatteryCapacity,
-                        FastCharging = model.PhoneBatterySpecs.FastCharging,
-                        ChargingSpeed = model.PhoneBatterySpecs.ChargingSpeed
+                        Name = model.Name,
+                        BrandId = model.BrandId,
+                        Category = model.Category,
+                        Price = model.Price,
+                        Seller = model.Seller,
+                        ImagePath = "photos/" + model.PhotoFile.FileName,
+                        PhoneScreenSpecsScreenResolution = model.PhoneScreenSpecsScreenResolution,
+                        PhoneScreenSpecsScreenSize = model.PhoneScreenSpecsScreenSize,
+                        PhoneScreenSpecsScreenFeature = model.PhoneScreenSpecsScreenFeature,
+                        PhoneScreenSpecsScreenRefreshRate = model.PhoneScreenSpecsScreenRefreshRate,
+                        PhoneCameraSpecsCameraResolution = model.PhoneCameraSpecsCameraResolution,
+                        PhoneCameraSpecsCameraFps = model.PhoneCameraSpecsCameraFps,
+                        PhoneCameraSpecsCameraZoom = model.PhoneCameraSpecsCameraZoom,
+                        PhoneBatterySpecsBatteryCapacity = model.PhoneBatterySpecsBatteryCapacity,
+                        PhoneBatterySpecsFastCharging = model.PhoneBatterySpecsFastCharging,
+                        PhoneBatterySpecsChargingSpeed = model.PhoneBatterySpecsChargingSpeed
                     }
+                );
 
-
-
-
-
-                }
-            );
-
-            await _brandWriteRepository.SaveAsync();
+            await epeyContext.SaveChangesAsync();
 
 
             return RedirectToAction("Create", "Phone");
         }
 
-        public IActionResult Compare(string url)
+        public IActionResult Compare()
         {
-            if (url == null)
-            {
-                return NotFound();
-            }
+            
 
-            var phoneIds = url.Split("-");
 
-            var phones = _phoneReadRepository.GetAll().Where(p => phoneIds.Contains(p.Id.ToString())).ToList();
+
+            var phones = epeyContext.Phones.Where(p => CompareItems.CompareItemId.Contains(p.Id.ToString())).ToList();
 
 
             return View(phones);
         }
-    }
+
+        [HttpPost]
+        public IActionResult AddToCompare([FromQuery] string id)
+        {
+            if (CompareItems.CompareItemId == null)
+            {
+                CompareItems.CompareItemId = new List<string>();
+            }
+
+            if (CompareItems.CompareItemId.Contains(id))
+            {
+                CompareItems.CompareItemId.Remove(id);
+            }
+            else
+            {
+                CompareItems.CompareItemId.Add(id);
+            }
+
+            return StatusCode((int)HttpStatusCode.Created);
+        }
+
+        [HttpPost]
+		public IActionResult CompareItemsClear()
+		{
+			if (CompareItems.CompareItemId.Count != 0)
+			{
+				CompareItems.CompareItemId.Clear();
+			}
+			return StatusCode((int)HttpStatusCode.Accepted);
+		}
+
+
+	}
 }

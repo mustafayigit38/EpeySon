@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
-using WebApplication1.Repositories;
 using WebApplication1.Models;
 using System.Net;
 
@@ -12,26 +11,22 @@ namespace WebApplication1.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly IReadRepository<User> _userReadRepository;
-        private readonly IWriteRepository<User> _userWriteRepository;
+        private readonly EpeyContext epeyContext;
 
-        public AccountController(IReadRepository<User> userReadRepository, IWriteRepository<User> userWriteRepository)
+        public AccountController()
         {
-            _userReadRepository = userReadRepository;
-            _userWriteRepository = userWriteRepository;
+            epeyContext = new EpeyContext();
         }
 
-        /*
+
+
         [HttpPost, ActionName("Register")]
         public async Task<IActionResult> Register()
         {
-            await _userWriteRepository.AddAsync(
-                 new User() { Email = "admin@admin.com", Password = "password" }
-                 );
-            await _userWriteRepository.SaveAsync();
-            //return created status code
+            await epeyContext.Users.AddAsync(new User() { Email = "admin@admin.com", Password = "password" });
+            await epeyContext.SaveChangesAsync();
             return StatusCode((int)HttpStatusCode.Created);
-        }*/
+        }
 
         [HttpGet]
         public IActionResult Login(string returnUrl = null)
@@ -54,7 +49,7 @@ namespace WebApplication1.Controllers
                 return View(userData);
             }
 
-            User user = await _userReadRepository.GetAll().FirstOrDefaultAsync(u => u.Email == userData.Email && u.Password == userData.Password);
+            User user = await epeyContext.Users.FirstOrDefaultAsync(u => u.Email == userData.Email && u.Password == userData.Password);
 
             if (user is null)
             {

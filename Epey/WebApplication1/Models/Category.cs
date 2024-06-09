@@ -1,7 +1,13 @@
-﻿namespace WebApplication1.Models
+﻿using System;
+using System.Collections.Generic;
+
+namespace WebApplication1.Models;
+
+public partial class Category
 {
-	public class Category:BaseEntity
-	{
-		public string Name { get; set; } 
-	}
+    public int Id { get; set; }
+
+    public string Name { get; set; } = null!;
+
+    public DateTime CreatedAt { get; set; }
 }
