@@ -1,4 +1,43 @@
 ﻿@{
     ViewData["Title"] = "Epey - her şeyi karşılaştır";
 }
+@model IEnumerable<Phone>
 
+<div id="blok">
+    <h2>Telefonlar</a></h2>
+    <div class="soneklenen table">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <a  class="blok blok1 cell">
+                    <span class="cell resim">
+                        <img src="/@item.ImagePath" >
+                    </span>
+                    <span class="cell">
+                        <span class="adi row">@item.Name</span>
+                        <span class="ozellik row">
+                            <span class="deger" title="">
+                                @item.PhoneScreenSpecsScreenSize İnç <div class="progress"><div class="oz940913_1 progress-bar progress-bar-info" role="progressbar" aria-label="6.67" style="width:84.22%"></div></div>
+                            </span>
+                            <script>$(document).ready(function () { $('.oz940913_1').css('width', '84.22%'); });</script>
+                            <span class="deger" title="">
+                                @item.PhoneBatterySpecsBatteryCapacity <div class="progress"><div class="oz940913_21 progress-bar progress-bar-info" role="progressbar" aria-label="1024" style="width:100.00%"></div></div>
+                            </span>
+                            <script>$(document).ready(function () { $('.oz940913_21').css('width', '100.00%'); });</script>
+                            <span class="deger" title="">
+                                @item.PhoneCameraSpecsCameraZoom X <div class="progress"><div class="oz940913_14 progress-bar progress-bar-info" role="progressbar" aria-label="16" style="width:66.67%"></div></div>
+                            </span>
+                            <script>$(document).ready(function () { $('.oz940913_14').css('width', '66.67%'); });</script>
+                            <span class="deger" title="">
+                                @item.PhoneBatterySpecsChargingSpeed <div class="progress"><div class="oz940913_7 progress-bar progress-bar-info" role="progressbar" aria-label="5000" style="width:50.00%"></div></div>
+                            </span>
+                            <script>$(document).ready(function () { $('.oz940913_7').css('width', '50.00%'); });</script>
+                        </span>
+                        <span class="fiyat row">@item.Price TL</span>
+                    </span>
+                </a>
+            }
+           
+        </div>
+    </div>
+</div>

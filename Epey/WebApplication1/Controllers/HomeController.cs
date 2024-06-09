@@ -7,15 +7,19 @@ namespace WebApplication1.Controllers
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
+		private readonly EpeyContext epeyContext;
 
-		public HomeController(ILogger<HomeController> logger)
+
+        public HomeController(ILogger<HomeController> logger)
 		{
 			_logger = logger;
-		}
+            epeyContext = new EpeyContext();
+        }
 
-		public IActionResult Index()
+		public async Task<IActionResult> Index()
 		{
-			return View();
+            var phones = epeyContext.Phones.ToList();
+            return View(phones);
 		}
 
 		public IActionResult Privacy()
