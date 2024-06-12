@@ -8,10 +8,8 @@ public partial class Phone
     public int Id { get; set; }
 
     public int BrandId { get; set; }
-    public Brand Brand { get; set; }
 
-
-    public string Category { get; set; } = null!;
+    public int CategoryId { get; set; }
 
     public DateTime CreatedAt { get; set; }
 
@@ -31,8 +29,6 @@ public partial class Phone
 
     public int PhoneCameraSpecsCameraZoom { get; set; }
 
-    public int PhoneScreenSpecsScreenFeature { get; set; }
-
     public int PhoneScreenSpecsScreenRefreshRate { get; set; }
 
     public int PhoneScreenSpecsScreenResolution { get; set; }
@@ -42,4 +38,10 @@ public partial class Phone
     public double Price { get; set; }
 
     public string Seller { get; set; } = null!;
+
+    public virtual Brand Brand { get; set; } = null!;
+
+    public virtual Category Category { get; set; } = null!;
+
+    public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 }

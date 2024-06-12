@@ -10,4 +10,6 @@ public partial class Category
     public string Name { get; set; } = null!;
 
     public DateTime CreatedAt { get; set; }
+
+    public virtual ICollection<Phone> Phones { get; set; } = new List<Phone>();
 }

@@ -33,7 +33,10 @@
                         {
                             <div id="sutun" class="deger deger0 urunid939542" style="position:relative">
                                 <span style="position:relative">
-                                    <a href="https://www.epey.com/akilli-telefonlar/samsung-galaxy-m35.html">@item.Name</a>
+                                    <a >@item.Name</a>
+                                </span>
+                                <span style="position:relative; display:block; margin-top:30px;">
+                                    <a ><span style="border:solid;">@item.Seller<span style="margin-left:30px;">@item.Price TL</span></span> </a>
                                 </span>
                             </div>
                         }
@@ -45,7 +48,7 @@
                         @foreach (var item in Model)
                         {
                             <div id="sutun" class="deger deger0 urunid939542">
-                                <a href="https://www.epey.com/akilli-telefonlar/samsung-galaxy-m35.html" title="Samsung Galaxy M35 Özellikleri"><img src="/@item.ImagePath" style="max-width:200px"></a>
+                                <a  title="Samsung Galaxy M35 Özellikleri"><img src="/@item.ImagePath" style="max-width:200px"></a>
                                 <div class="genislik"></div>
                             </div>
                         }
@@ -79,7 +82,7 @@
                         {
                             <div id="sutun" class="deger deger urunid939542">
                                 <span style="display:block;" class="@(item.PhoneScreenSpecsScreenSize == Model.Max(u=>u.PhoneScreenSpecsScreenSize)?"eniyi":"")">
-                                    <a href="https://www.epey.com/akilli-telefonlar/ekran-boyutu/6-6/" title="6.6 İnç Ekranlı Telefonlar">@item.PhoneScreenSpecsScreenSize İnç</a>
+                                    <a  title="6.6 İnç Ekranlı Telefonlar">@item.PhoneScreenSpecsScreenSize İnç</a>
                                 </span>
                             </div>
 
@@ -87,19 +90,7 @@
 
 
                     </div>
-                    <div id="satir" class="tum farkli">
-                        <div id="sutun" class="ozellik">Ekran Teknolojisi</div>
-                        @foreach (var item in Model)
-                        {
-                            <div id="sutun" class="deger deger urunid939542">
-                                <span style="display:block;" class="@(item.PhoneScreenSpecsScreenFeature == Model.Max(u=>u.PhoneScreenSpecsScreenFeature)?"eniyi":"")">
-                                    <a href="https://www.epey.com/akilli-telefonlar/ekran-teknolojisi/super-amoled/" title="Super AMOLED Ekran Teknolojisine Sahip Telefonlar">@item.PhoneScreenSpecsScreenFeature</a>
-                                </span>
-                            </div>
-
-                        }
-
-                    </div>
+                  
                     <div id="satir" class="tum farkli">
                         <div id="sutun" class="ozellik tip ozellik3">Ekran Çözünürlüğü</div>
                         @foreach (var item in Model)

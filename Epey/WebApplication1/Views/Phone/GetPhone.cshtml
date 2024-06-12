@@ -1,0 +1,159 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model GetPhone_VM
+
+@using WebApplication1.ViewModels
+
+<div class="table">
+	<div id="resimk" class="cell">
+		<div id="resim" class="row">
+			
+			<div class="buyuk row">
+				<div id="rtab2264045" class="galerim cell" style="padding-top: 2.5px;">
+					<a data-izimodal-open="#modal-galeri" title="Xiaomi 14 Ultra">
+						<img src="/@Model.Phone.ImagePath" alt="Xiaomi 14 Ultra">
+					</a>
+				</div>
+				<div id="rtab2264048" class="galerim cell" style="display: none; padding-top: 2.5px;">
+					<a data-izimodal-open="#modal-galeri" title="Xiaomi 14 Ultra">
+						<img src="https://resim.epey.com/923849/m_xiaomi-14-ultra-2.jpg" alt="Xiaomi 14 Ultra">
+					</a>
+				</div>
+				<div id="rtab2264058" class="galerim cell" style="display: none; padding-top: 2.5px;">
+					<a data-izimodal-open="#modal-galeri" title="Xiaomi 14 Ultra">
+						<img src="https://resim.epey.com/923849/m_xiaomi-14-ultra-14.jpg" alt="Xiaomi 14 Ultra">
+					</a>
+				</div>
+				<script>
+					$(window).on("load", function () { $(".galerim").each(function () { let a = $("#" + this.id).outerHeight(); let b = $("#ozet").outerHeight(); if (a < b) { let c = (b - a) / 2; $("#" + this.id).css("padding-top", c) } }) })
+				</script>
+			</div>
+		</div>
+	</div>
+	<div id="ozet" class="cell">
+		<div class="row">
+			<div class="baslik">
+				<h1><a href="https://www.epey.com/akilli-telefonlar/xiaomi-14-ultra.html" title="Xiaomi 14 Ultra">Xiaomi 14 Ultra</a></h1>
+				<div  id="listeleme">
+					<input onchange="Compareit(@Model.Phone.Id)" type="checkbox" checked="@CompareItems.CompareItemId.Contains(Model.Phone.Id.ToString())" id="@Model.Phone.Id" name="@Model.Phone.Id" value="@Model.Phone.Id" autocomplete="off"><label style="display:flex;" for="@Model.Phone.Id"><span></span><div style="display:flex;" class="kiyasla kiyasla923849">Karşılaştır</div></label>
+				</div>
+			</div>
+			
+		</div>
+		<div id="oncelikli" class="row">
+			<div class="row">
+				<div class="cell">
+					<div class="row row1">Ekran Boyutu:</div>
+					<div class="row row2">
+						<a href="https://www.epey.com/akilli-telefonlar/ekran-boyutu/6-73-inc/" title="6.73 İnç Ekranlı Telefonlar">@Model.Phone.PhoneScreenSpecsScreenSize İnç</a>
+					</div>
+					<div class="row progress"><div class="oz1 progress-bar progress-bar-info" role="progressbar" style="width: 84.97%;"></div></div>
+					<script>$(document).ready(function () { $('.oz1').css('width', '84.97%'); });</script>
+				</div>
+				<div class="cell">
+					<div class="row row1">Dahili Depolama:</div>
+					<div class="row row2">
+						<a href="https://www.epey.com/akilli-telefonlar/dahili-depolama/512/" title="512 GB Dahili Hafızaya Sahip Telefonlar">512 GB</a>
+					</div>
+					<div class="row progress"><div class="oz21 progress-bar progress-bar-info" role="progressbar" style="width: 83%;"></div></div>
+					<script>$(document).ready(function () { $('.oz21').css('width', '83.00%'); });</script>
+				</div>
+				<div class="cell">
+					<div class="row row1">Bellek (RAM):</div>
+					<div class="row row2">
+						<a href="https://www.epey.com/akilli-telefonlar/bellek-ram/16/" title="16 GB RAM (Sistem Belleğine) Sahip Telefonlar">16 GB</a>
+					</div>
+					<div class="row progress"><div class="oz14 progress-bar progress-bar-info" role="progressbar" style="width: 66.67%;"></div></div>
+					<script>$(document).ready(function () { $('.oz14').css('width', '66.67%'); });</script>
+				</div>
+				<div class="cell">
+					<div class="row row1">Batarya Kapasitesi (Tipik):</div>
+					<div class="row row2">
+						<a href="https://www.epey.com/akilli-telefonlar/batarya-kapasitesi-tipik/5000/" title="5000 mAh Batarya (Pil) Gücüne Sahip Telefonlar">@Model.Phone.PhoneBatterySpecsBatteryCapacity mAh</a>
+					</div>
+					<div class="row progress"><div class="oz7 progress-bar progress-bar-info" role="progressbar" style="width: 50%;"></div></div>
+					<script>$(document).ready(function () { $('.oz7').css('width', '50.00%'); });</script>
+				</div>
+			</div><div class="row">
+				<div class="cell">
+					<div class="row row1">Hat Sayısı:</div>
+					<div class="row row2">
+						<a href="https://www.epey.com/akilli-telefonlar/hat-sayisi/cift-hat/" title="Çift Hat Telefonlar">Çift Hat</a>
+					</div>
+					<div class="row progress"><div class="oz104 progress-bar progress-bar-info" role="progressbar" style="width: 100%;"></div></div>
+					<script>$(document).ready(function () { $('.oz104').css('width', '100.00%'); });</script>
+				</div>
+				<div class="cell">
+					<div class="row row1">Hızlı Şarj:</div>
+					<div class="@(Model.Phone.PhoneBatterySpecsFastCharging==1?"row row2 degerVar":"row row2 degerYok")">
+						<span>@(Model.Phone.PhoneBatterySpecsFastCharging == 1 ? "Var" : "Yok")</span>
+
+						
+
+					</div>
+					<div class="row progress"><div class="oz6104 progress-bar progress-bar-info" role="progressbar" style="width: 100%;"></div></div>
+					<script>$(document).ready(function () { $('.oz6104').css('width', '100.00%'); });</script>
+				</div>
+				<div class="cell">
+					<div class="row row1">5G:</div>
+					<div class="row row2 degerVar">
+						<span>Var</span>
+					</div>
+					<div class="row progress"><div class="oz5711 progress-bar progress-bar-info" role="progressbar" style="width: 100%;"></div></div>
+					<script>$(document).ready(function () { $('.oz5711').css('width', '100.00%'); });</script>
+				</div>
+				<div class="cell">
+					<div class="row row1">4.5G Desteği:</div>
+					<div class="row row2 degerVar">
+						<span>Var</span>
+					</div>
+					<div class="row progress"><div class="oz1737 progress-bar progress-bar-info" role="progressbar" style="width: 100%;"></div></div>
+					<script>$(document).ready(function () { $('.oz1737').css('width', '100.00%'); });</script>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<h1 style="margin-top:50px;	border:solid;">@Model.Phone.Seller Price <span style="float:right; ">@Model.Phone.Price TL</span></h1>
+
+<div style="margin-top:30px;" id="yorumlar" class="tab">
+	<h2 style="padding-top:10px">
+		Xiaomi 14 Ultra Yorumları <span class="yorumsayi">(489 yorum)</span>
+
+	</h2>
+	<div class="yorumlar table">
+		<div id="yorumyaz">
+			<div id="0" class="yorum yorumyaz row">
+				<div class="resim cell"><img alt="Profil Resmi" src="https://resim.epey.com/tema/profil.png"></div>
+				<div class="detay cell">
+					<form action="@Url.Action("SendComment","Phone")" >
+						<input asp-for="Phone.Id" hidden="hidden" />
+
+						<input asp-for="Comment.FirstOrDefault().Text" class="yorumekle" value="" placeholder="Yorum yapmak için üye girişi yapmalısınız" />
+
+					<button type="submit" class="gonder">Yorum Yap</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="yorum">
+			@foreach (var item in Model.Comment)
+			{
+				<div id="323690" class="yorum row">
+					<div class="resim cell">
+						<img alt="Profil Resmi" src="https://resim.epey.com/tema/profil.png">
+					</div>
+					<div class="cell c86a45">
+						<span class="adi">Anonim Kullanıcı</span>
+						<span class="metin">@item.Text</span>
+					</div>
+					<div class="cell 6s5df4" style="display:none"></div>
+				</div>
+			}
+		</div>
+	</div>
+</div>

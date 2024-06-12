@@ -4,12 +4,12 @@
 @model IEnumerable<Phone>
 
 <div id="blok">
-    <h2>Telefonlar</a></h2>
+    <h2>Son Eklenen Telefonlar</a></h2>
     <div class="soneklenen table">
         <div class="row">
             @foreach (var item in Model)
             {
-                <a  class="blok blok1 cell">
+                <a asp-controller="Phone" asp-action="GetPhone" asp-route-id="@item.Id" class="blok blok1 cell">
                     <span class="cell resim">
                         <img src="/@item.ImagePath" >
                     </span>

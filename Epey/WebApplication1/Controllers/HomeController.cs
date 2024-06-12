@@ -1,36 +1,23 @@
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using WebApplication1.Models;
+using Microsoft.AspNetCore.Mvc; 
+using System.Diagnostics; 
+using WebApplication1.Models; 
 
-namespace WebApplication1.Controllers
+namespace WebApplication1.Controllers 
 {
-	public class HomeController : Controller
+	public class HomeController : Controller 
 	{
-		private readonly ILogger<HomeController> _logger;
-		private readonly EpeyContext epeyContext;
+		private readonly EpeyContext epeyContext; // Veritaban? ba?lant?s?n? tutan de?i?ken
 
-
-        public HomeController(ILogger<HomeController> logger)
+		public HomeController() // Constructor
 		{
-			_logger = logger;
-            epeyContext = new EpeyContext();
-        }
-
-		public async Task<IActionResult> Index()
-		{
-            var phones = epeyContext.Phones.ToList();
-            return View(phones);
+			epeyContext = new EpeyContext(); // Veritaban? ba?lant?s?n? ba?lat?r
 		}
 
-		public IActionResult Privacy()
+		public async Task<IActionResult> Index() // Anasayfa aksiyonu
 		{
-			return View();
-		}
+			var phones = epeyContext.Phones.OrderByDescending(p => p.CreatedAt).Take(3).ToList(); // Veritaban?ndan olu?turulma tarihine göre en yeni 3 telefonu getirir
 
-		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-		public IActionResult Error()
-		{
-			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+			return View(phones); // Görünüme telefonlar? gönderir
 		}
 	}
 }
