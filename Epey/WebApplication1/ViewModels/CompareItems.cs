@@ -8,5 +8,5 @@
         }
 
         public static List<string> CompareItemId { get; set; }
-    }//how can i reach this class from view?
+    }
 }
