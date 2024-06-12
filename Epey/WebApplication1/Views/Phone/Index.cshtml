@@ -43,15 +43,14 @@
         {
             @foreach (var item in Model)
             {
-
             <ul id="923849" class="metin row">
                 <li class="adi cell">
                     <div class="resim cell">
-                        <a  class="urunresmi" title="Xiaomi 14 Ultra Cep Telefonu">
-                            <img src="/@item.ImagePath" width="56px" height="120px" alt="Xiaomi 14 Ultra resim">
+                        <a href="/Phone/GetPhone/@item.Id" class="urunresmi" title="Xiaomi 14 Ultra Cep Telefonu">
+                            <img src="/@item.ImagePath"  width="56px" height="120px" alt="Xiaomi 14 Ultra resim">
                         </a>
                     </div> <div class="detay cell">
-                        <a  class="urunadi" title="Xiaomi 14 Ultra Cep Telefonu">@item.Name</a>
+                        <a class="urunadi" href="/Phone/GetPhone/@item.Id" title="Xiaomi 14 Ultra Cep Telefonu">@item.Name</a>
                         <span class="degergetir">Android 14 (U)</span>
                         <div id="listeleme" >
                             <input onchange="Compareit(@item.Id)" type="checkbox" checked="@CompareItems.CompareItemId.Contains(item.Id.ToString())" id="@item.Id" name="@item.Id" value="@item.Id" autocomplete="off"><label for="@item.Id"><span></span><div style="display:flex;" class="kiyasla kiyasla923849">Karşılaştır</div></label>
@@ -59,7 +58,7 @@
                     </div>
                 </li>
                 <li class="fiyat cell">
-                    <a  title="Xiaomi 14 Ultra Cep Telefonu Fiyatı">@item.Price TL<span>6 site, 7 fiyat</span></a>
+                    <a href="/Phone/GetPhone/@item.Id" title="Xiaomi 14 Ultra Cep Telefonu Fiyatı">@item.Price TL<span>6 site, 7 fiyat</span></a>
                 </li>
                 <li class="ozellik ozellik1 cell">@item.PhoneScreenSpecsScreenSize İnç</li>
                 <li class="ozellik ozellik21 cell">512 GB</li>
@@ -67,7 +66,6 @@
                 <li class="ozellik ozellik7 cell">@item.PhoneBatterySpecsBatteryCapacity mAh</li>
                 <li class="puan cell"><div id="puan923849" data-dimension="70" data-text="100" data-info="puan" data-width="7" data-fontsize="22" data-percent="100" data-fgcolor="#D96041" data-bgcolor="#F8F4E0" class="circliful" style="width: 70px;"><span class="circle-text" itemprop="ratingValue" style="line-height: 70px; font-size: 22px;">100</span><span class="circle-info" style="line-height: 87.5px;">puan</span><canvas width="70" height="70"></canvas></div></li>
             </ul>
-
             }
 
 
