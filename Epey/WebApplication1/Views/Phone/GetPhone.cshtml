@@ -10,7 +10,7 @@
 <div class="table">
 	<div id="resimk" class="cell">
 		<div id="resim" class="row">
-			
+
 			<div class="buyuk row">
 				<div id="rtab2264045" class="galerim cell" style="padding-top: 2.5px;">
 					<a data-izimodal-open="#modal-galeri" title="Xiaomi 14 Ultra">
@@ -37,11 +37,11 @@
 		<div class="row">
 			<div class="baslik">
 				<h1><a href="https://www.epey.com/akilli-telefonlar/xiaomi-14-ultra.html" title="Xiaomi 14 Ultra">Xiaomi 14 Ultra</a></h1>
-				<div  id="listeleme">
+				<div id="listeleme">
 					<input onchange="Compareit(@Model.Phone.Id)" type="checkbox" checked="@CompareItems.CompareItemId.Contains(Model.Phone.Id.ToString())" id="@Model.Phone.Id" name="@Model.Phone.Id" value="@Model.Phone.Id" autocomplete="off"><label style="display:flex;" for="@Model.Phone.Id"><span></span><div style="display:flex;" class="kiyasla kiyasla923849">Karşılaştır</div></label>
 				</div>
 			</div>
-			
+
 		</div>
 		<div id="oncelikli" class="row">
 			<div class="row">
@@ -91,7 +91,7 @@
 					<div class="@(Model.Phone.PhoneBatterySpecsFastCharging==1?"row row2 degerVar":"row row2 degerYok")">
 						<span>@(Model.Phone.PhoneBatterySpecsFastCharging == 1 ? "Var" : "Yok")</span>
 
-						
+
 
 					</div>
 					<div class="row progress"><div class="oz6104 progress-bar progress-bar-info" role="progressbar" style="width: 100%;"></div></div>
@@ -130,12 +130,12 @@
 			<div id="0" class="yorum yorumyaz row">
 				<div class="resim cell"><img alt="Profil Resmi" src="https://resim.epey.com/tema/profil.png"></div>
 				<div class="detay cell">
-					<form action="@Url.Action("SendComment","Phone")" >
+					<form action="@Url.Action("SendComment","Phone")">
 						<input asp-for="Phone.Id" hidden="hidden" />
 
 						<input asp-for="Comment.FirstOrDefault().Text" class="yorumekle" value="" placeholder="Yorum yapmak için üye girişi yapmalısınız" />
 
-					<button type="submit" class="gonder">Yorum Yap</button>
+						<button type="submit" class="gonder">Yorum Yap</button>
 					</form>
 				</div>
 			</div>

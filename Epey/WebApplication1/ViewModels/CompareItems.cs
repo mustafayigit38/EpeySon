@@ -1,4 +1,7 @@
-﻿namespace WebApplication1.ViewModels
+﻿using Microsoft.AspNetCore.Mvc;
+using WebApplication1.Models;
+
+namespace WebApplication1.ViewModels
 {
     public static class CompareItems
     {

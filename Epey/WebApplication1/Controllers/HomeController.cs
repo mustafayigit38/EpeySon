@@ -15,9 +15,13 @@ namespace WebApplication1.Controllers
 
 		public async Task<IActionResult> Index() // Anasayfa aksiyonu
 		{
-			var phones = epeyContext.Phones.OrderByDescending(p => p.CreatedAt).Take(3).ToList(); // Veritaban?ndan olu?turulma tarihine göre en yeni 3 telefonu getirir
+			var phones = epeyContext.Phones.OrderByDescending(p => p.CreatedAt).ToList(); // Veritaban?ndan olu?turulma tarihine göre en yeni 3 telefonu getirir
 
-			return View(phones); // Görünüme telefonlar? gönderir
+            // Fetch all products, then sort and parse in memory
+            var products = epeyContext.Products.ToList(); // Load into memory
+            products = products.OrderByDescending(p => DateTime.Parse(p.ProductCreatedAt)).ToList();
+
+            return View(products); // Görünüme telefonlar? gönderir
 		}
 	}
 }

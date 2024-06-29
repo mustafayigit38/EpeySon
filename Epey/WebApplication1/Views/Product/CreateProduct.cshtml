@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Create Product";
+}
+
+@model WebApplication1.ViewModels.CreateProductViewModel
+
+<h1>Create Product</h1>
+
+<form asp-action="CreateProduct" asp-controller="Product" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        Ürün Resmi<input type="file" asp-for="ProductImage" /><br>
+        <label  >Product Name</label>
+        <input asp-for="ProductName"  />
+
+        
+        <input asp-for="ProductCategory" type="hidden" />
+    </div>
+
+    <div id="attributes">
+        @for (int i = 0; i < Model.Values.Count; i++)
+        {
+            <div class="form-group">
+                <label>@Model.Values[i].AttributeName</label>
+                <input type="hidden" asp-for="@Model.Values[i].AttributeID" />
+                <input type="hidden" asp-for="@Model.Values[i].AttributeName" />
+                <input type="hidden" asp-for="@Model.Values[i].AttributeType" />
+                @switch (Model.Values[i].AttributeType)
+                {
+                    case "string":
+                        <input asp-for="@Model.Values[i].ValueString" type="text"  />
+                        break;
+                    case "integer":
+                        <input asp-for="@Model.Values[i].ValueInteger" type="number"  />
+                        break;
+                    case "float":
+                        <input asp-for="@Model.Values[i].ValueFloat" type="number"  />
+                        break;
+                    case "date":
+                        <input asp-for="@Model.Values[i].ValueDate" type="date"  />
+                        break;
+                    case "boolean":
+                        <label><input style="display:inline-block; margin-left:10px;" asp-for="@Model.Values[i].ValueBoolean" type="radio" value=1 />Yes</label>
+                        <label><input style="display:inline-block; margin-left:10px;" asp-for="@Model.Values[i].ValueBoolean" type="radio" value=0 />No</label>
+
+                        break;
+                }
+            </div>
+        }
+    </div>
+
+
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+

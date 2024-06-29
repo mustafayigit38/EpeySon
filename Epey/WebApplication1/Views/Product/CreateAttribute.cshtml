@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model WebApplication1.ViewModels.CreateAttribute_VM
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateAttribute</title>
+</head>
+<body>
+    <div>
+        <form asp-action="CreateAttribute" method="post">
+
+
+            <div>
+                <label asp-for="attribute.AttributeName"></label>
+                <input asp-for="attribute.AttributeName" />
+            </div>
+            <div>
+                <label asp-for="attribute.AttributeType"></label>
+                <select asp-for="attribute.AttributeType">
+                    <option value="string">Text</option>
+                    <option value="integer">Number</option>
+                    <option value="float">Decimal Number</option>
+                    <option value="date">Date</option>
+                    <option value="boolean">Boolean</option>
+                </select>
+            </div>
+            <div>
+                <label asp-for="attributeSpec"></label>
+                <select asp-items="ViewBag.Specs" asp-for="attributeSpec.AttributeSpecsId"></select>
+            </div>
+
+            <div>
+                <label asp-for="categories"></label>
+                <select asp-items="ViewBag.Category" asp-for="categories.Id"></select>
+            </div>
+
+            <div>
+                <input type="submit" value="Create" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿@model IEnumerable<WebApplication1.ViewModels.ComparisonResult>
+
+
+<h2 style="text-align: center; margin-bottom: 20px;">Product Comparison</h2>
+
+<div style="display:flex">
+    @foreach (var result in Model)
+    {
+        @foreach (var product in result.ProductValues)
+        {
+            <div style="border-left: 6px solid green;height: 500px; padding-right:40px;">
+            </div>
+            <div style="margin-right:40px;">
+                <p style="font-size:30px">
+                    @product.ProductName
+                </p>
+                <img src="/@product.ProductImage" width="150px" />
+            </div>
+            <div style="border-left: 6px solid green; height: 500px; padding-left:40px;">
+                </div>
+        }
+    }
+</div>
+
+
+<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size:20px">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Attribute</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Spec</th>
+            @foreach (var product in Model.First().ProductValues)
+            {
+                <th style="padding: 10px; border: 1px solid #ddd;">@product.ProductName</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var result in Model)
+    {
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">@result.AttributeName</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">@result.AttributeSpecName</td>
+            @{
+                var numericValues = result.ProductValues
+                    .Where(v => v.Value != null && (v.Value is int || v.Value is float || v.Value is double || v.Value is decimal))
+                    .ToList();
+                var maxValue = numericValues.Any() ? numericValues.Max(v => Convert.ToDouble(v.Value)) : (double?)null;
+            }
+            @foreach (var productValue in result.ProductValues)
+            {
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">
+                    @if (productValue.Value != null && (productValue.Value is int || productValue.Value is float || productValue.Value is double || productValue.Value is decimal))
+                    {
+                        if (Convert.ToDouble(productValue.Value) == maxValue)
+                        {
+                                <span style="font-weight:900">@productValue.Value</span>
+                        }
+                        else
+                        {
+                                <a>@productValue.Value</a>
+                        }
+                    }
+                    else
+                    {
+                            <a>N/A</a>
+                    }
+                </td>
+            }
+        </tr>
+    }
+    </tbody>
+</table>

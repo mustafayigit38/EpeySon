@@ -1,0 +1,58 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "Product";
+}
+
+@using WebApplication1.ViewModels
+
+
+
+
+
+<div class="table">
+    <div id="resimk" class="cell">
+        <div id="resim" class="row">
+
+            <div class="buyuk row">
+                <div id="rtab2264045" class="galerim cell" style="padding-top: 2.5px;">
+                    <a data-izimodal-open="#modal-galeri" title="Xiaomi 14 Ultra" >
+                        <img src="/@Model.FirstOrDefault().ProductImage" class="mx-auto" alt="Xiaomi 14 Ultra">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ozet" class="cell">
+        <span style="font-size:30px;">@Model.FirstOrDefault().ProductName</span>
+
+        <div id="listeleme">
+            <input onchange="Compareit(@Model.FirstOrDefault().ProductId)" type="checkbox" checked="@CompareItems.CompareItemId.Contains(Model.FirstOrDefault().ProductId.ToString())" id="@Model.FirstOrDefault().ProductId" name="@Model.FirstOrDefault().ProductId" value="@Model.FirstOrDefault().ProductId" autocomplete="off"><label style="display:flex;" for="@Model.FirstOrDefault().ProductId"><span></span><div style="display:flex;" class="kiyasla kiyasla923849">Karşılaştır</div></label>
+        </div>
+
+        <div id="oncelikli" class="row">
+            <div class="row">
+            </div>
+            @foreach (var product in Model)
+            {
+                @foreach (var values in product.Values)
+                {
+                    @foreach (var items in values)
+                    {
+                        <div class="cell">
+                            <div class="row row1">@items.AttributeName</div>
+                            <div class="row row2">
+                                <a title="6.73 İnç Ekranlı Telefonlar">@items.Value</a>
+                            </div>
+                            <div class="row progress"><div class="oz1 progress-bar progress-bar-info" role="progressbar" style="width: 84.97%;"></div></div>
+                           
+                        </div>
+                    }
+                }
+
+            }
+
+        </div>
+
+    </div>
+</div>

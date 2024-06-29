@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model WebApplication1.Models.AttributeSpec
+
+
+
+<div>
+
+
+    <div>
+        <div id="giris">
+
+            <div id="uye_giris" class="uye_giris">
+                <form action="CreateAttributeSpecs" method="post">
+                    <p style="font-size:24px;">Spec oluştur</p>
+                    <div style="display:none" class="mesaj"></div>
+                    <div style="margin-top:10px;">
+
+                        <input asp-for="AttributeSpecsName" class="uye_parola uyelik_alan" placeholder="Spec ismi"><br>
+
+                    </div>
+
+
+                    <button class="giris epey-giris" type="submit" id="adg845">Kaydet</button><br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

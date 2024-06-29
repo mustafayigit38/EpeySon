@@ -10,19 +10,19 @@ namespace WebApplication1.Controllers
 {
 	public class AccountController : Controller // AccountController sınıfı, Controller sınıfından türetilmiş
 	{
-		private readonly EpeyContext epeyContext; // Veritabanı bağlantısını tutan değişken
+		private readonly EpeyContext epeyContext; 
 
 		public AccountController() // Constructor
 		{
-			epeyContext = new EpeyContext(); // Veritabanı bağlantısını başlatır
+			epeyContext = new EpeyContext(); 
 		}
 
-		[HttpPost, ActionName("Register")] // HTTP POST işlemi ve aksiyon adı belirleme
-		public async Task<IActionResult> Register() // Kullanıcı kayıt aksiyonu
+		[HttpPost, ActionName("Register")] 
+		public async Task<IActionResult> Register() 
 		{
-			await epeyContext.Users.AddAsync(new User() { Email = "admin@admin.com", Password = "password" }); // Yeni kullanıcıyı veritabanına ekler
-			await epeyContext.SaveChangesAsync(); // Veritabanına değişiklikleri kaydeder
-			return StatusCode((int)HttpStatusCode.Created); // HTTP 201 Created durum kodunu döner
+			await epeyContext.Users.AddAsync(new User() { Email = "admin@admin.com", Password = "password" }); 
+			await epeyContext.SaveChangesAsync(); 
+			return StatusCode((int)HttpStatusCode.Created); 
 		}
 
 		[HttpGet] // HTTP GET işlemi belirleme
@@ -32,48 +32,48 @@ namespace WebApplication1.Controllers
 			return View(); // Görünümü döner
 		}
 
-		[HttpPost] // HTTP POST işlemi belirleme
-		public async Task<IActionResult> Login([FromForm] User userData, string returnUrl = null) // Kullanıcı giriş aksiyonu
+		[HttpPost] 
+		public async Task<IActionResult> Login([FromForm] User userData, string returnUrl = null) 
 		{
-			ViewData["ReturnUrl"] = returnUrl; // Geri dönülecek URL'yi ViewData'ya ekler
-			if (userData == null) // Kullanıcı verisi yoksa görünümü döner
+			ViewData["ReturnUrl"] = returnUrl; 
+			if (userData == null) 
 			{
 				return View();
 			}
 
-			if (!ModelState.IsValid) // Model geçerli değilse kullanıcı verisiyle birlikte görünümü döner
+			if (!ModelState.IsValid) 
 			{
 				return View(userData);
 			}
 
-			User user = await epeyContext.Users.FirstOrDefaultAsync(u => u.Email == userData.Email && u.Password == userData.Password); // Veritabanından kullanıcıyı bulur
+			User user = await epeyContext.Users.FirstOrDefaultAsync(u => u.Email == userData.Email && u.Password == userData.Password); 
 
-			if (user is null) // Kullanıcı bulunamazsa kullanıcı verisiyle birlikte görünümü döner
+			if (user is null) 
 			{
 				return View(userData);
 			}
 
-			var claims = new List<Claim> { // Kullanıcı için iddia (claim) listesi oluşturur
+			var claims = new List<Claim> { 
                 new Claim(ClaimTypes.Name, userData.Email),
 			};
 
-			var claimIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme); // Kimlik doğrulama şemasıyla yeni kimlik oluşturur
-			var claimPrincipal = new ClaimsPrincipal(claimIdentity); // Yeni bir kimlik doğrulama prensi oluşturur
-			await HttpContext.SignInAsync(claimPrincipal); // Kullanıcıyı oturum açmış olarak işaretler
+			var claimIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme); 
+			var claimPrincipal = new ClaimsPrincipal(claimIdentity); 
+			await HttpContext.SignInAsync(claimPrincipal); 
 
-			if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl)) // Geri dönülecek URL varsa ve yerel bir URL ise oraya yönlendirir
+			if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl)) 
 			{
 				return Redirect(returnUrl);
 			}
-			else // Yoksa ana sayfaya yönlendirir
+			else 
 			{
 				return RedirectToAction("Index", "Home");
 			}
 		}
 
-		public IActionResult AccessDenied() // Erişim reddedildiğinde gösterilecek aksiyon
+		public IActionResult AccessDenied() 
 		{
-			return View(); // Görünümü döner
+			return View(); 
 		}
 	}
 }
