@@ -362,7 +362,7 @@ namespace WebApplication1.Controllers
 			{
 				ProductName = model.ProductName,
 				ProductCategory = model.ProductCategory,
-				ProductCreatedAt = DateTime.Now.ToString(),
+				ProductCreatedAt = DateTime.UtcNow.ToString(),
 				ProductImage = "photos/" + model.ProductImage.FileName,
 				Values = model.Values.Select(v => new Value
 				{
