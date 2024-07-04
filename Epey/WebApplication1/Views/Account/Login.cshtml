@@ -15,7 +15,7 @@
              <input type="hidden" name="ReturnUrl" value="@ViewData["ReturnUrl"]" />
             <div style="display:none" class="mesaj"></div>
             <input id="uye_posta1" class="uye_posta uyelik_alan" asp-for="Email" type="text" asp-for="Username"  placeholder="E-posta" ><br>
-            <input id="uye_parola1" class="uye_parola uyelik_alan" asp-for="Password" placeholder="Şifre" ><br>
+            <input id="uye_parola1" class="uye_parola uyelik_alan" type="password" asp-for="Password" placeholder="Şifre" ><br>
             <button class="giris epey-giris" type="submit" id="adg845">Giriş</button><br>
             <input style="display:initial;" type="checkbox" id="beni_hatirla" name="beni_hatirla"><label style="margin-right:125px" for="beni_hatirla">Beni Hatırla</label>
             <a style="float:none" class="sifre_unut" href="#">Şifremi Unuttum</a><br>
